@@ -1,11 +1,11 @@
 .carousel-cell {
     width: 100%; /* Take the full width of the container */
-    height: 90vh; /* Relative height, starting point around 500px */
+    height: 85vh; /* Relative height, starting point around 500px */
     min-height: 300px; /* Ensures a minimum height on smaller screens */
     max-height: 600px; /* Cap the height on very large screens */
     box-sizing: border-box; /* Include padding and border in width and height calculations */
     overflow: hidden; /* Ensure content doesn't overflow, important for images */
-    position: relative; /* Allows positioning of image inside */
+    position: relative; /* Allows positioning of elements inside */
 }
 
 .carousel-image {
@@ -15,13 +15,73 @@
     display: block; /* Ensures there's no gap around the image */
 }
 
+.carousel-caption-custom {
+    position: absolute;
+    left: 15%; /* Adjust this value to create space from the left edge */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically centers the caption */
+    background-color: rgba(255, 255, 255, 1); /* Semi-transparent white background */
+    padding: 40px; /* Adds padding around the text */
+    color: #555; /* Dark text for contrast */
+    max-width: 500px; /* Adjust to limit width if needed */
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-caption-custom h3 {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
 /* Media query for mobile screens */
-@media (max-width: 768px) { /* Targets devices with screen width up to 768px (common breakpoint for tablets and smaller devices) */
+@media (min-width: 450px) and (max-width: 768px) {
+    .carousel-caption-custom {
+        max-width: none;
+        width: 400px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .carousel-caption-custom h3 {
+        font-size: 22px;
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .carousel-caption-custom p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
     .carousel-cell {
-        height: 100vh; /* Increase height on smaller screens to 110% of the viewport height */
+        height: 100vh;
     }
 
     .flickity-button {
         display: none;
+    }
+
+    .carousel-caption-custom {
+        padding: 25px;
+        width: 300px;
+        left: 50%;
+        transform: translate(-50%, -25%);
+    }
+
+    .carousel-caption-custom h3 {
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .carousel-caption-custom p {
+        font-size: 12px;
     }
 }
