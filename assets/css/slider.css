@@ -19,29 +19,33 @@
     position: absolute;
     left: 15%; /* Adjust this value to create space from the left edge */
     top: 50%;
-    transform: translateY(-50%); /* Vertically centers the caption */
-    background-color: rgba(255, 255, 255, 1); /* Semi-transparent white background */
-    padding: 40px; /* Adds padding around the text */
-    color: #555; /* Dark text for contrast */
-    max-width: 500px; /* Adjust to limit width if needed */
+    transform: translateY(-40%); /* Vertically centers the caption */
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    padding: 50px 25px; /* Adds padding around the text */
+    max-width: 550px; /* Adjust to limit width if needed */
     font-family: 'Roboto', sans-serif;
 }
 
 .carousel-caption-custom h3 {
-    font-size: 28px;
+    font-size: 29px;
     line-height: 1;
     font-weight: 500;
     letter-spacing: 2px;
     margin-bottom: 15px;
+    color: #555;
+}
+
+.carousel-caption-custom p {
+    color: gray;
 }
 
 /* Media query for mobile screens */
-@media (min-width: 450px) and (max-width: 768px) {
+@media (min-width: 470px) and (max-width: 800px) {
     .carousel-caption-custom {
         max-width: none;
         width: 400px;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -40%);
     }
 
     .carousel-caption-custom h3 {
@@ -57,7 +61,7 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 469px) {
     .carousel-cell {
         height: 100vh;
     }
@@ -82,6 +86,6 @@
     }
 
     .carousel-caption-custom p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }

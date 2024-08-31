@@ -1,0 +1,40 @@
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 1); /* Fully opaque */
+    color: black;
+    padding: 20px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out; /* Smooth background change */
+    z-index: 1000;
+}
+
+/* Semi-transparent state */
+.navbar-custom.transparent {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent */
+}
+
+.navbar-custom nav {
+    display: flex;
+    max-width: 75%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar-custom img {
+    height: 40px;
+    width: auto;
+}
+
+@media (max-width: 500px) {
+    .navbar-custom nav {
+        max-width: 90%;
+    }
+
+    .navbar-custom img {
+        height: 30px;
+        width: auto;
+    }
+}

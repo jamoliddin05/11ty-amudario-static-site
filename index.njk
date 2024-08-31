@@ -5,37 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/sticky-navbar.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/flickity.css" media="screen">
 </head>
 <body class="mx-auto mb-10">
-    <section id="slider">
-       <div class="main-carousel">
-       {% for carouselItem in pageContent.carouselItems %}
-           <div class="carousel-cell">
-               <img src="{{ carouselItem.image.src }}" alt="{{ carouselItem.image.alt }}" class="carousel-image">
-               <div class="carousel-caption-custom">
-                  <h3 class="text-uppercase">{{ carouselItem.caption.heading }}</h3>
-                  <p>{{ carouselItem.caption.text }}</p>
-               </div>
-           </div>
-       {% endfor %}
-      </div>
-    </section>
+    <header class="navbar-custom">
+        <nav>
+            <a href="#">
+                <img src="assets/img/logo/logo.png" alt="Logo" />
+            </a>
+            <div class="d-none d-md-block">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="slider">
+               <div class="main-carousel">
+               {% for carouselItem in pageContent.carouselItems %}
+                   <div class="carousel-cell">
+                       <img src="{{ carouselItem.image.src }}" alt="{{ carouselItem.image.alt }}" class="carousel-image">
+                       <div class="carousel-caption-custom">
+                          <h3 class="text-uppercase">{{ carouselItem.caption.heading }}</h3>
+                          <p>{{ carouselItem.caption.text }}</p>
+                       </div>
+                   </div>
+               {% endfor %}
+              </div>
+            </section>
 
-    <section class="container mx-auto mt-10 mb-10">
-        <h1>{{ mainContent.title }}</h1>
-        <p>{{ mainContent.description }}</p>
-
-        <ul>
-          {% for feature in mainContent.features %}
-            <li>{{ feature }}</li>
-          {% endfor %}
-        </ul>
-    </section>
-
+            <section class="my-5 container">
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+                <p class="my-5">test</p>
+            </section>
+    </main>
 </body>
 <script src="assets/js/flickity.pkgd.min.js"></script>
 <script src="assets/js/top_carousel.js"></script>
+<script src="assets/js/sticky_navbar.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </html>
