@@ -21,7 +21,14 @@
     </section>
 
     <section class="container mx-auto mt-10 mb-10">
-        <p>Hello, fucking world!</p>
+        <h1>{{ mainContent.title }}</h1>
+        <p>{{ mainContent.description }}</p>
+
+        <ul>
+          {% for feature in mainContent.features %}
+            <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
     </section>
 
 </body>
