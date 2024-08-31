@@ -1,0 +1,29 @@
+.carousel-cell {
+    width: 100%; /* Take the full width of the container */
+    height: 90vh; /* Relative height, starting point around 500px */
+    min-height: 300px; /* Ensures a minimum height on smaller screens */
+    max-height: 600px; /* Cap the height on very large screens */
+    background: #8C8;
+    counter-increment: carousel-cell;
+    box-sizing: border-box; /* Include padding and border in width and height calculations */
+    overflow: hidden; /* Ensure content doesn't overflow, important for images */
+    position: relative; /* Allows positioning of image inside */
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes the image cover the entire container while maintaining aspect ratio */
+    display: block; /* Ensures there's no gap around the image */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) { /* Targets devices with screen width up to 768px (common breakpoint for tablets and smaller devices) */
+    .carousel-cell {
+        height: 100vh; /* Increase height on smaller screens to 110% of the viewport height */
+    }
+
+    .flickity-button {
+        display: none;
+    }
+}
