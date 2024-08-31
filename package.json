@@ -1,0 +1,21 @@
+{
+  "name": "amudar.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "flickity": "^3.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
