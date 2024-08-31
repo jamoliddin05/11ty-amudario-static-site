@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/flickity.css" media="screen">
 </head>
 <body class="mx-auto mb-10">
     <section id="slider">
        <div class="main-carousel">
-         <div class="carousel-cell">
-           <img src="assets/img/top-slider/slider-01.jpg" alt="Image 1" class="carousel-image">
-         </div>
-         <div class="carousel-cell">
-           <img src="assets/img/top-slider/slider-02.jpg" alt="Image 1" class="carousel-image">
-         </div>
-       </div>
+       {% for carouselItem in pageContent.carouselItems %}
+           <div class="carousel-cell">
+               <img src="{{ carouselItem.image.src }}" alt="{{ carouselItem.image.alt }}" class="carousel-image">
+               <div class="carousel-caption-custom">
+                  <h3 class="text-uppercase">{{ carouselItem.caption.heading }}</h3>
+                  <p>{{ carouselItem.caption.text }}</p>
+               </div>
+           </div>
+       {% endfor %}
+      </div>
     </section>
 
     <section class="container mx-auto mt-10 mb-10">
@@ -34,4 +37,5 @@
 </body>
 <script src="assets/js/flickity.pkgd.min.js"></script>
 <script src="assets/js/top_carousel.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 </html>
