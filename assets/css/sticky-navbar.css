@@ -28,6 +28,16 @@
     width: auto;
 }
 
+.centered-link {
+    display: grid;
+    place-items: center; /* Center items both horizontally and vertically */
+}
+
+.centered-link img {
+    max-width: 100%; /* Ensure the image scales properly */
+    max-height: 100%; /* Ensure the image scales properly */
+}
+
 @media (max-width: 500px) {
     .navbar-custom nav {
         max-width: 90%;
@@ -37,4 +47,87 @@
         height: 30px;
         width: auto;
     }
+}
+
+.languagepicker {
+    background-color: #FFF;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+    position: relative;
+    padding: 0;
+    height: 40px;
+    overflow: hidden;
+    transition: all .3s ease;
+    margin: 0 50px 10px 0;
+    vertical-align: top;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.languagepicker::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid #444;
+    border-color: #444 transparent transparent transparent;
+    top: 18px;
+    right: 10px;
+
+}
+
+.languagepicker:hover {
+    /* don't forget the 1px border */
+    height: auto;
+}
+
+.languagepicker a{
+    color: #000;
+    text-decoration: none;
+}
+
+/* sets the current language on top: */
+.languagepicker a.current{
+    order: -1;
+}
+
+.languagepicker li {
+    display: block;
+    padding: 0px 20px;
+    line-height: 40px;
+    border-top: 1px solid #EEE;
+}
+
+.languagepicker li:hover{
+    background-color: #EEE;
+}
+
+.languagepicker a:first-child li {
+    border: none;
+    background: #FFF !important;
+}
+
+.languagepicker li img {
+    margin-right: 5px;
+}
+
+.roundborders {
+    border-radius: 5px;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.line-through + b{
+    color: dodgerblue;
+}
+
+.large:hover {
+    /*
+    don't forget the 1px border!
+    The first language is 40px heigh,
+    the others are 41px
+    */
+    height: 245px;
 }

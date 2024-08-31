@@ -6,20 +6,24 @@
     <title></title>
     <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/sticky-navbar.css">
+    <link rel="stylesheet" href="assets/css/language-switcher.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/flickity.css" media="screen">
 </head>
 <body class="mx-auto mb-10">
     <header class="navbar-custom">
         <nav>
-            <a href="#">
+            <a href="#" class="centered-link">
                 <img src="assets/img/logo/logo.png" alt="Logo" />
             </a>
-            <div class="d-none d-md-block">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
+
+            <div class="language-switcher">
+                <button class="language-switcher-button"><img src="assets/img/lang-icons/united-states.png" alt="En" /></button>
+                <div class="language-menu">
+                    <a href="?lang=en" class="language-item"><img src="assets/img/lang-icons/uzbekistan.png" alt="Uz" /></a>
+                    <a href="?lang=en" class="language-item"><img src="assets/img/lang-icons/united-states.png" alt="En" /></a>
+                    <a href="?lang=en" class="language-item"><img src="assets/img/lang-icons/russia.png" alt="Ru" /></a>
+                </div>
             </div>
         </nav>
     </header>

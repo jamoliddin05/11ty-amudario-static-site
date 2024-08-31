@@ -1,0 +1,64 @@
+/* Base styles for the language switcher */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.language-switcher-button {
+    background-color: transparent; /* Primary color */
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.language-switcher-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Menu styles */
+.language-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%; /* Center the dropdown horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Menu item styles */
+.language-item {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.language-item:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+}
+
+/* Show menu on button click */
+.language-switcher:hover .language-menu {
+    display: block;
+}
+
+.language-switcher img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 450px) {
+    .language-switcher-button, .language-item {
+        padding: 10px;
+    }
+}
