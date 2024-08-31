@@ -3,8 +3,6 @@
     height: 90vh; /* Relative height, starting point around 500px */
     min-height: 300px; /* Ensures a minimum height on smaller screens */
     max-height: 600px; /* Cap the height on very large screens */
-    background: #8C8;
-    counter-increment: carousel-cell;
     box-sizing: border-box; /* Include padding and border in width and height calculations */
     overflow: hidden; /* Ensure content doesn't overflow, important for images */
     position: relative; /* Allows positioning of image inside */
