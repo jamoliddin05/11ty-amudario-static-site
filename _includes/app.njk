@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/language-switcher.css">
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/common.css">
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/first-section.css">
+    <link rel="stylesheet" href="{{ baseUrl }}assets/css/hamburger.css">
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/bootstrap.min.css" >
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/flickity.css" media="screen">
     <link rel="stylesheet" href="{{ baseUrl }}assets/fontawesome/css/fontawesome.css"/>
@@ -29,8 +30,14 @@
                 <img src="{{ baseUrl }}assets/img/logo/logo.png" alt="Logo" />
             </a>
 
-            <div class="custom-language-switcher">
-                {{ content | safe }}
+            <div class="right-block d-flex">
+                <div class="custom-language-switcher">
+                    {{ content | safe }}
+                </div>
+                <div class="contact-info align-items-center">
+                    <a href="mailto:{{ mySite.email }}" class="mx-2 text-uppercase" id="email">{{ mySite.email }}</a>
+                    <a href="tel:{{ mySite.phone }}" class="mx-2" id="phone">{{ mySite.phone }}</a>
+                </div>
             </div>
         </nav>
     </header>

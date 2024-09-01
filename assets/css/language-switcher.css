@@ -5,7 +5,6 @@
     align-items: center;
     text-align: center;
     color: gray;
-    font-weight: bold;
 }
 
 .custom-language-switcher ul {
@@ -13,7 +12,7 @@
     list-style-type: none;
     pointer-events: none;
     position: absolute;
-    top: 150%;
+    top: 160%;
     padding-left: 0;
     transition: all .6s ease;
     left: 50%;
@@ -27,13 +26,13 @@
     top: 100%;
     left: 0;
     right: 0;
-    height: 20px; /* Adjust to cover the gap */
+    height: 30px; /* Adjust to cover the gap */
 }
 
 .custom-language-switcher:hover ul,
 .custom-language-switcher ul:hover,
 .custom-language-switcher:hover::before { /* Keep ul open with the pseudo-element hover */
-    top: 127%;
+    top: 150%;
     pointer-events: all;
     opacity: 1;
 }
@@ -47,9 +46,11 @@
 }
 
 .custom-language-switcher li {
-    transition: all .6s ease;
+    transition: background-color .6s ease;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
 }
 
 
@@ -58,18 +59,16 @@
     color: gray;
     transition: all .6s ease;
     padding: 10px;
+    font-size: 11px;
+    font-weight: 500;
 }
 
 .custom-language-switcher li:hover {
     color: white!important;
     background-color: #0563aa!important;
+    transition: all .6s ease;
 }
 
 .custom-language-switcher li:hover a {
     color: white!important;
-}
-
-.custom-language-switcher li {
-    background-color: rgba(255, 255, 255, 0.95);
-    text-align: center;
 }
