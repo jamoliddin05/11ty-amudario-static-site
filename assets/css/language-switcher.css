@@ -1,14 +1,11 @@
 /* Base styles for the language switcher */
 .language-switcher {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .language-switcher-button {
-    background-color: transparent; /* Primary color */
-    color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -21,6 +18,7 @@
 
 /* Menu styles */
 .language-menu {
+    /*margin-top: 10px;*/
     display: none;
     position: absolute;
     top: 100%;
@@ -36,7 +34,7 @@
 /* Menu item styles */
 .language-item {
     display: block;
-    padding: 10px 20px;
+    padding: 20px;
     color: #333;
     text-decoration: none;
     border-bottom: 1px solid #ddd;
@@ -48,11 +46,16 @@
 }
 
 /* Show menu on button click */
-.language-switcher:hover .language-menu {
+.language-switcher:hover .language-menu, .language-switcher-button {
     display: block;
 }
 
-.language-switcher img {
+.language-switcher-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.language-item img {
     width: 30px;
     height: 30px;
 }
