@@ -1,0 +1,62 @@
+{% if language == 'en' %}
+    {% set mySite = pageContentEn %}
+{% elif language == 'ru' %}
+    {% set mySite = pageContentRu %}
+{% else %}
+    {% set mySite = pageContent %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{{ baseUrl }}assets/css/slider.css">
+    <link rel="stylesheet" href="{{ baseUrl }}assets/css/sticky-navbar.css">
+    <link rel="stylesheet" href="{{ baseUrl }}assets/css/language-switcher.css">
+    <link rel="stylesheet" href="{{ baseUrl }}assets/css/common.css">
+    <link rel="stylesheet" href="{{ baseUrl }}assets/css/first-section.css">
+    <link rel="stylesheet" href="{{ baseUrl }}assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="{{ baseUrl }}assets/css/flickity.css" media="screen">
+    <link rel="stylesheet" href="{{ baseUrl }}assets/fontawesome/css/fontawesome.css"/>
+    <link rel="stylesheet" href="{{ baseUrl }}assets/fontawesome/css/brands.css"/>
+    <link rel="stylesheet" href="{{ baseUrl }}assets/fontawesome/css/solid.css"/>
+</head>
+<body class="mx-auto mb-10">
+    <header class="navbar-custom">
+        <nav>
+            <a href="#" class="centered-link">
+                <img src="{{ baseUrl }}assets/img/logo/logo.png" alt="Logo" />
+            </a>
+
+            <div class="custom-language-switcher">
+                {{ content | safe }}
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="slider">
+           <div class="main-carousel">
+           {% for carouselItem in mySite.carouselItems %}
+               <div class="carousel-cell">
+                   <img src="{{ baseUrl }}{{ carouselItem.image.src }}" alt="{{ carouselItem.image.alt }}" class="carousel-image">
+                   <div class="carousel-caption-custom">
+                      <h3 class="text-uppercase">{{ carouselItem.caption.heading }}</h3>
+                      <p>{{ carouselItem.caption.text }}</p>
+                   </div>
+               </div>
+           {% endfor %}
+          </div>
+        </section>
+
+        <section id="firs-section" class="custom-container">
+            <span class="section-title">{{ mySite.firstSection.title }}</span>
+        </section>
+    </main>
+
+</body>
+<script src="{{ baseUrl }}assets/js/flickity.pkgd.min.js"></script>
+<script src="{{ baseUrl }}assets/js/top_carousel.js"></script>
+<script src="{{ baseUrl }}assets/js/sticky_navbar.js"></script>
+<script src="{{ baseUrl }}assets/js/bootstrap.bundle.min.js"></script>
+</html>

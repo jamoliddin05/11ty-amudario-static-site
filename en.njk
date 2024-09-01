@@ -1,76 +1,10 @@
 ---
+layout: app.njk
 baseUrl: "../"
+language: "en"
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/slider.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/sticky-navbar.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/language-switcher.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/flickity.css" media="screen">
-</head>
-<body class="mx-auto mb-10">
-    <header class="navbar-custom">
-        <nav>
-            <a href="#" class="centered-link">
-                <img src="{{ baseUrl }}assets/img/logo/logo.png" alt="Logo" />
-            </a>
-
-            <div class="language-switcher">
-                <a class="language-switcher-button"><img src="{{ baseUrl }}assets/img/lang-icons/united-states.png" alt="En" /></a>
-                <div class="language-menu">
-                    <a href="/ru" class="language-item"><img src="{{ baseUrl }}assets/img/lang-icons/russia.png" alt="En" /></a>
-                    <a href="/" class="language-item"><img src="{{ baseUrl }}assets/img/lang-icons/uzbekistan.png" alt="Uz" /></a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="slider">
-           <div class="main-carousel">
-           {% for carouselItem in pageContentEn.carouselItems %}
-               <div class="carousel-cell">
-                   <img src="{{ baseUrl }}{{ carouselItem.image.src }}" alt="{{ carouselItem.image.alt }}" class="carousel-image">
-                   <div class="carousel-caption-custom">
-                      <h3 class="text-uppercase">{{ carouselItem.caption.heading }}</h3>
-                      <p>{{ carouselItem.caption.text }}</p>
-                   </div>
-               </div>
-           {% endfor %}
-          </div>
-        </section>
-
-        <section class="my-5 container">
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-        </section>
-    </main>
-    <script>
-        // This will log the full URL of the current page to the console
-        console.log(window.location.href);
-    </script>
-</body>
-<script src="{{ baseUrl }}assets/js/flickity.pkgd.min.js"></script>
-<script src="{{ baseUrl }}assets/js/top_carousel.js"></script>
-<script src="{{ baseUrl }}assets/js/sticky_navbar.js"></script>
-<script src="{{ baseUrl }}assets/js/bootstrap.bundle.min.js"></script>
-</html>
+<a id="current-language">EN <i class="fa-solid fa-chevron-down"></i></a>
+<ul class="custom-language-submenu">
+    <li><a href="/">UZ</a></li>
+    <li><a href="/ru">RU</a></li>
+</ul>

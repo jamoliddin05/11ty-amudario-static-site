@@ -1,0 +1,48 @@
+.custom-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+@media (max-width: 600px) {
+    .custom-container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #555;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-title:before,
+.section-title:after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background-color: rgba(87, 81, 81, 0.1);; /* Line color */
+}
+
+.section-title:before {
+    margin-right: 10px; /* Space between line and text */
+}
+
+.section-title:after {
+    margin-left: 10px; /* Space between line and text */
+}
+
+.section-title span {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1); /* Text color */
+    background-color: white; /* Background color behind text */
+    padding: 0 10px; /* Padding to add space between text and background */
+}
