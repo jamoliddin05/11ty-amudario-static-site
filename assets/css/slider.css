@@ -6,6 +6,7 @@
     box-sizing: border-box; /* Include padding and border in width and height calculations */
     overflow: hidden; /* Ensure content doesn't overflow, important for images */
     position: relative; /* Allows positioning of elements inside */
+    background-color: #0563aa;
 }
 
 .carousel-image {
