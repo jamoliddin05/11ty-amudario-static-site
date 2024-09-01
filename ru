@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +19,10 @@
             </a>
 
             <div class="language-switcher">
-                <a class="language-switcher-button"><img src="assets/img/lang-icons/uzbekistan.png" alt="Uz" /></a>
+                <a class="language-switcher-button"><img src="assets/img/lang-icons/russia.png" alt="Ru" /></a>
                 <div class="language-menu">
+                    <a href="/" class="language-item"><img src="assets/img/lang-icons/uzbekistan.png" alt="Uz" /></a>
                     <a href="/en" class="language-item"><img src="assets/img/lang-icons/united-states.png" alt="En" /></a>
-                    <a href="/ru" class="language-item"><img src="assets/img/lang-icons/russia.png" alt="Ru" /></a>
                 </div>
             </div>
         </nav>
@@ -33,16 +34,16 @@
                <div class="carousel-cell">
                    <img src="assets/img/top-slider/slider-01.jpg" alt="Image 1" class="carousel-image">
                    <div class="carousel-caption-custom">
-                      <h3 class="text-uppercase">Ақлли агрометеостанциялар</h3>
-                      <p>Бизнинг агрометеостанциямиз сизнинг боғингизни тинимсиз кузатади ва барча керакли метео-маълумотларни йиғиб боради. Шу билан бирга, у сизга об-ҳаво башорати ва ўсимликларда кўп учрайдиган касаллик ва зараркунандаларнинг ривожланиши хақида фойдали маълумотларни етказиб туради.</p>
+                      <h3 class="text-uppercase">Умные агрометеостанции</h3>
+                      <p>Агрометеостанция предназначена для автоматического сбора метеорологической информации, прогноза погоды и предупреждения о распространении болезней и вредителей растений.</p>
                    </div>
                </div>
            
                <div class="carousel-cell">
                    <img src="assets/img/top-slider/slider-02.jpg" alt="Image 2" class="carousel-image">
                    <div class="carousel-caption-custom">
-                      <h3 class="text-uppercase">Ақлли феромон тутқичлар</h3>
-                      <p>Бизнинг феромон тутқичлар зараркунандаларни сунъий интеллект ёрдамида аниқлай олади ва бу хақида сизга зудлик билан хабар бера олади. Шунингдек, у сизнинг ҳудудингизда зараркунанда тарқалиши эҳтимоллигини айтади ва унга қарши курашишда фойдали маслаҳатлар беради.</p>
+                      <h3 class="text-uppercase">Умные феромонные ловушки</h3>
+                      <p>Наши феромонные ловушки способны распознавать вредителей растений, используя искусственный интеллект и немедленно сообщать об опасности распространения вредителей на вашем участке. Система так же дает рекомендации по борьбе с вредителями.</p>
                    </div>
                </div>
            
@@ -64,7 +65,7 @@
             <p class="my-5">test</p>
             <p class="my-5">test</p>
             <p class="my-5">test</p>
-            <p class="my-5">test</p>
+            <p class="my-5">hello</p>
             <p class="my-5">test</p>
             <p class="my-5">test</p>
         </section>
