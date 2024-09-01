@@ -1,0 +1,44 @@
+.contact-info a {
+    text-decoration: none!important;
+    font-size: 11px;
+    transition: all .3s ease-in-out;
+}
+
+.contact-info {
+    padding-top: 2px;
+    display: flex;
+}
+
+.contact-info a:hover {
+    color: black;
+}
+
+#email {
+    color: gray;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+#email:hover {
+    color: black;
+}
+
+#phone {
+    background-color: #0563aa!important;
+    color: white!important;
+    padding: 7px 25px 8px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+}
+
+#phone:hover {
+    background-color: #045591 !important;
+}
+
+@media (max-width: 992px) {
+    .contact-info {
+        display: none!important;
+    }
+}
