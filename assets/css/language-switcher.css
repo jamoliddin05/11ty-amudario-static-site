@@ -1,67 +1,75 @@
-/* Base styles for the language switcher */
-.language-switcher {
+.custom-language-switcher {
     position: relative;
+    cursor: pointer;
     display: flex;
     align-items: center;
+    text-align: center;
+    color: gray;
+    font-weight: bold;
 }
 
-.language-switcher-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.custom-language-switcher ul {
+    opacity: 0;
+    list-style-type: none;
+    pointer-events: none;
+    position: absolute;
+    top: 150%;
+    padding-left: 0;
+    transition: all .6s ease;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100; /* Ensure the dropdown is above other content */
 }
 
-.language-switcher-button:hover {
-    background-color: #f0f0f0;
-}
-
-/* Menu styles */
-.language-menu {
-    /*margin-top: 10px;*/
-    display: none;
+.custom-language-switcher::before {
+    content: "";
     position: absolute;
     top: 100%;
-    left: 50%; /* Center the dropdown horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    left: 0;
+    right: 0;
+    height: 20px; /* Adjust to cover the gap */
 }
 
-/* Menu item styles */
-.language-item {
-    display: block;
-    padding: 20px;
-    color: #333;
+.custom-language-switcher:hover ul,
+.custom-language-switcher ul:hover,
+.custom-language-switcher:hover::before { /* Keep ul open with the pseudo-element hover */
+    top: 127%;
+    pointer-events: all;
+    opacity: 1;
+}
+
+.custom-language-switcher i {
+    transition: all .6s ease;
+}
+
+.custom-language-switcher:hover i {
+    transform: rotate(180deg);
+}
+
+.custom-language-switcher li {
+    transition: all .6s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+
+.custom-language-switcher a {
     text-decoration: none;
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s ease;
+    color: gray;
+    transition: all .6s ease;
+    padding: 10px;
 }
 
-.language-item:hover {
-    background-color: #f0f0f0; /* Light background on hover */
+.custom-language-switcher li:hover {
+    color: white!important;
+    background-color: #0563aa!important;
 }
 
-/* Show menu on button click */
-.language-switcher:hover .language-menu, .language-switcher-button {
-    display: block;
+.custom-language-switcher li:hover a {
+    color: white!important;
 }
 
-.language-switcher-button img {
-    width: 35px;
-    height: 35px;
-}
-
-.language-item img {
-    width: 30px;
-    height: 30px;
-}
-
-@media (max-width: 450px) {
-    .language-switcher-button, .language-item {
-        padding: 10px;
-    }
+.custom-language-switcher li {
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
 }

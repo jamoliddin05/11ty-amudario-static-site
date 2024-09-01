@@ -1,3 +1,6 @@
+
+    
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +10,13 @@
     <link rel="stylesheet" href="../assets/css/slider.css">
     <link rel="stylesheet" href="../assets/css/sticky-navbar.css">
     <link rel="stylesheet" href="../assets/css/language-switcher.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/first-section.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" >
     <link rel="stylesheet" href="../assets/css/flickity.css" media="screen">
+    <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.css"/>
+    <link rel="stylesheet" href="../assets/fontawesome/css/brands.css"/>
+    <link rel="stylesheet" href="../assets/fontawesome/css/solid.css"/>
 </head>
 <body class="mx-auto mb-10">
     <header class="navbar-custom">
@@ -17,12 +25,12 @@
                 <img src="../assets/img/logo/logo.png" alt="Logo" />
             </a>
 
-            <div class="language-switcher">
-                <a class="language-switcher-button"><img src="../assets/img/lang-icons/united-states.png" alt="En" /></a>
-                <div class="language-menu">
-                    <a href="/ru" class="language-item"><img src="../assets/img/lang-icons/russia.png" alt="En" /></a>
-                    <a href="/" class="language-item"><img src="../assets/img/lang-icons/uzbekistan.png" alt="Uz" /></a>
-                </div>
+            <div class="custom-language-switcher">
+                <a id="current-language">EN <i class="fa-solid fa-chevron-down"></i></a>
+<ul class="custom-language-submenu">
+    <li><a href="/">UZ</a></li>
+    <li><a href="/ru">RU</a></li>
+</ul>
             </div>
         </nav>
     </header>
@@ -49,30 +57,11 @@
           </div>
         </section>
 
-        <section class="my-5 container">
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
-            <p class="my-5">test</p>
+        <section id="firs-section" class="custom-container">
+            <span class="section-title"></span>
         </section>
     </main>
-    <script>
-        // This will log the full URL of the current page to the console
-        console.log(window.location.href);
-    </script>
+
 </body>
 <script src="../assets/js/flickity.pkgd.min.js"></script>
 <script src="../assets/js/top_carousel.js"></script>
