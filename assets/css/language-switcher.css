@@ -1,74 +1,86 @@
 .custom-language-switcher {
-    position: relative;
-    cursor: pointer;
     display: flex;
     align-items: center;
-    text-align: center;
-    color: gray;
+    position: relative;
 }
 
-.custom-language-switcher ul {
-    opacity: 0;
-    list-style-type: none;
-    pointer-events: none;
-    position: absolute;
-    top: 160%;
-    padding-left: 0;
-    transition: all .6s ease;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100; /* Ensure the dropdown is above other content */
-}
-
-.custom-language-switcher::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    height: 30px; /* Adjust to cover the gap */
-}
-
-.custom-language-switcher:hover ul,
-.custom-language-switcher ul:hover,
-.custom-language-switcher:hover::before { /* Keep ul open with the pseudo-element hover */
-    top: 150%;
-    pointer-events: all;
-    opacity: 1;
+.custom-language-switcher a {
+    text-decoration: none;
+    color: rgba(102,102,102,0.85)!important;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
 }
 
 .custom-language-switcher i {
-    transition: all .6s ease;
+    transition: all .6s ease-in-out;
+}
+
+#current-language {
+    padding-top: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.custom-switcher-submenu a {
+    display: block;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.95);
+    transition: all .6s ease-in-out;
+}
+
+.custom-switcher-submenu a:hover {
+    background-color: #0563aa!important;
+    color: white!important;
+}
+
+
+.custom-switcher-submenu {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .6s;
+}
+
+#current-language::after {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    display: block; /* Makes the pseudo-element a block element */
+    width: 100%;    /* Fills the full width of the submenu */
+    height: 40px;   /* Adjust this height as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.custom-language-switcher:hover .custom-switcher-submenu {
+    opacity: 1;
+    top: 150%;
+}
+
+.custom-language-switcher:hover #current-language::after {
+    opacity: 1;
+}
+
+#current-language::after:hover .custom-switcher-submenu {
+    opacity: 1;
 }
 
 .custom-language-switcher:hover i {
     transform: rotate(180deg);
 }
 
-.custom-language-switcher li {
-    transition: background-color .6s ease;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.95);
-    text-align: center;
+@media (max-width: 992px) {
+    .custom-language-switcher a {
+        font-size: 14px;
+    }
 }
 
-
-.custom-language-switcher a {
-    text-decoration: none;
-    color: gray;
-    transition: all .6s ease;
-    padding: 10px;
-    font-size: 11px;
-    font-weight: 500;
-}
-
-.custom-language-switcher li:hover {
-    color: white!important;
-    background-color: #0563aa!important;
-    transition: all .6s ease;
-}
-
-.custom-language-switcher li:hover a {
-    color: white!important;
+@media (max-width: 500px) {
+    .custom-language-switcher:hover .custom-switcher-submenu {
+        top: 170%;
+    }
 }
