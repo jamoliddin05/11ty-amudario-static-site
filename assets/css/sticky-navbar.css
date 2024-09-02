@@ -11,6 +11,10 @@
     z-index: 1000;
 }
 
+.right-block {
+    display: flex;
+}
+
 /* Semi-transparent state */
 .navbar-custom.transparent {
     background: rgba(255, 255, 255, 0.9); /* Semi-transparent */
@@ -18,7 +22,7 @@
 
 .navbar-custom nav {
     display: flex;
-    max-width: 75%;
+    max-width: 70%;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -26,6 +30,7 @@
 .navbar-custom img {
     height: 40px;
     width: auto;
+    display: block;
 }
 
 .centered-link {
@@ -38,7 +43,7 @@
     max-height: 100%; /* Ensure the image scales properly */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .navbar-custom nav {
         max-width: 90%;
     }
