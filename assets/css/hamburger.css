@@ -2,6 +2,8 @@
     text-decoration: none!important;
     font-size: 11px;
     transition: all .3s ease-in-out;
+    color: rgba(102,102,102,0.85);
+    font-weight: 500;
 }
 
 .contact-info {
@@ -14,9 +16,7 @@
 }
 
 #email {
-    color: gray;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    letter-spacing: .08em;
 }
 
 #email:hover {
@@ -26,9 +26,7 @@
 #phone {
     background-color: #0563aa!important;
     color: white!important;
-    padding: 7px 25px 8px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    padding: 7px 20px 8px;
     font-size: 13px;
     transition: all .3s ease-in-out;
 }
