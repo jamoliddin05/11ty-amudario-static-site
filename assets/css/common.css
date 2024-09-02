@@ -3,16 +3,23 @@
 }
 
 .custom-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 1rem;
+}
+
+@media (max-width: 800px) {
+    .custom-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
 }
 
 @media (max-width: 600px) {
     .custom-container {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
-        padding: 0 1rem;
     }
 
 }
