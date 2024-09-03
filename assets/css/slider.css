@@ -29,10 +29,6 @@
     transition: all .6s;
 }
 
-.slider-overlay {
-    filter: brightness(70%);
-}
-
 .carousel-caption-custom h3 {
     font-size: 29px;
     line-height: 1;
