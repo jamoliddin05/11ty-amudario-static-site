@@ -50,27 +50,23 @@
     letter-spacing: .3px;
 }
 
-@media (min-width: 1220px) and (max-width: 1500px) {
+@media (min-width: 1250px) and (max-width: 1500px) {
     .custom-feature-container {
-        width: 75%;
+        width: 85%;
         margin: 0 auto;
         padding: 0 1rem;
-    }
-
-    .custom-feature {
-        max-width: 300px!important;
     }
 }
 
-@media (min-width: 1000px) and (max-width: 1220px) {
+@media (min-width: 1000px) and (max-width: 1250px) {
     .custom-feature-container {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
         padding: 0 1rem;
     }
 
     .custom-feature {
-        max-width: 250px!important;
+        max-width: 270px!important;
     }
 }
 
@@ -96,5 +92,13 @@
 
     .custom-feature {
         max-width: 230px!important;
+    }
+}
+
+@media (max-width: 740px) {
+    .custom-feature-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
     }
 }
