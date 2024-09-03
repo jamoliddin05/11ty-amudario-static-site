@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/common.css">
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/first-section.css">
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/hamburger.css">
+    <link rel="stylesheet" href="{{ baseUrl }}assets/css/feature.css">
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/bootstrap.min.css" >
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/flickity.css" media="screen">
     <link rel="stylesheet" href="{{ baseUrl }}assets/fontawesome/css/fontawesome.css"/>
@@ -66,66 +67,19 @@
 
         <section id="firs-section" class="custom-container">
             <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
-        </section>
-
-        <section id="firs-section" class="custom-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
+            <div class="row mt-5 justify-content-center">
+                {% for iconFeature in mySite.firstSection.iconFeatures %}
+                   <div class="custom-feature">
+                       <div class="feature-image-container">
+                          <img src="{{baseUrl}}{{ iconFeature.img }}" class="custom-feature-img" />
+                       </div>
+                       <div class="feature-data">
+                           <h5 class="text-uppercase">{{ iconFeature.title }}</h5>
+                           <p>{{ iconFeature.paragraph }}</p>
+                       </div>
+                   </div>
+               {% endfor %}
+            </div>
         </section>
     </main>
 

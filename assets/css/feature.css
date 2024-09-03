@@ -1,0 +1,57 @@
+.custom-feature {
+    max-width: 350px!important;
+    text-align: center;
+    margin-bottom: 3em;
+    padding: 0 20px;
+}
+
+.feature-image-container {
+    width: 60px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    overflow: hidden; /* Ensure overflow is hidden to crop the image */
+    position: relative; /* Positioning for any additional effects */
+    border-radius: 50%;
+    border: 2px solid #0563aa;
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    transition: 0.6s ease-in-out;
+    margin: 0 auto 20px;
+}
+
+.custom-feature img {
+    width: 40px; /* Make image fill the container width */
+    height: 40px; /* Make image fill the container height */
+    object-fit: cover; /* Cover the container and zoom in on content */
+    display: block; /* Remove any extra space below the image */
+}
+
+.feature-image-container:hover {
+    background-color: #0563aa;
+}
+
+.feature-data h5 {
+    font-size: 1em;
+    color: #555;
+    letter-spacing: .5px;
+}
+
+.feature-data p {
+    color: #777;
+    line-height: 1.6;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: .3px;
+}
+
+@media (min-width: 760px) and (max-width: 950px) {
+    .custom-feature {
+        max-width: 300px!important;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 760px) {
+    .custom-feature {
+        max-width: 250px!important;
+    }
+}

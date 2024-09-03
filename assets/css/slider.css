@@ -14,6 +14,7 @@
     height: 100%;
     object-fit: cover; /* Makes the image cover the entire container while maintaining aspect ratio */
     display: block; /* Ensures there's no gap around the image */
+    transition: all .6s;
 }
 
 .carousel-caption-custom {
@@ -25,6 +26,11 @@
     padding: 50px 30px; /* Adds padding around the text */
     max-width: 500px; /* Adjust to limit width if needed */
     font-family: 'Roboto', sans-serif;
+    transition: all .6s;
+}
+
+.slider-overlay {
+    filter: brightness(70%);
 }
 
 .carousel-caption-custom h3 {

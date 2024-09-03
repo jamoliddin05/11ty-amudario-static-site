@@ -3,7 +3,7 @@
 }
 
 .custom-container {
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -22,6 +22,10 @@
         margin: 0 auto;
     }
 
+    .section-title {
+        font-size: 1em!important;
+    }
+
 }
 
 .section-title {
@@ -29,9 +33,9 @@
     align-items: center;
     text-align: center;
     color: #555;
-    font-size: 19px;
+    font-size: 1.25em;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .section-title:before,
