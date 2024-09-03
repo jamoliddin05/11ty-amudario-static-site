@@ -50,6 +50,19 @@
     letter-spacing: .3px;
 }
 
+@media (min-width: 1600px) {
+    .custom-feature-container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .custom-feature {
+        max-width: 350px!important;
+    }
+
+}
+
 @media (min-width: 1250px) and (max-width: 1500px) {
     .custom-feature-container {
         width: 85%;
