@@ -22,7 +22,7 @@
 
 .navbar-custom nav {
     display: flex;
-    max-width: 70%;
+    max-width: 75%;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -42,10 +42,14 @@
     max-width: 100%; /* Ensure the image scales properly */
     max-height: 100%; /* Ensure the image scales properly */
 }
-
-@media (max-width: 550px) {
+@media (min-width: 550px) and (max-width: 850px) {
     .navbar-custom nav {
         max-width: 90%;
+    }
+}
+@media (max-width: 550px) {
+    .navbar-custom nav {
+        max-width: 95%;
     }
 
     .navbar-custom img {
