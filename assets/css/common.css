@@ -7,9 +7,17 @@ main {
 }
 
 .custom-container {
-    width: 75%;
+    width: 77%;
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+@media (min-width: 1600px) {
+    .custom-container {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -22,7 +30,7 @@ main {
 
 @media (max-width: 600px) {
     .custom-container {
-        width: 90%;
+        width: 98%;
         margin: 0 auto;
     }
 
