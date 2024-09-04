@@ -81,13 +81,30 @@ main {
     margin-bottom: 10px;
 }
 
+#meteostation-technical h3 {
+    margin-bottom: 10px;
+}
+
+#foreign-difference h3 {
+    margin-bottom: 10px;
+}
+
+#foreign-difference {
+    background-color: rgb(241, 248, 233);
+}
+
+#gallery-section {
+    padding: 4em 0;
+    background-color: rgb(40, 40, 40);
+}
+
 @media (max-width: 850px) {
     #meteostation-online ul {
         max-width: 100%;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     #meteostation-online h3 {
         text-align: center;
     }

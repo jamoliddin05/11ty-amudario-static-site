@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 8vh 2em;
-    gap: 2em;
+    gap: 3em;
     justify-content: center;
 }
 
@@ -25,6 +25,8 @@
     display: flex;
     align-items: center;
     padding-bottom: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .text-block h3 {
@@ -51,7 +53,7 @@
 }
 
 .image-block img {
-    width: 95%; /* Makes the image responsive and fit the parent width */
+    width: 100%; /* Makes the image responsive and fit the parent width */
     height: auto; /* Maintains the aspect ratio */
     display: block; /* Removes extra space below the image */
     box-shadow: 10px 10px 20px rgba(10, 0, 10, 0.2);
@@ -59,9 +61,9 @@
 }
 
 @media (min-width: 1600px) {
-    .image-block img {
-        width: 500px; /* Makes the image responsive and fit the parent width */
-    }
+    /*.image-block img {*/
+    /*    width: 500px; !* Makes the image responsive and fit the parent width *!*/
+    /*}*/
 }
 
 @media (max-width: 1280px) {
@@ -91,7 +93,7 @@
 /*    }*/
 /*}*/
 
-@media (max-width: 840px) {
+@media (max-width: 860px) {
     .text-block h3 {
         color: #555;
         margin-bottom: 1.8em;
@@ -101,6 +103,10 @@
     .image-block img, .text-block {
         max-width: 600px;
         margin: 0 auto;
+    }
+
+    .text-block {
+        padding-bottom: 0;
     }
 }
 
@@ -120,5 +126,16 @@
 
     .image-block div {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-block {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .text-block h3 {
+        font-size: 1.2em;
     }
 }
