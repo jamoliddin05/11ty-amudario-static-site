@@ -3,11 +3,13 @@
     flex-wrap: wrap;
     padding: 8vh 2em;
     gap: 2em;
+    justify-content: center;
 }
 
 .image-block {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .image-block div {
@@ -70,7 +72,7 @@
 
 @media (max-width: 1220px) {
     .image-block img {
-        width: 90%; /* Makes the image responsive and fit the parent width */
+        width: 100%; /* Makes the image responsive and fit the parent width */
     }
 
     .text-block, .image-block {
@@ -83,23 +85,40 @@
     }
 }
 
+/*@media (max-width: 1000px) {*/
+/*    .image-block img {*/
+/*        min-width: 370px;*/
+/*    }*/
+/*}*/
+
+@media (max-width: 840px) {
+    .text-block h3 {
+        color: #555;
+        margin-bottom: 1.8em;
+        letter-spacing: .05em;
+    }
+
+    .image-block img, .text-block {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 800px) {
     .text-block h3 {
         color: #555;
         margin-bottom: 1.8em;
         letter-spacing: .05em;
-        text-align: center;
-    }
-
-    .image-block img {
-        width: 100%; /* Makes the image responsive and fit the parent width */
     }
 }
 
 @media (max-width: 600px) {
     .text-block, .image-block {
         flex: 1 1 45%; /* Allows the items to flexibly resize and wrap */
-        min-width: 250px; /* Ensures the items do not get too small */
+        max-width: 400px;
     }
 
+    .image-block div {
+        margin: 0 auto;
+    }
 }
