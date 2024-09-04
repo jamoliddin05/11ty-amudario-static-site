@@ -6,9 +6,60 @@
 }
 
 .custom-feature-container {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+@media (min-width: 1600px) {
+    .custom-feature-container {
+        width: 1350px;
+        margin: 0 auto;
+    }
+
+    .custom-feature {
+        max-width: 400px!important;
+    }
+}
+
+@media (max-width: 1250px) {
+    .custom-feature-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .custom-feature {
+        max-width: 350px!important;
+    }
+}
+
+@media (max-width: 1120px) {
+    .custom-feature {
+        max-width: 300px!important;
+    }
+}
+
+@media (max-width: 960px) {
+    .custom-feature-container {
+        width: 98%;
+        padding: 0;
+    }
+
+    .custom-feature {
+        max-width: 270px!important;
+    }
+}
+
+@media (max-width: 810px) {
+    .custom-feature-container {
+        width: 98%;
+        padding: 0 1em;
+        margin: 0 auto;
+    }
+
+    .custom-feature {
+        max-width: 400px!important;
+    }
 }
 
 .feature-image-container {
@@ -48,74 +99,4 @@
     font-size: 1em;
     font-weight: 400;
     letter-spacing: .3px;
-}
-
-@media (min-width: 1600px) {
-    .custom-feature-container {
-        width: 1200px;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
-
-    .custom-feature {
-        max-width: 350px!important;
-    }
-
-}
-
-@media (min-width: 1250px) and (max-width: 1500px) {
-    .custom-feature-container {
-        width: 85%;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
-}
-
-@media (min-width: 1000px) and (max-width: 1250px) {
-    .custom-feature-container {
-        width: 85%;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
-
-    .custom-feature {
-        max-width: 270px!important;
-    }
-}
-
-
-@media (min-width: 840px) and (max-width: 1000px) {
-    .custom-feature-container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
-
-    .custom-feature {
-        max-width: 220px!important;
-    }
-}
-
-@media (min-width: 740px) and (max-width: 840px) {
-    .custom-feature-container {
-        width: 90%;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .custom-feature {
-        max-width: 230px!important;
-    }
-}
-
-@media (max-width: 740px) {
-    .custom-feature-container {
-        width: 90%;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .custom-feature {
-        max-width: 400px!important;
-    }
 }
