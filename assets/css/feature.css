@@ -114,4 +114,8 @@
         margin: 0 auto;
         padding: 0;
     }
+
+    .custom-feature {
+        max-width: 400px!important;
+    }
 }
