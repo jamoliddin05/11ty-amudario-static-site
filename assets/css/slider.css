@@ -47,9 +47,9 @@
 }
 
 /* Media query for mobile screens */
-@media (min-width: 1500px) {
-    .carousel-cell {
-        height: 1200px; /* Relative height, starting point around 500px */
+@media (min-width: 1700px) {
+    .carousel-caption-custom {
+        left: 25%; /* Adjust this value to create space from the left edge */
     }
 }
 
