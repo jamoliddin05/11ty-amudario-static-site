@@ -2,7 +2,7 @@ var elem = document.querySelector('.carousel-bottom');
 var flkty = new Flickity( elem, {
     // options
     wrapAround: true,
-    freeScroll: true,
+    freeScroll: false,
     lazyLoad: 4,
     pageDots: false,
     selectedAttraction: 0.1,

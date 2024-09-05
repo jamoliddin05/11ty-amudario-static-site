@@ -1,0 +1,12 @@
+.partner-logo {
+    max-width: 150px!important;
+    max-height: 150px!important;
+    padding: 0 !important;
+    margin: 0 20px;
+}
+
+.partner-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
