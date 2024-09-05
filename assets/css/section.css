@@ -1,7 +1,7 @@
 .section-wrapper-ordinary {
     display: flex;
     flex-wrap: wrap;
-    padding: 8vh 2em;
+    padding: 6vh 2em;
     gap: 3em;
     justify-content: center;
 }
@@ -41,6 +41,7 @@
     font-weight: 300;
     color: #777;
     line-height: 1.8;
+    font-style: normal;
 }
 
 .text-block ul {
@@ -53,7 +54,7 @@
 }
 
 .image-block img {
-    width: 100%; /* Makes the image responsive and fit the parent width */
+    width: 95%; /* Makes the image responsive and fit the parent width */
     height: auto; /* Maintains the aspect ratio */
     display: block; /* Removes extra space below the image */
     box-shadow: 10px 10px 20px rgba(10, 0, 10, 0.2);
