@@ -10,6 +10,11 @@
     object-fit: cover;
 }
 
+.carousel-wrapper {
+    padding-left: 2.65rem;
+    padding-right: 2.65rem;
+}
+
 @media (max-width: 860px) {
     .carousel-wrapper {
         padding-left: 3rem!important;

@@ -1,0 +1,53 @@
+.media-info {
+    max-width: 350px!important;
+    min-width: 250px!important;
+    margin-bottom: 2em;
+}
+
+.media-info h5 {
+    letter-spacing: .05em;
+    font-size: 1em;
+    color: #555;
+    font-weight: 700;
+    width: 100%;
+}
+
+.media-info a {
+    text-decoration: none;
+    color: #0563aa;
+    font-weight: 300;
+}
+
+.media-info a:hover {
+    color: black;
+}
+
+@media (max-width: 1330px) {
+    .media-info {
+        max-width: 300px!important;
+    }
+}
+
+@media (max-width: 960px) {
+    .media-info {
+        max-width: 350px!important;
+    }
+}
+
+@media (max-width: 730px) {
+    .media-info {
+        max-width: 300px!important;
+    }
+}
+
+@media (max-width: 630px) {
+    .media-info {
+        max-width: 250px!important;
+    }
+}
+
+@media (max-width: 520px) {
+    .media-info {
+        max-width: 350px!important;
+    }
+}
