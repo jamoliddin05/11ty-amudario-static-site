@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/about-us.css">
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/media.css">
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/partner.css">
+    <link rel="stylesheet" href="{{ baseUrl }}assets/css/footer.css">
 
 
     <link rel="stylesheet" href="{{ baseUrl }}assets/css/bootstrap.min.css" >
@@ -398,54 +399,67 @@
 
         <section id="our-partners" class="py-5">
             <span class="section-title custom-container mb-5">БИЗНИНГ ҲАМКОРЛАР</span>
-            <div class="custom-container">
-                <div class="row justify-content-center">
-                    <div class="partner-logo">
-                        <a href="{{baseUrl}}assets/img/partner-logos/hydromet-1.jpg"
-                         data-fancybox="partner">
-                          <img src="{{baseUrl}}assets/img/partner-logos/hydromet-1.jpg" class="mb-3"/>
-                        </a>
-                    </div>
-
-                    <div class="partner-logo">
-                        <a href="{{baseUrl}}assets/img/partner-logos/logo_inha.jpg"
-                         data-fancybox="partner">
-                          <img src="{{baseUrl}}assets/img/partner-logos/logo_inha.jpg" class="mb-3"/>
-                        </a>
-                    </div>
-
-                    <div class="partner-logo">
-                        <a href="{{baseUrl}}assets/img/partner-logos/logo_karantin_inspeksiya.jpg"
-                         data-fancybox="partner">
-                          <img src="{{baseUrl}}assets/img/partner-logos/logo_karantin_inspeksiya.jpg" class="mb-3"/>
-                        </a>
-                    </div>
-
-                    <div class="partner-logo">
-                        <a href="{{baseUrl}}assets/img/partner-logos/logo_tpp_02.jpg"
-                         data-fancybox="partner">
-                          <img src="{{baseUrl}}assets/img/partner-logos/logo_tpp_02.jpg" class="mb-3"/>
-                        </a>
-                    </div>
-
-                    <div class="partner-logo">
-                        <a href="{{baseUrl}}assets/img/partner-logos/logo_undp.jpg"
-                         data-fancybox="partner">
-                          <img src="{{baseUrl}}assets/img/partner-logos/logo_undp.jpg" class="mb-3"/>
-                        </a>
-                    </div>
-
-                    <div class="partner-logo">
-                        <a href="{{baseUrl}}assets/img/partner-logos/toshkent-800x800.jpg"
-                         data-fancybox="partner">
-                          <img src="{{baseUrl}}assets/img/partner-logos/toshkent-800x800.jpg" class="mb-3"/>
-                        </a>
-                    </div>
+            <div class="custom-container carousel-wrapper">
+                <div class="carousel-partners"
+                  data-flickity='{ "wrapAround": true, "freeScroll": true, "pageDots": false }'>
+                  <div class="carousel-cell-partner">
+                    <a href="{{baseUrl}}assets/img/partner-logos/toshkent-800x800.jpg"
+                     data-fancybox="partner">
+                      <img src="{{baseUrl}}assets/img/partner-logos/toshkent-800x800.jpg" class="mb-3"/>
+                    </a>
+                  </div>
+                  <div class="carousel-cell-partner">
+                    <a href="{{baseUrl}}assets/img/partner-logos/logo_undp.jpg"
+                     data-fancybox="partner">
+                      <img src="{{baseUrl}}assets/img/partner-logos/logo_undp.jpg" class="mb-3"/>
+                    </a>
+                  </div>
+                  <div class="carousel-cell-partner">
+                    <a href="{{baseUrl}}assets/img/partner-logos/logo_tpp_02.jpg"
+                     data-fancybox="partner">
+                      <img src="{{baseUrl}}assets/img/partner-logos/logo_tpp_02.jpg" class="mb-3"/>
+                    </a>
+                  </div>
+                  <div class="carousel-cell-partner">
+                    <a href="{{baseUrl}}assets/img/partner-logos/logo_karantin_inspeksiya.jpg"
+                     data-fancybox="partner">
+                      <img src="{{baseUrl}}assets/img/partner-logos/logo_karantin_inspeksiya.jpg" class="mb-3"/>
+                    </a>
+                  </div>
+                  <div class="carousel-cell-partner">
+                    <a href="{{baseUrl}}assets/img/partner-logos/logo_inha.jpg"
+                     data-fancybox="partner">
+                      <img src="{{baseUrl}}assets/img/partner-logos/logo_inha.jpg" class="mb-3"/>
+                    </a>
+                  </div>
+                  <div class="carousel-cell-partner">
+                    <a href="{{baseUrl}}assets/img/partner-logos/hydromet-1.jpg"
+                     data-fancybox="partner">
+                      <img src="{{baseUrl}}assets/img/partner-logos/hydromet-1.jpg" class="mb-3"/>
+                    </a>
+                  </div>
                 </div>
             </div>
         </section>
-
     </main>
+
+
+    <footer>
+        <div class="top-footer-wrapper">
+            <div class="top-footer">
+                <h3>БУЮРТМА БЕРИНГ!</h3>
+                <p>Буюртма бериш ва cизни қизиқтирган саволлар учун:</p>
+                <div class="contact-buttons-footer">
+                    <a href="tel:{{ mySite.phone }}">{{ mySite.phone }}</a>
+                    <a href="mailto:{{ mySite.email }}" class="text-uppercase">{{ mySite.email }}</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-footer custom-container py-3">
+            <span>2024 <strong>© Amudar.io</strong></span>
+        </div>
+    </footer>
 
 </body>
 <script src="{{ baseUrl }}assets/js/flickity.pkgd.min.js"></script>
