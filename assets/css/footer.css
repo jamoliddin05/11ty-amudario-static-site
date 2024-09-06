@@ -1,0 +1,64 @@
+.top-footer-wrapper {
+    background: rgb(5, 99, 170);
+}
+
+.top-footer {
+    padding: 10vh 1em;
+    background: rgb(5, 99, 170);
+}
+
+.top-footer {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.top-footer h3 {
+    letter-spacing: .05em;
+    font-size: 1.6em;
+}
+
+.top-footer p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.contact-buttons-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-buttons-footer a {
+    padding: 10px 25px;
+    background-color: #9ed22d;
+    text-decoration: none;
+    color: white;
+    font-size: .97em;
+    letter-spacing: .05em;
+    transition: all .6s;
+}
+
+.contact-buttons-footer a:hover {
+    background-color: #789e22;
+}
+
+@media (max-width: 500px) {
+    .top-footer p {
+        margin-bottom: 1em;
+    }
+
+    .contact-buttons-footer {
+        gap: 1em;
+    }
+}
+
+.bottom-footer {
+    color: rgba(0,0,0,0.5);
+}
+
+.bottom-footer span {
+    font-weight: 300;
+}
