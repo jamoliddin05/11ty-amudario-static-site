@@ -4,6 +4,11 @@
     font-weight: 500;
 }
 
+::selection {
+    background-color: #0563aa; /* Highlight background color */
+    color: white; /* Highlight text color */
+}
+
 main {
     transition: all 0.6s;
 }

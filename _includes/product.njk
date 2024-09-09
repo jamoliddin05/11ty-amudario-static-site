@@ -1,32 +1,40 @@
+{% if language == 'en' %}
+    {% set mySite = pageContentEn %}
+    {% elif language == 'ru' %}
+    {% set mySite = pageContentRu %}
+{% else %}
+    {% set mySite = pageContent %}
+{% endif %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AmudarIO</title>
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/slider.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/sticky-navbar.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/language-switcher.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/common.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/first-section.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/hamburger.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/feature.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/second-section.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/section.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/custom-carousel.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/about-us.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/media.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/partner.css">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/slider.css">
+    <link rel="stylesheet" href="../assets/css/sticky-navbar.css">
+    <link rel="stylesheet" href="../assets/css/language-switcher.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/first-section.css">
+    <link rel="stylesheet" href="../assets/css/hamburger.css">
+    <link rel="stylesheet" href="../assets/css/feature.css">
+    <link rel="stylesheet" href="../assets/css/second-section.css">
+    <link rel="stylesheet" href="../assets/css/section.css">
+    <link rel="stylesheet" href="../assets/css/custom-carousel.css">
+    <link rel="stylesheet" href="../assets/css/about-us.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+    <link rel="stylesheet" href="../assets/css/partner.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
 
+    <link rel="stylesheet" href="../assets/css/product/product.css">
 
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/flickity.css" media="screen">
-    <link rel="stylesheet" href="{{ baseUrl }}assets/fontawesome/css/fontawesome.css"/>
-    <link rel="stylesheet" href="{{ baseUrl }}assets/fontawesome/css/brands.css"/>
-    <link rel="stylesheet" href="{{ baseUrl }}assets/fontawesome/css/solid.css"/>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../assets/css/flickity.css" media="screen">
+    <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.css"/>
+    <link rel="stylesheet" href="../assets/fontawesome/css/brands.css"/>
+    <link rel="stylesheet" href="../assets/fontawesome/css/solid.css"/>
 
-    <link rel="stylesheet" href="{{ baseUrl }}assets/css/fancybox.css"/>
+    <link rel="stylesheet" href="../assets/css/fancybox.css"/>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +46,7 @@
 <header class="navbar-custom">
     <nav>
         <a href="#" class="centered-link">
-            <img src="{{ baseUrl }}assets/img/logo/logo.png" alt="Logo" />
+            <img src="../assets/img/logo/logo.png" alt="Logo" />
         </a>
 
         <div class="right-block">
@@ -49,7 +57,8 @@
                 </div>
             </div>
             <div class="custom-language-switcher">
-                {{ content | safe }}
+                <a href="/ru">RU</a>
+                <a href="/en">EN</a>
             </div>
             <button id="hamburger-button">
                 <span></span>
@@ -64,7 +73,65 @@
     </nav>
 </header>
 
+<main>
+    <section id="product-banner">
+        <div class="banner-wrapper">
+            <img src="../assets/img/top-slider/slider-01.jpg"  alt="banner"/>
+            <h1>Oxus AirSense</h1>
+        </div>
+    </section>
 
+    <section id="problem-emphasize">
+        <div class="custom-container">
+            <div class="problem-flex-container">
+                <div class="product-image-block">
+                    <div class="left-block-product">
+                        <h3 class="text-uppercase">your pain points</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at culpa eveniet
+                            hic in incidunt ipsa ipsam, iure laboriosam quod rerum sequi, soluta voluptate. A ab accusamus
+                            aliquam atque deserunt dicta, dolorum explicabo illum, itaque libero minus molestiae mollitia optio
+                            perferendis placeat quam repellendus sed velit voluptates voluptatum.</p>
+                    </div>
+                    <div class="right-block-product-image">
+                        <a href="../assets/img/product-problem/DIY-Soil-Test-Water-Drainage-Clay-Soil.jpg.webp"
+                           data-fancybox="problem-images">
+                            <img src="../assets/img/product-problem/DIY-Soil-Test-Water-Drainage-Clay-Soil.jpg.webp" class="mb-3"/>
+                        </a>
+                        <a href="../assets/img/product-problem/overwatered-tomatoes.jpg"
+                           data-fancybox="problem-images">
+                            <img src="../assets/img/product-problem/overwatered-tomatoes.jpg" class="mb-3"/>
+                        </a>
+                        <a href="../assets/img/product-problem/Common_Plant_Diseases_and_How_To_Control_Them-min.jpg.webp"
+                           data-fancybox="problem-images">
+                            <img src="../assets/img/product-problem/Common_Plant_Diseases_and_How_To_Control_Them-min.jpg.webp" class="mb-3"/>
+                        </a>
+                        <a href="../assets/img/product-problem/PXL_20210527_201308115.jpg"
+                           data-fancybox="problem-images">
+                            <img src="../assets/img/product-problem/PXL_20210527_201308115.jpg" class="mb-3"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="second-section-features">
+        <span class="section-title custom-feature-container">{{ mySite.firstSection.title }}</span>
+        <div class="row mt-5 justify-content-center custom-feature-container custom-product-div">
+            {% for iconFeature in mySite.firstSection.iconFeatures %}
+                <div class="custom-feature">
+                    <div class="feature-image-container">
+                        <img src="../{{ iconFeature.img }}" class="custom-feature-img" />
+                    </div>
+                    <div class="feature-data">
+                        <h5 class="text-uppercase">{{ iconFeature.title }}</h5>
+                        <p>{{ iconFeature.paragraph }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+</main>
 
 <footer>
     <div class="top-footer-wrapper">
@@ -83,12 +150,12 @@
     </div>
 </footer>
 </body>
-<script src="{{ baseUrl }}assets/js/flickity.pkgd.min.js"></script>
-<script src="{{ baseUrl }}assets/js/top_carousel.js"></script>
-<script src="{{ baseUrl }}assets/js/carousel.js"></script>
-<script src="{{ baseUrl }}assets/js/sticky_navbar.js"></script>
-<script src="{{ baseUrl }}assets/js/hamburger.js"></script>
-<script src="{{ baseUrl }}assets/js/bootstrap.bundle.min.js"></script>
-<script src="{{ baseUrl }}assets/js/fancybox.umd.js"></script>
-<script src="{{ baseUrl }}assets/js/fancybox-options.js"></script>
+<script src="../assets/js/flickity.pkgd.min.js"></script>
+<script src="../assets/js/top_carousel.js"></script>
+<script src="../assets/js/carousel.js"></script>
+<script src="../assets/js/sticky_navbar.js"></script>
+<script src="../assets/js/hamburger.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/fancybox.umd.js"></script>
+<script src="../assets/js/fancybox-options.js"></script>
 </html>
