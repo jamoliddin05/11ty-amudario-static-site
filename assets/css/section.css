@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 6vh 2em;
+    padding-top: 8vh;
     gap: 3em;
     justify-content: center;
 }
@@ -32,7 +33,7 @@
 .text-block h3 {
     font-size: 1.6em;
     color: #555;
-    margin-bottom: 1.6em;
+    /*margin-bottom: 1.6em;*/
     letter-spacing: .05em;
     font-weight: 500;
 }
@@ -53,12 +54,22 @@
     color: #777;
 }
 
+.text-block a {
+    color: #0563aa!important;
+}
+
 .image-block img {
     width: 95%; /* Makes the image responsive and fit the parent width */
     height: auto; /* Maintains the aspect ratio */
     display: block; /* Removes extra space below the image */
     box-shadow: 10px 10px 20px rgba(10, 0, 10, 0.2);
     margin: 0 auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.custom-image-section {
+    max-height: 300px!important;
 }
 
 @media (min-width: 1600px) {

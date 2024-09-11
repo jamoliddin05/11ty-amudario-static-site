@@ -79,7 +79,7 @@ main {
     padding: 0 10px; /* Padding to add space between text and background */
 }
 
-#agrometeostation {
+#agrometeostation-custom {
     background-color: rgb(227, 242, 253);
 }
 
@@ -122,6 +122,14 @@ main {
 
 #jayhun-trap-spec h3 {
     margin-bottom: 10px;
+}
+
+#jayhun-trap-spec {
+    background-color: rgb(227, 242, 253);
+}
+
+#oxus-airsense {
+    background-color: rgb(241, 248, 233)
 }
 
 @media (max-width: 850px) {
