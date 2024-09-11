@@ -76,8 +76,8 @@
 <main>
     <section id="product-banner">
         <div class="banner-wrapper">
-            <img src="../assets/img/top-slider/slider-01.jpg"  alt="banner"/>
-            <h1>Oxus AirSense</h1>
+            <img src="../assets/img/section-photos/gozanlink.jpg"  alt="banner"/>
+            <h1>GozanLink</h1>
         </div>
     </section>
 
@@ -115,6 +115,30 @@
         </div>
     </section>
 
+    <section id="agrometeostation-custom">
+        <div class="custom-container section-wrapper-ordinary">
+            <div class="image-block">
+                <div id="meteostation-wrap">
+                    <a href="../assets/img/section-photos/agrometeo_station_uz_01-1.jpg"
+                       data-fancybox>
+                        <img src="../assets/img/section-photos/agrometeo_station_uz_01-1.jpg" class="mb-3"/>
+                    </a>
+                </div>
+            </div>
+            <div class="text-block">
+                <div>
+                    <h3 class="text-uppercase">how it works</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, labore, quis. Alias aliquid architecto consectetur corporis cum dolores,
+                        doloribus ea eius facilis fugiat inventore laborum laudantium mollitia nisi nostrum odio officia optio perferendis placeat provident quas quidem reiciendis,
+                        rem reprehenderit vero. At commodi dolore dolores eaque eos expedita explicabo fugit incidunt itaque,
+                        iure magni nesciunt non officia quae quibusdam rem repellendus reprehenderit soluta suscipit tempore temporibus velit vitae voluptas voluptatibus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="second-section-features">
         <span class="section-title custom-feature-container">{{ mySite.firstSection.title }}</span>
         <div class="row mt-5 justify-content-center custom-feature-container custom-product-div">
@@ -129,6 +153,125 @@
                     </div>
                 </div>
             {% endfor %}
+        </div>
+    </section>
+
+    <section id="gallery-section">
+        <div class="gallery-wrapper custom-container carousel-wrapper">
+            <span class="carousel-title mb-4">ФОТОГАЛЕРЕЯ</span>
+            <div class="carousel-bottom py-3">
+                <div class="carousel-cell-bottom">
+                    <a href="../assets/img/section-photos/difference.png"
+                       data-fancybox="gallery">
+                        <img src="../assets/img/section-photos/difference.png" class="carousel-image-bottom"/>
+                    </a>
+                </div>
+
+                <div class="carousel-cell-bottom">
+                    <a href="../assets/img/section-photos/agrometeo_station_spec_uz_01.jpg"
+                       data-fancybox="gallery">
+                        <img src="../assets/img/section-photos/agrometeo_station_spec_uz_01.jpg" class="carousel-image-bottom"/>
+                    </a>
+                </div>
+
+                <div class="carousel-cell-bottom">
+                    <a href="../assets/img/section-photos/agrometeo_station_uz_01-1.jpg"
+                       data-fancybox="gallery">
+                        <img src="../assets/img/section-photos/agrometeo_station_uz_01-1.jpg" class="carousel-image-bottom"/>
+                    </a>
+                </div>
+
+                <div class="carousel-cell-bottom">
+                    <a href="../assets/img/section-photos/dashboard1-1.png" data-fancybox="gallery">
+                        <img src="../assets/img/section-photos/dashboard1-1.png" class="carousel-image-bottom"/>
+                    </a>
+                </div>
+
+                <div class="carousel-cell-bottom">
+                    <a href="../assets/img/section-photos/agrometeo_station_uz_01-1.jpg"
+                       data-fancybox="gallery">
+                        <img src="../assets/img/section-photos/agrometeo_station_uz_01-1.jpg" class="carousel-image-bottom"/>
+                    </a>
+                </div>
+
+                <div class="carousel-cell-bottom">
+                    <a href="../assets/img/section-photos/dashboard1-1.png" data-fancybox="gallery">
+                        <img src="../assets/img/section-photos/dashboard1-1.png" class="carousel-image-bottom"/>
+                    </a>
+                </div>
+
+                <div class="carousel-cell-bottom">
+                    <a href="../assets/img/section-photos/dashboard1-1.png" data-fancybox="gallery">
+                        <img src="../assets/img/section-photos/dashboard1-1.png" class="carousel-image-bottom"/>
+                    </a>
+                </div>
+
+                <div class="carousel-cell-bottom">
+                    <a href="../assets/img/section-photos/dashboard1-1.png" data-fancybox="gallery">
+                        <img src="../assets/img/section-photos/dashboard1-1.png" class="carousel-image-bottom"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="meteostation-online">
+        <div class="custom-container section-wrapper-ordinary">
+            <div class="text-block">
+                <div>
+                    <h3 class="text-uppercase">{{ mySite.thirdSection.title}}</h3>
+                    <ul>
+                        {% for featureText in mySite.thirdSection.paragraphs %}
+                            <li>
+                                <p>{{ featureText.text }}</p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="image-block">
+                <div id="meteostation-wrap">
+                    <a href="../{{ mySite.thirdSection.imageOne }}"
+                       data-fancybox="meteostation">
+                        <img src="../{{ mySite.thirdSection.imageOne }}" class="mb-3"/>
+                    </a>
+                    <a href="../{{ mySite.thirdSection.imageTwo }}"
+                       data-fancybox="meteostation">
+                        <img src="../{{ mySite.thirdSection.imageTwo }}" class="mb-3"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hardware-characteristics">
+        <div class="hardware-wrapper custom-container">
+            <table class="table-info">
+                <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                    <td>Cell 6</td>
+                </tr>
+                <tr>
+                    <td>Cell 7</td>
+                    <td>Cell 8</td>
+                    <td>Cell 9</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 </main>

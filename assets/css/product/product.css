@@ -202,9 +202,44 @@
 /*second-section*/
 #second-section-features {
     padding: 5vh 0;
-    background: rgb(241, 248, 233);
 }
 
 #second-section-features .custom-product-div {
     margin: 0 auto;
+}
+
+#hardware-characteristics {
+    padding: 5vh 0;
+    background: rgb(241, 248, 233);
+}
+
+.table-info {
+    margin: 0 auto;
+}
+
+.table-info td {
+    padding: 1em;
+}
+
+.table-info th {
+    padding: 1em;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders do not have gaps */
+    border: 2px solid #333; /* Adds a border around the entire table */
+}
+th, td {
+    border: 1px solid #ddd; /* Adds borders around each cell */
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #333; /* Thicker border for header */
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
