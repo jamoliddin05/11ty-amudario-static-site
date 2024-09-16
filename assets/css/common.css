@@ -79,9 +79,9 @@ main {
     padding: 0 10px; /* Padding to add space between text and background */
 }
 
-#agrometeostation-custom {
-    background-color: rgb(227, 242, 253);
-}
+/*#agrometeostation-custom {*/
+/*    background-color: rgb(227, 242, 253);*/
+/*}*/
 
 #agrometeostation h3 {
     margin-bottom: 10px;

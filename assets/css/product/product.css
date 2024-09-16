@@ -3,23 +3,44 @@
 }
 
 .banner-wrapper {
-    width: 100%;
-    height: 80vh;
-    min-height: 300px;
-    position: relative;
+    width: 100%; /* Take the full width of the container */
+    height: 90vh; /* Relative height, starting point around 500px */
+    min-height: 300px; /* Ensures a minimum height on smaller screens */
+    max-height: 600px; /* Cap the height on very large screens */
+    box-sizing: border-box; /* Include padding and border in width and height calculations */
+    overflow: hidden; /* Ensure content doesn't overflow, important for images */
+    position: relative; /* Allows positioning of elements inside */
+    background-color: #0563aa;
 }
 
-.banner-wrapper h1 {
-    top: 55%;
+.banner-wrapper .banner-caption-custom {
+    top: 65%;
     left: 50%;
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -65%);
     position: absolute;
-    color: white;
-    text-transform: uppercase;
     font-weight: bold;
-    font-size: 6em;
-    width: 100%;
-    text-align: center;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 7vh;
+}
+
+.banner-caption-custom h3 {
+    font-size: 29px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin-bottom: 15px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.banner-caption-custom p {
+    color: gray;
+    line-height: 1.9;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    /*font-size: 15px;*/
 }
 
 .banner-wrapper img {
@@ -29,104 +50,10 @@
     -webkit-user-drag: none;
 }
 
-.product-image-block {
-    max-width: 90%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    gap: 2em;
-    flex-wrap: wrap;
-}
-
-.product-image-block img {
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(10, 0, 10, 0.2);
-}
-
-.left-block-product, .right-block-product-image {
-    flex: 1 1 45%; /* Allows the items to flexibly resize and wrap */
-    /*min-width: 400px; !* Ensures the items do not get too small *!*/
-}
-
-.left-block-product {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.right-block-product-image {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    justify-items: center;
-    padding: 0 2em;
-    gap: 1em;
-}
-
-.right-block-product-image a {
-    width: 190px;
-    height: 190px;
-}
-
-.right-block-product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.left-block-product h3 {
-    color: #555;
-}
-
-.left-block-product p {
-    line-height: 2em;
-    color: #777;
-    font-weight: 400;
-    font-size: 1.2em;
-}
-
-@media (max-width: 1290px) {
-    .right-block-product-image a {
-        width: 300px;
-        height: 300px;
-    }
-
-    .right-block-product-image {
-        padding: 0 4em;
-    }
-}
-
-@media (max-width: 1250px) {
-    .right-block-product-image a {
-        width: 300px;
-        height: 300px;
-    }
-
-    .right-block-product-image {
-        padding: 0 8em;
-    }
-}
-
 @media (max-width: 1050px) {
-    .right-block-product-image a {
-        width: 300px;
-        height: 300px;
-    }
 
-    .right-block-product-image {
-        padding: 0 4em;
-    }
-}
-
-@media (max-width: 860px) {
-    .right-block-product-image a {
-        width: 250px;
-        height: 250px;
-    }
-
-    .right-block-product-image {
-        padding: 0 2em;
+    #hardware-characteristics {
+        padding: 5vh 2vh!important;
     }
 }
 
@@ -138,50 +65,20 @@
     .banner-wrapper h1 {
         font-size: 4em;
     }
-}
 
-@media (max-width: 720px) {
-    .right-block-product-image a {
-        width: 250px;
-        height: 250px;
-    }
-
-    .right-block-product-image {
-        padding: 0 1em;
-    }
-}
-
-@media (max-width: 650px) {
-    .right-block-product-image a {
-        width: 220px;
-        height: 220px;
-    }
-
-    .right-block-product-image {
-        padding: 0 1em;
+    #hardware-characteristics {
+        padding: 5vh 1vh!important;
     }
 }
 
 @media (max-width: 580px) {
-    .right-block-product-image a {
-        width: 170px;
-        height: 170px;
-    }
 
-    .right-block-product-image {
-        padding: 0 1em;
+    #hardware-characteristics {
+        padding: 5vh 0!important;
     }
 }
 
 @media (max-width: 469px) {
-    .right-block-product-image a {
-        width: 150px;
-        height: 150px;
-    }
-
-    .right-block-product-image {
-        padding: 0;
-    }
 
     .banner-wrapper {
         height: 60vh;
@@ -192,12 +89,7 @@
     }
 }
 
-@media (max-width: 370px) {
-    .right-block-product-image a {
-        width: 120px;
-        height: 120px;
-    }
-}
+/*first-section*/
 
 /*second-section*/
 #second-section-features {
@@ -209,8 +101,12 @@
 }
 
 #hardware-characteristics {
-    padding: 5vh 0;
+    padding: 5vh 15vh;
     background: rgb(241, 248, 233);
+}
+
+.custom-features-product {
+    background-color: rgb(227, 242, 253)!important;
 }
 
 .table-info {
@@ -242,4 +138,86 @@ th {
 }
 tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+@media (max-width: 1000px) {
+    /*.banner-wrapper {*/
+    /*    height: 90vh; !* Relative height, starting point around 500px *!*/
+    /*}*/
+
+    .banner-caption-custom {
+        top: 80%!important;
+        left: 50%;
+        transform: translate(-50%, -80%)!important;
+        width: 450px;
+        padding: 4vh!important;
+    }
+
+    .banner-caption-custom h3 {
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+
+    .banner-caption-custom p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 800px) {
+    /*.banner-wrapper {*/
+    /*    height: 90vh; !* Relative height, starting point around 500px *!*/
+    /*}*/
+
+    .banner-caption-custom {
+        top: 80%!important;
+        left: 50%;
+        transform: translate(-50%, -80%)!important;
+        width: 400px;
+        padding: 3.5vh!important;
+    }
+
+    .banner-caption-custom h3 {
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+
+    .banner-caption-custom p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .banner-wrapper {
+        height: 100vh; /* Relative height, starting point around 500px */
+    }
+
+    .banner-caption-custom {
+        top: 80%!important;
+        left: 50%;
+        transform: translate(-50%, -80%)!important;
+        width: 300px;
+        padding: 1.9vh 2vh!important;
+    }
+
+    .banner-caption-custom h3 {
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+
+    .banner-caption-custom p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 }
