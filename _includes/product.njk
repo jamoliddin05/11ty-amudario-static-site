@@ -5,28 +5,31 @@
 {% else %}
     {% set mySite = pageContent %}
 {% endif %}
+
+{% set assetsVersion = "1" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AmudarIO</title>
-    <link rel="stylesheet" href="../assets/css/slider.css">
-    <link rel="stylesheet" href="../assets/css/sticky-navbar.css">
-    <link rel="stylesheet" href="../assets/css/language-switcher.css">
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <link rel="stylesheet" href="../assets/css/first-section.css">
-    <link rel="stylesheet" href="../assets/css/hamburger.css">
-    <link rel="stylesheet" href="../assets/css/feature.css">
-    <link rel="stylesheet" href="../assets/css/second-section.css">
-    <link rel="stylesheet" href="../assets/css/section.css">
-    <link rel="stylesheet" href="../assets/css/custom-carousel.css">
-    <link rel="stylesheet" href="../assets/css/about-us.css">
-    <link rel="stylesheet" href="../assets/css/media.css">
-    <link rel="stylesheet" href="../assets/css/partner.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/slider.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/sticky-navbar.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/language-switcher.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/common.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/first-section.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/hamburger.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/feature.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/second-section.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/section.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/custom-carousel.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/about-us.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/media.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/partner.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/footer.css?v={{ assetsVersion }}">
 
-    <link rel="stylesheet" href="../assets/css/product/product.css">
+    <link rel="stylesheet" href="../assets/css/product/product.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/product/first-section-product.css?v={{ assetsVersion }}">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" >
     <link rel="stylesheet" href="../assets/css/flickity.css" media="screen">
@@ -76,8 +79,17 @@
 <main>
     <section id="product-banner">
         <div class="banner-wrapper">
-            <img src="../assets/img/section-photos/gozanlink.jpg"  alt="banner"/>
-            <h1>GozanLink</h1>
+            <img src="../assets/img/top-slider/slider-03.jpg"  alt="banner"/>
+            <div class="banner-caption-custom">
+                <h3>GozanLink Иссикхона Назоратчиси</h3>
+                <p>
+                    Бу замонавий тизим иссиқхона хўжалигингизнинг асосий кўрсаткичларини назорат қилади:
+                    ҳаво ва тупроқнинг ҳарорати ҳамда намлиги, газ ёки кўмир сарфиёти, шунингдек насослар ва
+                    бошқа ускуналарнинг ишлашини кузатиб боради. Тизим автоматик равишда электр таъминотининг узилиши,
+                    кучли шамоллар ёки ҳароратнинг кескин пасайиши каби фавқулодда вазиятлар ҳақида сизни СМС,
+                    телефон қўнғироқлари, Телеграм ва мобил илова орқали дарҳол хабардор қилади.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -87,31 +99,60 @@
                 <div class="product-image-block">
                     <div class="left-block-product">
                         <h3 class="text-uppercase">your pain points</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at culpa eveniet
-                            hic in incidunt ipsa ipsam, iure laboriosam quod rerum sequi, soluta voluptate. A ab accusamus
-                            aliquam atque deserunt dicta, dolorum explicabo illum, itaque libero minus molestiae mollitia optio
-                            perferendis placeat quam repellendus sed velit voluptates voluptatum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Alias animi consequatur deleniti dolore dolores dolorum eaque enim eum,
+                            facilis fuga fugit id ipsum labore laborum maxime natus, officia officiis omnis quas,
+                            reiciendis sed similique sunt vero! Ab asperiores autem consectetur culpa doloremque ducimus earum
+                            esse est eum eveniet fugit impedit ipsa ipsum iure, laborum maiores non numquam odit perferendis praesentium
+                            provident quam quibusdam quod sapiente sint sit temporibus totam vel voluptatem voluptates? Aliquid animi aspernatur
+                            assumenda corporis dicta dignissimos ea esse eveniet hic ipsa ipsam,
+                            laudantium maxime minus modi mollitia nam nemo numquam provident quasi qui quia sequi veniam voluptatem.</p>
                     </div>
                     <div class="right-block-product-image">
-                        <a href="../assets/img/product-problem/DIY-Soil-Test-Water-Drainage-Clay-Soil.jpg.webp"
-                           data-fancybox="problem-images">
-                            <img src="../assets/img/product-problem/DIY-Soil-Test-Water-Drainage-Clay-Soil.jpg.webp" class="mb-3"/>
-                        </a>
-                        <a href="../assets/img/product-problem/overwatered-tomatoes.jpg"
-                           data-fancybox="problem-images">
-                            <img src="../assets/img/product-problem/overwatered-tomatoes.jpg" class="mb-3"/>
-                        </a>
-                        <a href="../assets/img/product-problem/Common_Plant_Diseases_and_How_To_Control_Them-min.jpg.webp"
-                           data-fancybox="problem-images">
-                            <img src="../assets/img/product-problem/Common_Plant_Diseases_and_How_To_Control_Them-min.jpg.webp" class="mb-3"/>
-                        </a>
-                        <a href="../assets/img/product-problem/PXL_20210527_201308115.jpg"
-                           data-fancybox="problem-images">
-                            <img src="../assets/img/product-problem/PXL_20210527_201308115.jpg" class="mb-3"/>
-                        </a>
+                        <div class="image-container-product">
+                            <a href="../assets/img/product-problem/DIY-Soil-Test-Water-Drainage-Clay-Soil.jpg.webp"
+                               data-fancybox="problem-gallery">
+                                <img src="../assets/img/product-problem/DIY-Soil-Test-Water-Drainage-Clay-Soil.jpg.webp"/>
+                            </a>
+                        </div>
+                        <div class="image-container-product">
+                            <a href="../assets/img/product-problem/overwatered-tomatoes.jpg"
+                               data-fancybox="problem-gallery">
+                                <img src="../assets/img/product-problem/overwatered-tomatoes.jpg"/>
+                            </a>
+                        </div>
+                        <div class="image-container-product">
+                            <a href="../assets/img/product-problem/Common_Plant_Diseases_and_How_To_Control_Them-min.jpg.webp"
+                               data-fancybox="problem-gallery">
+                                <img src="../assets/img/product-problem/Common_Plant_Diseases_and_How_To_Control_Them-min.jpg.webp"/>
+                            </a>
+                        </div>
+                        <div class="image-container-product">
+                            <a href="../assets/img/product-problem/PXL_20210527_201308115.jpg"
+                               data-fancybox="problem-gallery">
+                                <img src="../assets/img/product-problem/PXL_20210527_201308115.jpg"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="second-section-features" class="custom-features-product">
+        <span class="section-title custom-feature-container">{{ mySite.firstSection.title }}</span>
+        <div class="row mt-5 justify-content-center custom-feature-container custom-product-div">
+            {% for iconFeature in mySite.firstSection.iconFeatures %}
+                <div class="custom-feature">
+                    <div class="feature-image-container">
+                        <img src="../{{ iconFeature.img }}" class="custom-feature-img" />
+                    </div>
+                    <div class="feature-data">
+                        <h5 class="text-uppercase">{{ iconFeature.title }}</h5>
+                        <p>{{ iconFeature.paragraph }}</p>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
     </section>
 
@@ -119,9 +160,9 @@
         <div class="custom-container section-wrapper-ordinary">
             <div class="image-block">
                 <div id="meteostation-wrap">
-                    <a href="../assets/img/section-photos/agrometeo_station_uz_01-1.jpg"
+                    <a href="../assets/img/product-problem/diagram.png"
                        data-fancybox>
-                        <img src="../assets/img/section-photos/agrometeo_station_uz_01-1.jpg" class="mb-3"/>
+                        <img src="../assets/img/product-problem/diagram.png" class="mb-3"/>
                     </a>
                 </div>
             </div>
@@ -136,23 +177,6 @@
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="second-section-features">
-        <span class="section-title custom-feature-container">{{ mySite.firstSection.title }}</span>
-        <div class="row mt-5 justify-content-center custom-feature-container custom-product-div">
-            {% for iconFeature in mySite.firstSection.iconFeatures %}
-                <div class="custom-feature">
-                    <div class="feature-image-container">
-                        <img src="../{{ iconFeature.img }}" class="custom-feature-img" />
-                    </div>
-                    <div class="feature-data">
-                        <h5 class="text-uppercase">{{ iconFeature.title }}</h5>
-                        <p>{{ iconFeature.paragraph }}</p>
-                    </div>
-                </div>
-            {% endfor %}
         </div>
     </section>
 
@@ -249,26 +273,41 @@
             <table class="table-info">
                 <thead>
                 <tr>
-                    <th>Header 1</th>
-                    <th>Header 2</th>
-                    <th>Header 3</th>
+                    <th>#</th>
+                    <th>Ultrasonic Weather Sensor</th>
+                    <th>Range+Unit</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>Cell 1</td>
-                    <td>Cell 2</td>
-                    <td>Cell 3</td>
+                    <td>1</td>
+                    <td>Air Temperature</td>
+                    <td>-40 — +80°C</td>
                 </tr>
                 <tr>
-                    <td>Cell 4</td>
-                    <td>Cell 5</td>
-                    <td>Cell 6</td>
+                    <td>2</td>
+                    <td>Air Relative humidity </td>
+                    <td>0 — 100%</td>
                 </tr>
                 <tr>
-                    <td>Cell 7</td>
-                    <td>Cell 8</td>
-                    <td>Cell 9</td>
+                    <td>3</td>
+                    <td>Atmospheric Pressure </td>
+                    <td>150 — 1100hPa</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Atmospheric Pressure </td>
+                    <td>150 — 1100hPa</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Atmospheric Pressure </td>
+                    <td>150 — 1100hPa</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Atmospheric Pressure </td>
+                    <td>150 — 1100hPa</td>
                 </tr>
                 </tbody>
             </table>
@@ -294,10 +333,9 @@
 </footer>
 </body>
 <script src="../assets/js/flickity.pkgd.min.js"></script>
-<script src="../assets/js/top_carousel.js"></script>
-<script src="../assets/js/carousel.js"></script>
-<script src="../assets/js/sticky_navbar.js"></script>
-<script src="../assets/js/hamburger.js"></script>
+<script src="../assets/js/carousel.js?v={{ assetsVersion }}"></script>
+<script src="../assets/js/product/navbar.js?v={{ assetsVersion }}"></script>
+<script src="../assets/js/hamburger.js?v={{ assetsVersion }}"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/fancybox.umd.js"></script>
 <script src="../assets/js/fancybox-options.js"></script>

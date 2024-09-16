@@ -5,26 +5,28 @@
 {% else %}
     {% set mySite = pageContent %}
 {% endif %}
+
+{% set assetsVersion = "1" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AmudarIO</title>
-    <link rel="stylesheet" href="../assets/css/slider.css">
-    <link rel="stylesheet" href="../assets/css/sticky-navbar.css">
-    <link rel="stylesheet" href="../assets/css/language-switcher.css">
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <link rel="stylesheet" href="../assets/css/first-section.css">
-    <link rel="stylesheet" href="../assets/css/hamburger.css">
-    <link rel="stylesheet" href="../assets/css/feature.css">
-    <link rel="stylesheet" href="../assets/css/second-section.css">
-    <link rel="stylesheet" href="../assets/css/section.css">
-    <link rel="stylesheet" href="../assets/css/custom-carousel.css">
-    <link rel="stylesheet" href="../assets/css/about-us.css">
-    <link rel="stylesheet" href="../assets/css/media.css">
-    <link rel="stylesheet" href="../assets/css/partner.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/slider.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/sticky-navbar.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/language-switcher.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/common.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/first-section.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/hamburger.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/feature.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/second-section.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/section.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/custom-carousel.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/about-us.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/media.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/partner.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/footer.css?v={{ assetsVersion }}">
 
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" >
@@ -415,10 +417,10 @@
     </footer>
 </body>
 <script src="../assets/js/flickity.pkgd.min.js"></script>
-<script src="../assets/js/top_carousel.js"></script>
-<script src="../assets/js/carousel.js"></script>
-<script src="../assets/js/sticky_navbar.js"></script>
-<script src="../assets/js/hamburger.js"></script>
+<script src="../assets/js/top_carousel.js?v={{ assetsVersion }}"></script>
+<script src="../assets/js/carousel.js?v={{ assetsVersion }}"></script>
+<script src="../assets/js/sticky_navbar.js?v={{ assetsVersion }}"></script>
+<script src="../assets/js/hamburger.js?v={{ assetsVersion }}"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/fancybox.umd.js"></script>
 <script src="../assets/js/fancybox-options.js"></script>
