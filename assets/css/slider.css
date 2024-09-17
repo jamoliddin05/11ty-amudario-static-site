@@ -29,10 +29,6 @@
     transition: all .6s;
 }
 
-.carousel-caption-custom a {
-    color: #0563aa!important;
-}
-
 .carousel-caption-custom h3 {
     font-size: 29px;
     line-height: 1;
@@ -48,6 +44,7 @@
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 /* Media query for mobile screens */

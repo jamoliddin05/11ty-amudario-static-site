@@ -221,3 +221,8 @@ tr:nth-child(even) {
         line-height: 1.5;
     }
 }
+
+#home-icon {
+    width: 30px;
+    height: 30px;
+}
