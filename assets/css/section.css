@@ -43,6 +43,7 @@
     color: #777;
     line-height: 1.8;
     font-style: normal;
+    margin-bottom: 20px;
 }
 
 .text-block ul {
@@ -52,10 +53,6 @@
 
 .text-block li {
     color: #777;
-}
-
-.text-block a {
-    color: #0563aa!important;
 }
 
 .image-block img {
@@ -104,6 +101,19 @@
 /*        min-width: 370px;*/
 /*    }*/
 /*}*/
+
+.learn-more-button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    color: white!important;
+    background-color: rgba(102, 102, 102, 0.85);
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.learn-more-button:hover {
+    background-color: #0563aa!important;
+}
 
 @media (max-width: 860px) {
     .text-block h3 {
