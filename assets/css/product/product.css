@@ -14,14 +14,14 @@
 }
 
 .banner-wrapper .banner-caption-custom {
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -65%);
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -70%);
     position: absolute;
     font-weight: bold;
     max-width: 600px;
     background-color: rgba(255, 255, 255, 0.95);
-    padding: 7vh;
+    padding: 50px 30px;
 }
 
 .banner-caption-custom h3 {
@@ -55,9 +55,14 @@
     #hardware-characteristics {
         padding: 5vh 2vh!important;
     }
+
+    .banner-wrapper .banner-caption-custom {
+        left: 50%;
+    }
 }
 
 @media (max-width: 800px) {
+
     .banner-wrapper {
         height: 70vh;
     }
