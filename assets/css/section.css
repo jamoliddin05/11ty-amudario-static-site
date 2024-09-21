@@ -65,6 +65,10 @@
     object-fit: cover;
 }
 
+.image-block div {
+    width: 100%;
+}
+
 .custom-image-section {
     max-height: 300px!important;
 }
