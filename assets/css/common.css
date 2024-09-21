@@ -4,9 +4,9 @@
     font-weight: 500;
 }
 
-/*html {*/
-/*    scroll-behavior: auto;*/
-/*}*/
+html {
+    scroll-behavior: smooth;
+}
 
 ::selection {
     background-color: #0563aa; /* Highlight background color */
