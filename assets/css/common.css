@@ -147,3 +147,7 @@ main {
         text-align: center;
     }
 }
+
+.products {
+    scroll-margin-top: 20vh;
+}
