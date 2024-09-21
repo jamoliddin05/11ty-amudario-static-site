@@ -5,7 +5,7 @@
 }
 
 .left-block-product, .right-block-product-image {
-    flex: 1 1 50%; /* Allows the items to flexibly resize and wrap */
+    flex: 1 1 45%; /* Allows the items to flexibly resize and wrap */
     min-width: 400px; /* Ensures the items do not get too small */
     max-width: 600px;
 }
@@ -64,6 +64,13 @@
     .right-block-product-image {
         max-width: 600px;
         min-width: 500px;
+    }
+}
+
+@media (max-width: 960px) and (min-width: 840px) {
+
+    .image-container-product {
+        min-width: 300px;
     }
 }
 

@@ -80,9 +80,9 @@
         height: 100vh;
     }
 
-    .flickity-button {
-        display: none;
-    }
+    /*.flickity-button {*/
+    /*    display: none;*/
+    /*}*/
 
     .carousel-caption-custom {
         padding: 25px;
