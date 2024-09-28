@@ -13,34 +13,8 @@
     background-color: #0563aa;
 }
 
-.banner-wrapper .banner-caption-custom {
-    top: 70%;
-    left: 35%;
-    transform: translate(-50%, -70%);
-    position: absolute;
-    font-weight: bold;
-    max-width: 500px;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 50px 30px;
-}
-
-.banner-caption-custom h3 {
-    font-size: 29px;
-    line-height: 1;
-    font-weight: 400;
-    letter-spacing: 1.2px;
-    margin-bottom: 15px;
-    color: #555;
-    text-transform: uppercase;
-}
-
-.banner-caption-custom p {
-    color: gray;
-    line-height: 1.9;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    /*font-size: 15px;*/
+#product-banner p {
+    text-transform: none!important;
 }
 
 .banner-wrapper img {

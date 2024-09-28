@@ -1,0 +1,9 @@
+.home-link {
+    display: flex;
+    align-items: center;
+}
+
+.home-link a {
+    padding-top: 7px;
+    font-size: 1em;
+}
