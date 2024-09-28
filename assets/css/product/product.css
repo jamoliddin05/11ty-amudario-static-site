@@ -19,7 +19,7 @@
     transform: translate(-50%, -70%);
     position: absolute;
     font-weight: bold;
-    max-width: 600px;
+    max-width: 500px;
     background-color: rgba(255, 255, 255, 0.95);
     padding: 50px 30px;
 }
@@ -48,6 +48,10 @@
     height: 100%;
     object-fit: cover;
     -webkit-user-drag: none;
+    /*transform: scale(0.8); !* Zoom out to 80% of the original size *!*/
+    /*transform-origin: center; !* Ensures the image zooms out from the center *!*/
+    /*zoom: 150%;*/
+    margin-top: 8vh;
 }
 
 @media (max-width: 1050px) {

@@ -14,7 +14,7 @@
     height: 100%;
     object-fit: cover; /* Makes the image cover the entire container while maintaining aspect ratio */
     display: block; /* Ensures there's no gap around the image */
-    transition: all .6s;
+    margin-top: 8vh;
 }
 
 .carousel-caption-custom {
