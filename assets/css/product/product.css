@@ -1,5 +1,5 @@
 #problem-emphasize {
-    padding: 10vh 0;
+    padding: 5vh 0;
 }
 
 .banner-wrapper {
@@ -30,10 +30,6 @@
 
 @media (max-width: 1050px) {
 
-    #hardware-characteristics {
-        padding: 5vh 2vh!important;
-    }
-
     .banner-wrapper .banner-caption-custom {
         left: 50%;
     }
@@ -47,17 +43,6 @@
 
     .banner-wrapper h1 {
         font-size: 4em;
-    }
-
-    #hardware-characteristics {
-        padding: 5vh 1vh!important;
-    }
-}
-
-@media (max-width: 580px) {
-
-    #hardware-characteristics {
-        padding: 5vh 0!important;
     }
 }
 
@@ -84,43 +69,11 @@
 }
 
 #hardware-characteristics {
-    padding: 5vh 15vh;
     background: rgb(241, 248, 233);
 }
 
 .custom-features-product {
     background-color: rgb(227, 242, 253)!important;
-}
-
-.table-info {
-    margin: 0 auto;
-}
-
-.table-info td {
-    padding: 1em;
-}
-
-.table-info th {
-    padding: 1em;
-    text-align: center;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse; /* Ensures borders do not have gaps */
-    border: 2px solid #333; /* Adds a border around the entire table */
-}
-th, td {
-    border: 1px solid #ddd; /* Adds borders around each cell */
-    padding: 8px;
-    text-align: center;
-}
-th {
-    background-color: #f4f4f4;
-    border-bottom: 2px solid #333; /* Thicker border for header */
-}
-tr:nth-child(even) {
-    background-color: #f9f9f9;
 }
 
 @media (max-width: 1000px) {
