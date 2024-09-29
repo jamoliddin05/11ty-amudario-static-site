@@ -1,0 +1,49 @@
+.table-info {
+    margin: 0 auto;
+}
+
+.table-info td {
+    padding: 1em;
+}
+
+.table-info th {
+    padding: 1em;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders do not have gaps */
+    border: 2px solid #333; /* Adds a border around the entire table */
+}
+th, td {
+    border: 1px solid #ddd; /* Adds borders around each cell */
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #333; /* Thicker border for header */
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.hardware-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8vh 2em 6vh;
+    gap: 5em;
+    justify-content: space-between;
+}
+
+.table-block, .table-text-block {
+    flex: 1 1 45%; /* Allows the items to flexibly resize and wrap */
+    min-width: 400px; /* Ensures the items do not get too small */
+}
+
+.table-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
