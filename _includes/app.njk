@@ -1,11 +1,3 @@
-{% if language == 'en' %}
-    {% set mySite = pageContentEn %}
-{% elif language == 'ru' %}
-    {% set mySite = pageContentRu %}
-{% else %}
-    {% set mySite = pageContent %}
-{% endif %}
-
 {% set assetsVersion = "6" %}
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +51,6 @@
                     </div>
                 </div>
                 <div class="custom-language-switcher">
-                    {{ content | safe }}
                 </div>
                 <button id="hamburger-button">
                     <span></span>
@@ -223,18 +214,14 @@
             </div>
         </section>
 
+        {% set "gallery" %}
+            {% getGalleryPaths mySite.galleryFolder %}
+        {% endset %}
         <section id="gallery-section">
             <div class="gallery-wrapper custom-container carousel-wrapper">
                 <span class="carousel-title mb-4">ФОТОГАЛЕРЕЯ</span>
                 <div class="carousel-bottom py-3">
-                    {% for image in main_gallery %}
-                        <div class="carousel-cell-bottom">
-                            <a href="{{ image }}"
-                               data-fancybox="gallery">
-                                <img src="{{ image }}" class="carousel-image-bottom"/>
-                            </a>
-                        </div>
-                    {% endfor %}
+                    {{ gallery | safe }}
                 </div>
             </div>
         </section>
