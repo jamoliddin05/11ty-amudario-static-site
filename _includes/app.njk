@@ -213,7 +213,7 @@
                 <div class="carousel-bottom py-3">
                     {% for galleryImage in mySite.mainGallery.folder | getFiles %}
                         <div class="carousel-cell-partner">
-                            <a href="{{ galleryImage }}" data-fancybox="partner">
+                            <a href="{{ galleryImage }}" data-fancybox="mainGallery">
                                 <img src="{{ galleryImage }}" class="mb-3"/>
                             </a>
                         </div>
@@ -293,8 +293,8 @@
     <footer>
         <div class="top-footer-wrapper">
             <div class="top-footer">
-                <h3>БУЮРТМА БЕРИНГ!</h3>
-                <p>Буюртма бериш ва cизни қизиқтирган саволлар учун:</p>
+                <h3 class="text-uppercase">{{ mySite.footer_info.title }}</h3>
+                <p>{{ mySite.footer_info.info }}</p>
                 <div class="contact-buttons-footer">
                     <a href="tel:{{ mySite.phone }}">{{ mySite.phone }}</a>
                     <a href="mailto:{{ mySite.email }}" class="text-uppercase">{{ mySite.email }}</a>
@@ -303,7 +303,7 @@
         </div>
 
         <div class="bottom-footer custom-container py-3">
-            <span>2024 <strong>© Amudar.io</strong></span>
+            <span>{{ mySite.footer_info.bottom_strong }}<strong>{{ mySite.footer_info.bottom_ord }}</strong></span>
         </div>
     </footer>
 
