@@ -51,6 +51,8 @@
                     </div>
                 </div>
                 <div class="custom-language-switcher">
+                    <a href="{{ mySite.firstLang.link }}">{{ mySite.firstLang.value }}</a>
+                    <a href="{{ mySite.secondLang.link }}">{{ mySite.secondLang.value }}</a>
                 </div>
                 <button id="hamburger-button">
                     <span></span>
@@ -81,7 +83,7 @@
         </section>
 
         <section id="first-section" class="custom-feature-container">
-            <span class="section-title">{{ mySite.firstSection.title }}</span>
+            <span class="section-title text-uppercase">{{ mySite.firstSection.title }}</span>
             <div class="row mt-5 justify-content-center">
                 {% for iconFeature in mySite.firstSection.iconFeatures %}
                    <div class="custom-feature">
@@ -120,21 +122,19 @@
             <div class="custom-container section-wrapper-ordinary">
                 <div class="image-block">
                     <div id="meteostation-wrap">
-                        <a href="../assets/img/section-photos/2024-09-11%2010.27.36.jpg"
+                        <a href="{{ mySite.thirdSection.image }}"
                            data-fancybox>
-                            <img src="../assets/img/section-photos/2024-09-11%2010.27.36.jpg" class="mb-3 custom-image-section"/>
+                            <img src="{{ mySite.thirdSection.image }}" class="mb-3 custom-image-section"/>
                         </a>
                     </div>
                 </div>
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase">OXUS-WS ишлащи</h3>
+                        <h3 class="text-uppercase">{{ mySite.thirdSection.title }}</h3>
                         <p>
-                            Бу қишлоқ хўжалиги ҳудудларида атмосфера ва тупроқ ҳолатини кузатиш учун комплекс ечим ҳисобланади.
-                            Станция ҳаво ҳарорати, нисбий намлик, ёғингарчилик, шамол тезлиги ва йўналиши, тупроқ намлиги ва ҳарорати,
-                            тупроқнинг электр ўтказувчанлиги каби турли параметрларни ўлчайдиган датчиклар мажмуаси билан жиҳозланган
+                            {{ mySite.thirdSection.text }}
                         </p>
-                        <a href="#" class="learn-more-button">Батафсил</a>
+                        <a href="{{ mySite.thirdSection.buttonLink }}" class="learn-more-button">{{ mySite.thirdSection.buttonValue }}</a>
                     </div>
                 </div>
             </div>
@@ -144,21 +144,19 @@
             <div class="custom-container section-wrapper-ordinary">
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase">“JAYHUN TRAP” ФЕРОМОН ТУТҚИЧИ</h3>
+                        <h3 class="text-uppercase">{{ mySite.fourthSection.title }}</h3>
                         <p>
-                            Феромон тутқич кенг бурчакли мини-камералар ёрдамида юқори сифатли тасвирларни тинимсиз
-                            булутли платформага юклаб боради. Ушбу тасвирлар сунъий интеллек ёрдамда таҳлил қилинади ва ундаги зараркунандалар автомат равишда аниқланади. Феромон тутқич қуёш энергиясида
-                            тўла автоном тизимда ишлайди. Алоқа эса GSM модем ёрдамида амалга оширилади.
+                            {{ mySite.fourthSection.text }}
                         </p>
-                        <a href="#" class="learn-more-button">Батафсил</a>
+                        <a href="{{ mySite.fourthSection.buttonLink }}" class="learn-more-button">{{ mySite.fourthSection.buttonValue }}</a>
                     </div>
                 </div>
 
                 <div class="image-block">
                     <div id="meteostation-wrap">
-                        <a href="../assets/img/section-photos/jayhun-trap.jpg"
+                        <a href="{{ mySite.fourthSection.image }}"
                            data-fancybox>
-                            <img src="../assets/img/section-photos/jayhun-trap.jpg" class="mb-3 custom-image-section"/>
+                            <img src="{{ mySite.fourthSection.image }}" class="mb-3 custom-image-section"/>
                         </a>
                     </div>
                 </div>
@@ -169,22 +167,19 @@
             <div class="custom-container section-wrapper-ordinary">
                 <div class="image-block">
                     <div id="meteostation-wrap">
-                        <a href="../assets/img/section-photos/airsense.png"
+                        <a href="{{ mySite.fifthSection.image }}"
                            data-fancybox>
-                            <img src="../assets/img/section-photos/airsense.png" class="mb-3 custom-image-section"/>
+                            <img src="{{ mySite.fifthSection.image }}" class="mb-3 custom-image-section"/>
                         </a>
                     </div>
                 </div>
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase">Oxus Airsense Кандай тузилган</h3>
+                        <h3 class="text-uppercase">{{ mySite.fifthSection.title }}</h3>
                         <p>
-                            Агрометеостанция ҳаво ҳарорати ва намлиги, шамол тезлиги ва йўналиши, ёғингарчилик миқдори, тупроқ ҳарорати,
-                            намлиги ва электрўтказувчанлиги, геопозиция ва аккумуляторнинг заряди хақида маълумотларни тинимсиз булутли
-                            платформага узатиб туради. Алоқа GSM модем ёрдамида амалга оширилади. Агрометеостанция қуёш энергиясида тўла автоном тизимда
-                            ишлайди.
+                            {{ mySite.fifthSection.text }}
                         </p>
-                        <a href="#" class="learn-more-button">Батафсил</a>
+                        <a href="{{ mySite.fifthSection.buttonLink }}" class="learn-more-button">{{ mySite.fifthSection.buttonValue }}</a>
                     </div>
                 </div>
             </div>
@@ -194,34 +189,35 @@
             <div class="custom-container section-wrapper-ordinary">
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase">GozanLink ТЕХНИК ТАРИФИ</h3>
+                        <h3 class="text-uppercase">{{ mySite.sixthSection.title }}</h3>
                         <p>
-                            Агрометеостанция Европа мамлакатларининг саноатида кенг қўлланиладиган ўта сезгир датчиклардан
-                             ташкил топган. Ҳар бир датчик сифати сертификацияланган бўлиб, бизнинг иқлим шароитида ҳам узоқ хизмат
-                              муддатига эга.
+                            {{ mySite.sixthSection.text }}
                         </p>
-                        <a href="gozanlink" class="learn-more-button">Батафсил</a>
+                        <a href="{{ mySite.sixthSection.buttonLink }}" class="learn-more-button">{{ mySite.sixthSection.buttonValue }}</a>
                     </div>
                 </div>
                 <div class="image-block">
                     <div id="meteostation-wrap">
-                        <a href="../assets/img/section-photos/gozanlink.jpg"
+                        <a href="{{ mySite.sixthSection.image }}"
                          data-fancybox>
-                          <img src="../assets/img/section-photos/gozanlink.jpg" class="mb-3 custom-image-section"/>
+                          <img src="{{ mySite.sixthSection.image }}" class="mb-3 custom-image-section"/>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        {% set "gallery" %}
-            {% getGalleryPaths mySite.galleryFolder %}
-        {% endset %}
         <section id="gallery-section">
             <div class="gallery-wrapper custom-container carousel-wrapper">
-                <span class="carousel-title mb-4">ФОТОГАЛЕРЕЯ</span>
+                <span class="carousel-title mb-4">{{ mySite.mainGallery.title }}</span>
                 <div class="carousel-bottom py-3">
-                    {{ gallery | safe }}
+                    {% for galleryImage in mySite.mainGallery.folder | getFiles %}
+                        <div class="carousel-cell-partner">
+                            <a href="{{ galleryImage }}" data-fancybox="partner">
+                                <img src="{{ galleryImage }}" class="mb-3"/>
+                            </a>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>
@@ -231,30 +227,30 @@
             <div class="about-us-wrapper custom-container">
                 <div class="member-info">
                     <div class="member-image-title">
-                        <img src="../assets/img/members/about_02.jpg"/>
-                        <h5>ЖАСУРБЕК ХОДЖАЕВ</h5>
-                        <p>ТАЪСИСЧИ</p>
+                        <img src="{{ mySite.about_us_section.member_one.member_img }}"/>
+                        <h5>{{ mySite.about_us_section.member_one.member_name }}</h5>
+                        <p>{{ mySite.about_us_section.member_one.member_position }}</p>
                     </div>
                     <div class="member-text">
                         <ul>
-                            <li>Инха Университети профессори</li>
-                            <li>PhD in ICT Engineering, Youngnam University, South Korea</li>
-                            <li>Жанубий Корея, Ирландия, АҚШ ва Хитой давлатларида илмий тадқиқот ва ишланмалар борасида 15 йилдан ортиқ тажрибага эга</li>
+                            <li>{{ mySite.about_us_section.member_one.member_desc_1 }}</li>
+                            <li>{{ mySite.about_us_section.member_one.member_desc_2 }}</li>
+                            <li>{{ mySite.about_us_section.member_one.member_desc_3 }}</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="member-info">
                     <div class="member-image-title">
-                        <img src="../assets/img/members/about_01.jpg"/>
-                        <h5>САРВАР АБДУЛЛАЕВ</h5>
-                        <p>ТАЪСИСЧИ</p>
+                        <img src="{{ mySite.about_us_section.member_two.member_img }}"/>
+                        <h5>{{ mySite.about_us_section.member_two.member_name }}</h5>
+                        <p>{{ mySite.about_us_section.member_two.member_position }}</p>
                     </div>
                     <div class="member-text">
                         <ul>
-                            <li>Инха Университети профессори</li>
-                            <li>PhD in Computer Science, King’s College London, UK</li>
-                            <li>Жанубий Корея, Буюк Британия, АҚШ ва Хиндистон давлатларида илмий тадқиқот ва ишланмалар борасида 12 йилдан ортиқ тажрибага эга</li>
+                            <li>{{ mySite.about_us_section.member_two.member_desc_1 }}</li>
+                            <li>{{ mySite.about_us_section.member_two.member_desc_2 }}</li>
+                            <li>{{ mySite.about_us_section.member_two.member_desc_3 }}</li>
                         </ul>
                     </div>
                 </div>
@@ -262,38 +258,15 @@
         </section>
 
         <section id="media-about-us" class="py-5">
-            <span class="section-title custom-container mb-5">ОАВ Биз хакимизда</span>
+            <span class="section-title custom-container mb-5">{{ mySite.media_about_us_section.title }}</span>
             <div class="custom-container">
                 <div class="row justify-content-around">
-                    <div class="media-info">
-                        <h5>НА ФЕРМАХ ТАШКЕНТСКОЙ ОБЛАСТИ НАЧАЛИ ВНЕДРЯТЬ «ИНТЕРНЕТ ВЕЩЕЙ»</h5>
-                        <a href="https://spot.uz/ru/2017/10/30/smart-farm/">Spot.uz</a>
-                    </div>
-
-                    <div class="media-info">
-                        <h5>UNDP PROMOTES MODERN ECO-FRIENDLY TECHNIQUES OF PEST AND DISEASES MANAGEMENT | UNDP IN UZBEKISTAN</h5>
-                        <a href="http://www.uz.undp.org/content/uzbekistan/en/home/presscenter/articles/2019/02/13/undp-promotes-modern-eco-friendly-techniques-of-pest-and-disease.html">UNDP.ORG</a>
-                    </div>
-
-                    <div class="media-info">
-                        <h5>КАК ТЕХНОЛОГИИ ДЛЯ «ТОЧНОГО ЗЕМЛЕДЕЛИЯ» МЕНЯЮТ ФЕРМЕРСТВО В УЗБЕКИСТАНЕ</h5>
-                        <a href="https://spot.uz/ru/2017/10/30/smart-farm/">Spot.uz</a>
-                    </div>
-
-                    <div class="media-info">
-                        <h5>ФЕРОМОННЫЕ ЛОВУШКИ ПОМОГУТ ФЕРМЕРАМ ТУРАКУРГАНА БОРОТЬСЯ С ВРЕДИТЕЛЯМИ</h5>
-                        <a href="https://spot.uz/ru/2017/10/30/smart-farm/">Spot.uz</a>
-                    </div>
-
-                    <div class="media-info">
-                        <h5>В УЗБЕКИСТАНЕ ПОЯВИЛИСЬ СОБСТВЕННЫЕ МИНИАТЮРНЫЕ АГРОМЕТЕОРОЛОГИЧЕСКИЕ СТАНЦИИ</h5>
-                        <a href="https://spot.uz/ru/2017/10/30/smart-farm/">Spot.uz</a>
-                    </div>
-
-                    <div class="media-info">
-                        <h5>PROFESSORS OF INHA UNIVERSITY IN TASHKENT PRESENTED SMART AGROMETEOROLOGICAL STATIONS</h5>
-                        <a href="https://spot.uz/ru/2017/10/30/smart-farm/">Spot.uz</a>
-                    </div>
+                    {% for media in mySite.media_about_us_section.media_info %}
+                        <div class="media-info">
+                            <h5>{{ media.title }}</h5>
+                            <a href="{{ media.link }}">{{ media.linkValue }}</a>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>
@@ -303,42 +276,14 @@
             <div class="custom-container carousel-wrapper">
                 <div class="carousel-partners"
                   data-flickity='{ "wrapAround": true, "freeScroll": true, "pageDots": false }'>
-                  <div class="carousel-cell-partner">
-                    <a href="../assets/img/partner-logos/toshkent-800x800.jpg"
-                     data-fancybox="partner">
-                      <img src="../assets/img/partner-logos/toshkent-800x800.jpg" class="mb-3"/>
-                    </a>
-                  </div>
-                  <div class="carousel-cell-partner">
-                    <a href="../assets/img/partner-logos/logo_undp.jpg"
-                     data-fancybox="partner">
-                      <img src="../assets/img/partner-logos/logo_undp.jpg" class="mb-3"/>
-                    </a>
-                  </div>
-                  <div class="carousel-cell-partner">
-                    <a href="../assets/img/partner-logos/logo_tpp_02.jpg"
-                     data-fancybox="partner">
-                      <img src="../assets/img/partner-logos/logo_tpp_02.jpg" class="mb-3"/>
-                    </a>
-                  </div>
-                  <div class="carousel-cell-partner">
-                    <a href="../assets/img/partner-logos/logo_karantin_inspeksiya.jpg"
-                     data-fancybox="partner">
-                      <img src="../assets/img/partner-logos/logo_karantin_inspeksiya.jpg" class="mb-3"/>
-                    </a>
-                  </div>
-                  <div class="carousel-cell-partner">
-                    <a href="../assets/img/partner-logos/logo_inha.jpg"
-                     data-fancybox="partner">
-                      <img src="../assets/img/partner-logos/logo_inha.jpg" class="mb-3"/>
-                    </a>
-                  </div>
-                  <div class="carousel-cell-partner">
-                    <a href="../assets/img/partner-logos/hydromet-1.jpg"
-                     data-fancybox="partner">
-                      <img src="../assets/img/partner-logos/hydromet-1.jpg" class="mb-3"/>
-                    </a>
-                  </div>
+                  {% for logo in mySite.partners_section.folder | getFiles %}
+                    <div class="carousel-cell-partner">
+                        <a href="{{ logo }}"
+                            data-fancybox="partner">
+                            <img src="{{ logo }}" class="mb-3"/>
+                        </a>
+                    </div>
+                {% endfor %}
                 </div>
             </div>
         </section>

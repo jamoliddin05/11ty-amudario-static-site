@@ -5,9 +5,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("CNAME");
 
-    eleventyConfig.addShortcode("getGalleryPaths", function(galleryFolder) {
-        // Resolve the full path to the gallery folder
-        const fullPath = path.join(__dirname, galleryFolder);
+    eleventyConfig.addFilter("getFiles", function(folderPath) {
+         // Resolve the full path to the gallery folder
+        const fullPath = path.join(__dirname, folderPath);
 
         try {
             // Read the files in the folder and filter by image extensions
@@ -16,22 +16,16 @@ module.exports = function(eleventyConfig) {
             });
 
             // Create an HTML string for each file path
-            const galleryHTML = files.map(file => {
-                const filePath = path.join(galleryFolder, file).toString();
-                return `
-                <div class="carousel-cell-bottom">
-                    <a href="${filePath}" data-fancybox="gallery">
-                        <img src="${filePath}" class="carousel-image-bottom" alt="gallery"/>
-                    </a>
-                </div>
-            `;
-            }).join(''); // Join the array into a single string
+            const fullPaths = files.map(file => {
+                const filePath = path.join(folderPath, file).toString();
+                return filePath;
+            }); // Join the array into a single string
 
-            return galleryHTML;  // Return the complete HTML string
+            return fullPaths;  // Return the complete HTML string
         } catch (err) {
             console.error("Error reading gallery folder:", err);
             return ''; // Return an empty string in case of error
-        }
+        } 
     });
 
 
