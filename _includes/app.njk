@@ -213,8 +213,8 @@
                 <div class="carousel-bottom py-3">
                     {% for galleryImage in mySite.mainGallery.folder | getFiles %}
                         <div class="carousel-cell-partner">
-                            <a href="{{ galleryImage }}" data-fancybox="mainGallery">
-                                <img src="{{ galleryImage }}" class="mb-3"/>
+                            <a href="../{{ galleryImage }}" data-fancybox="mainGallery">
+                                <img src="../{{ galleryImage }}" class="mb-3"/>
                             </a>
                         </div>
                     {% endfor %}
@@ -278,9 +278,9 @@
                   data-flickity='{ "wrapAround": true, "freeScroll": true, "pageDots": false }'>
                   {% for logo in mySite.partners_section.folder | getFiles %}
                     <div class="carousel-cell-partner">
-                        <a href="{{ logo }}"
+                        <a href="../{{ logo }}"
                             data-fancybox="partner">
-                            <img src="{{ logo }}" class="mb-3"/>
+                            <img src="../{{ logo }}" class="mb-3"/>
                         </a>
                     </div>
                 {% endfor %}
