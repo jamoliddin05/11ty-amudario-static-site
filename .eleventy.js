@@ -19,7 +19,7 @@ module.exports = function(eleventyConfig) {
             const fullPaths = files.map(file => {
                 const filePath = path.join(folderPath, file).toString();
                 return filePath;
-            }); // Join the array into a single string
+            });
 
             return fullPaths;  // Return the complete HTML string
         } catch (err) {
