@@ -151,3 +151,11 @@ main {
 .products {
     scroll-margin-top: 20vh;
 }
+
+#oxusws-photo {
+    max-height: 400px!important;
+}
+
+#oxus-airsense-photo {
+    max-height: 400px!important;
+}
