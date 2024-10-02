@@ -25,6 +25,7 @@
     margin-top: 28px;
     opacity: 0;
     transition: all .4s;
+    box-shadow: 10px 10px 20px rgba(10, 0, 10, 0.2);
 }
 
 .dropdown-product-wrapper:focus-within .product-dropdown-menu {
