@@ -8,5 +8,4 @@ var flkty = new Flickity( elem, {
     friction: 0.8,
     dragThreshold: 50,
     autoPlay: 4500,
-    pauseAutoPlayOnHover: true
 });

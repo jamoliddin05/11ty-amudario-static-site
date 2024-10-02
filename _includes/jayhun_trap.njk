@@ -44,7 +44,7 @@
     <nav>
         <div class="d-flex justify-content-between align-items-center">
             <a href="{{ mySite.menu.home.link }}" class="centered-link">
-                <img src="{{ baseUrl }}../assets/img/logo/logo.png" alt="Logo" />
+                <img src="{{ baseUrl }}../assets/img/logo/newLogo.png" alt="Logo" />
             </a>
         </div>
 
@@ -150,7 +150,7 @@
                 {% for productPhoto in mySite.product_gallery.folder | getFiles %}
                     <div class="carousel-cell-bottom">
                         <a href="{{ mySite.product_gallery.sub }}{{ productPhoto }}"
-                        data-fancybox="gallery">
+                           data-fancybox="gallery">
                             <img src="{{ mySite.product_gallery.sub }}{{ productPhoto }}" class="carousel-image-bottom" alt="test"/>
                         </a>
                     </div>
