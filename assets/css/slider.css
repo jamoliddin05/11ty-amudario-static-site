@@ -14,7 +14,6 @@
     height: 100%;
     object-fit: cover; /* Makes the image cover the entire container while maintaining aspect ratio */
     display: block; /* Ensures there's no gap around the image */
-    margin-top: 8vh;
 }
 
 .carousel-caption-custom {
@@ -36,6 +35,7 @@
     letter-spacing: 1.2px;
     margin-bottom: 15px;
     color: #555;
+    max-width: 400px;
 }
 
 .carousel-caption-custom p {

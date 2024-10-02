@@ -149,5 +149,13 @@ main {
 }
 
 .products {
-    scroll-margin-top: 20vh;
+    scroll-margin-top: 10vh;
 }
+
+/*#oxusws-photo {*/
+/*    max-height: 400px!important;*/
+/*}*/
+
+/*#oxus-airsense-photo {*/
+/*    max-height: 400px!important;*/
+/*}*/

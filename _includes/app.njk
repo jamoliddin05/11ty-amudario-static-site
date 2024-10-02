@@ -39,7 +39,7 @@
     <header class="navbar-custom">
         <nav>
             <a href="#" class="centered-link">
-                <img src="../assets/img/logo/logo.png" alt="Logo" />
+                <img src="../assets/img/logo/newLogo.png" alt="Logo" />
             </a>
 
             <div class="right-block">
@@ -50,8 +50,9 @@
                     </div>
                 </div>
                 <div class="custom-language-switcher">
-                    <a href="{{ mySite.firstLang.link }}">{{ mySite.firstLang.value }}</a>
-                    <a href="{{ mySite.secondLang.link }}">{{ mySite.secondLang.value }}</a>
+                    <a href="{{ mySite.menu.home.link }}">{{ mySite.menu.home.value }}</a>
+                    <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>
+                    <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>
                 </div>
                 <button id="hamburger-button">
                     <span></span>
@@ -123,7 +124,7 @@
                     <div id="meteostation-wrap">
                         <a href="{{ mySite.thirdSection.image }}"
                            data-fancybox>
-                            <img src="{{ mySite.thirdSection.image }}" class="mb-3 custom-image-section"/>
+                            <img src="{{ mySite.thirdSection.image }}" class="mb-3 custom-image-section" id="oxusws-photo"/>
                         </a>
                     </div>
                 </div>
@@ -168,7 +169,7 @@
                     <div id="meteostation-wrap">
                         <a href="{{ mySite.fifthSection.image }}"
                            data-fancybox>
-                            <img src="{{ mySite.fifthSection.image }}" class="mb-3 custom-image-section"/>
+                            <img src="{{ mySite.fifthSection.image }}" class="mb-3 custom-image-section" id="oxus-airsense-photo"/>
                         </a>
                     </div>
                 </div>
