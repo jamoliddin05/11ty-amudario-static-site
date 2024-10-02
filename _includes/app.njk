@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/slider.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/sticky-navbar.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/language-switcher.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/products-menu.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/common.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/first-section.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/hamburger.css?v={{ assetsVersion }}">
@@ -49,8 +50,19 @@
                         <a href="#">Link 2</a>
                     </div>
                 </div>
+                <div class="menu-content">
+                    <div class="dropdown-product-wrapper">
+                        <a href="#" id="product-dropdown"><i class="fa-solid fa-chevron-down"></i> МАХСУЛОТЛАР</a>
+                        <div class="product-dropdown-menu">
+                            <a href="#oxus-ws">OXUS-WS</a>
+                            <a href="#jayhun-trap-spec">JAYHUN TRAP</a>
+                            <a href="#oxus-airsense">OXUS AIRSENSE</a>
+                            <a href="#gozanlink">GOZANLINK</a>
+                        </div>
+                    </div>
+                    <a href="{{ mySite.menu.home.link }}" id="home-link-id">{{ mySite.menu.home.value }}</a>
+                </div>
                 <div class="custom-language-switcher">
-                    <a href="{{ mySite.menu.home.link }}">{{ mySite.menu.home.value }}</a>
                     <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>
                     <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>
                 </div>
