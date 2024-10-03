@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/language-switcher.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/common.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/first-section.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/products-menu.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/hamburger.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/feature.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/second-section.css?v={{ assetsVersion }}">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/media.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/partner.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/footer.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/back-to-top.css?v={{ assetsVersion }}">
 
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/product/product.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/product/first-section-product.css?v={{ assetsVersion }}">
@@ -51,12 +53,32 @@
         <div class="right-block">
             <div class="dropdown-custom">
                 <div class="dropdown-content">
-                    <a href="#">testing a really great app</a>
-                    <a href="#">Link 2</a>
+                    <a href="{{ mySite.menu.home.link }}">{{ mySite.menu.home.value }}</a>
+                    <a href="#problem-emphasize">МУАММОЛАР</a>
+                    <a href="#second-section-features">ХУСУСИЯТЛАР</a>
+                    <a href="#agrometeostation-custom">КАНДАЙ ИШЛАЙДИ</a>
+                    <a href="#gallery-section">ГАЛЛЕРЕЯ</a>
+                    <a href="#meteostation-online">DASHBOARD</a>
+                    <a href="#hardware-characteristics">HARDWARE</a>
+                    <a href="mailto:{{ mySite.email }}">{{ mySite.email }}</a>
+                    <a href="tel:{{ mySite.phone }}">{{ mySite.short_phone }}</a>
                 </div>
             </div>
+            <div class="menu-content">
+                <div class="dropdown-product-wrapper">
+                    <a href="#" id="product-dropdown" class="product-dropdown-link"><i class="fa-solid fa-chevron-down"></i> НАВИГАЦИЯ</a>
+                    <div class="product-dropdown-menu">
+                        <a href="#problem-emphasize">МУАММОЛАР</a>
+                        <a href="#second-section-features">ХУСУСИЯТЛАР</a>
+                        <a href="#agrometeostation-custom">КАНДАЙ ИШЛАЙДИ</a>
+                        <a href="#gallery-section">ГАЛЛЕРЕЯ</a>
+                        <a href="#meteostation-online">DASHBOARD</a>
+                        <a href="#hardware-characteristics">HARDWARE</a>
+                    </div>
+                </div>
+                <a href="{{ mySite.menu.home.link }}" id="home-link-id">{{ mySite.menu.home.value }}</a>
+            </div>
             <div class="custom-language-switcher">
-                <a href="{{ mySite.menu.home.link }}">{{ mySite.menu.home.value }}</a>
                 <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>
                 <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>
             </div>
@@ -66,12 +88,13 @@
                 <span></span>
             </button>
             <div class="contact-info align-items-center">
-                <a href="mailto:{{ mySite.menu.email }}" class="mx-2 text-uppercase" id="email">{{ mySite.menu.email }}</a>
-                <a href="tel:{{ mySite.menu.phone }}" class="mx-2" id="phone">{{ mySite.menu.phone }}</a>
+                <a href="mailto:{{ mySite.email }}" class="mx-2 text-uppercase" id="email">{{ mySite.email }}</a>
+                <a href="tel:{{ mySite.phone }}" class="mx-2" id="phone">{{ mySite.phone }}</a>
             </div>
         </div>
     </nav>
 </header>
+<button id="backToTopBtn" class="back-to-top">↑</button>
 
 <main>
     <section id="product-banner">
@@ -86,7 +109,7 @@
         </div>
     </section>
 
-    <section id="problem-emphasize">
+    <section id="problem-emphasize" class="scroll-margin-top-class">
         <span class="section-title custom-feature-container">{{ mySite.firstSection.title }}</span>
         <div class="custom-container">
             <div class="row mt-5 justify-content-center">
@@ -105,7 +128,7 @@
         </div>
     </section>
 
-    <section id="second-section-features" class="custom-features-product">
+    <section id="second-section-features" class="custom-features-product scroll-margin-top-class">
         <span class="section-title custom-feature-container">{{ mySite.secondSection.title }}</span>
         <div class="row mt-5 justify-content-center custom-feature-container custom-product-div">
             {% for iconFeature in mySite.secondSection.iconFeatures %}
@@ -122,7 +145,7 @@
         </div>
     </section>
 
-    <section id="agrometeostation-custom">
+    <section id="agrometeostation-custom" class="scroll-margin-top-class">
         <div class="custom-container section-wrapper-ordinary">
             <div class="image-block">
                 <div id="meteostation-wrap">
@@ -143,7 +166,7 @@
         </div>
     </section>
 
-    <section id="gallery-section">
+    <section id="gallery-section" class="scroll-margin-top-class">
         <div class="gallery-wrapper custom-container carousel-wrapper">
             <span class="carousel-title mb-4">{{ mySite.product_gallery.title }}</span>
             <div class="carousel-bottom py-3">
@@ -159,7 +182,7 @@
         </div>
     </section>
 
-    <section id="meteostation-online">
+    <section id="meteostation-online" class="scroll-margin-top-class">
         <div class="custom-container section-wrapper-ordinary">
             <div class="text-block">
                 <div>
@@ -188,7 +211,7 @@
         </div>
     </section>
 
-    <section id="hardware-characteristics">
+    <section id="hardware-characteristics" class="scroll-margin-top-class">
         <div class="custom-container section-wrapper-ordinary">
             <div class="image-block">
                 <div id="meteostation-wrap">
@@ -216,8 +239,8 @@
             <h3>{{ mySite.footer_info.title }}</h3>
             <p>{{ mySite.footer_info.info }}</p>
             <div class="contact-buttons-footer">
-                <a href="tel:{{ mySite.menu.phone }}">{{ mySite.menu.phone }}</a>
-                <a href="mailto:{{ mySite.menu.email }}" class="text-uppercase">{{ mySite.menu.email }}</a>
+                <a href="tel:{{ mySite.phone }}">{{ mySite.phone }}</a>
+                <a href="mailto:{{ mySite.email }}" class="text-uppercase">{{ mySite.email }}</a>
             </div>
         </div>
     </div>
@@ -231,6 +254,8 @@
 <script src="{{ baseUrl }}../assets/js/carousel.js?v={{ assetsVersion }}"></script>
 <script src="{{ baseUrl }}../assets/js/product/navbar.js?v={{ assetsVersion }}"></script>
 <script src="{{ baseUrl }}../assets/js/hamburger.js?v={{ assetsVersion }}"></script>
+<script src="{{ baseUrl }}../assets/js/product/sticky_navbar.js?v={{ assetsVersion }}"></script>
+<script src="{{ baseUrl }}../assets/js/back-to-top.js?v={{ assetsVersion }}"></script>
 <script src="{{ baseUrl }}../assets/js/bootstrap.bundle.min.js"></script>
 <script src="{{ baseUrl }}../assets/js/fancybox.umd.js"></script>
 <script src="{{ baseUrl }}../assets/js/fancybox-options.js"></script>
