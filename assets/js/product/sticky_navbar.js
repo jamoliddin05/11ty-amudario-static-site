@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar-custom');
-    const slider = document.querySelector('#slider');
+    const slider = document.querySelector('#product-banner');
     const sliderHeight = slider.offsetHeight;
 
     window.addEventListener('scroll', function() {

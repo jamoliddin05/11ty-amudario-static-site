@@ -149,5 +149,35 @@ main {
 }
 
 .products {
+    scroll-margin-top: 80px;
+}
+
+#jayhun-trap-spec {
     scroll-margin-top: 20vh;
 }
+
+#gozanlink {
+    scroll-margin-top: 20vh;
+}
+
+@media (max-width: 550px) {
+    .products {
+        scroll-margin-top: -10vh;
+    }
+
+    #jayhun-trap-spec {
+        scroll-margin-top: 100px;
+    }
+
+    #gozanlink {
+        scroll-margin-top: 100px;
+    }
+}
+
+/*#oxusws-photo {*/
+/*    max-height: 400px!important;*/
+/*}*/
+
+/*#oxus-airsense-photo {*/
+/*    max-height: 400px!important;*/
+/*}*/

@@ -25,7 +25,6 @@
     /*transform: scale(0.8); !* Zoom out to 80% of the original size *!*/
     /*transform-origin: center; !* Ensures the image zooms out from the center *!*/
     /*zoom: 150%;*/
-    margin-top: 8vh;
 }
 
 @media (max-width: 1050px) {
@@ -161,4 +160,8 @@
 #home-icon {
     width: 30px;
     height: 30px;
+}
+
+.scroll-margin-top-class {
+    scroll-margin-top: 100px;
 }

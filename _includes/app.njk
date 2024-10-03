@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/slider.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/sticky-navbar.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/language-switcher.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/products-menu.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/common.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/first-section.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/hamburger.css?v={{ assetsVersion }}">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="../assets/css/media.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/partner.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/footer.css?v={{ assetsVersion }}">
+    <link rel="stylesheet" href="../assets/css/back-to-top.css?v={{ assetsVersion }}">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" >
     <link rel="stylesheet" href="../assets/css/flickity.css" media="screen">
@@ -39,19 +41,36 @@
     <header class="navbar-custom">
         <nav>
             <a href="#" class="centered-link">
-                <img src="../assets/img/logo/logo.png" alt="Logo" />
+                <img src="../assets/img/logo/newLogo.png" alt="Logo" />
             </a>
 
             <div class="right-block">
                 <div class="dropdown-custom">
                     <div class="dropdown-content">
-                        <a href="#">testing a really great app</a>
-                        <a href="#">Link 2</a>
+                        <a href="{{ mySite.menu.home.link }}">{{ mySite.menu.home.value }}</a>
+                        <a href="#oxus-ws">OXUS-WS</a>
+                        <a href="#jayhun-trap-spec">JAYHUN TRAP</a>
+                        <a href="#oxus-airsense">AIRSENSE PRO</a>
+                        <a href="#gozanlink">GOZANLINK</a>
+                        <a href="mailto:{{ mySite.email }}">{{ mySite.email }}</a>
+                        <a href="tel:{{ mySite.phone }}">{{ mySite.short_phone }}</a>
                     </div>
                 </div>
+                <div class="menu-content">
+                    <div class="dropdown-product-wrapper">
+                        <a href="#" id="product-dropdown" class="product-dropdown-link"><i class="fa-solid fa-chevron-down"></i> {{ mySite.menu.products.value }}</a>
+                        <div class="product-dropdown-menu">
+                            <a href="#oxus-ws">OXUS-WS</a>
+                            <a href="#jayhun-trap-spec">JAYHUN TRAP</a>
+                            <a href="#oxus-airsense">OXUS AIRSENSE</a>
+                            <a href="#gozanlink">GOZANLINK</a>
+                        </div>
+                    </div>
+                    <a href="{{ mySite.menu.home.link }}" id="home-link-id">{{ mySite.menu.home.value }}</a>
+                </div>
                 <div class="custom-language-switcher">
-                    <a href="{{ mySite.firstLang.link }}">{{ mySite.firstLang.value }}</a>
-                    <a href="{{ mySite.secondLang.link }}">{{ mySite.secondLang.value }}</a>
+                    <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>
+                    <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>
                 </div>
                 <button id="hamburger-button">
                     <span></span>
@@ -65,6 +84,7 @@
             </div>
         </nav>
     </header>
+    <button id="backToTopBtn" class="back-to-top">↑</button>
     <main>
         <section id="slider">
            <div class="main-carousel">
@@ -123,7 +143,7 @@
                     <div id="meteostation-wrap">
                         <a href="{{ mySite.thirdSection.image }}"
                            data-fancybox>
-                            <img src="{{ mySite.thirdSection.image }}" class="mb-3 custom-image-section"/>
+                            <img src="{{ mySite.thirdSection.image }}" class="mb-3 custom-image-section" id="oxusws-photo"/>
                         </a>
                     </div>
                 </div>
@@ -133,7 +153,7 @@
                         <p>
                             {{ mySite.thirdSection.text }}
                         </p>
-                        <a href="{{ mySite.thirdSection.buttonLink }}" class="learn-more-button">{{ mySite.thirdSection.buttonValue }}</a>
+                        <a href="{{ mySite.menu.home.link }}{{ mySite.thirdSection.buttonLink }}" class="learn-more-button">{{ mySite.thirdSection.buttonValue }}</a>
                     </div>
                 </div>
             </div>
@@ -147,7 +167,7 @@
                         <p>
                             {{ mySite.fourthSection.text }}
                         </p>
-                        <a href="{{ mySite.fourthSection.buttonLink }}" class="learn-more-button">{{ mySite.fourthSection.buttonValue }}</a>
+                        <a href="{{ mySite.menu.home.link }}{{ mySite.fourthSection.buttonLink }}" class="learn-more-button">{{ mySite.fourthSection.buttonValue }}</a>
                     </div>
                 </div>
 
@@ -168,7 +188,7 @@
                     <div id="meteostation-wrap">
                         <a href="{{ mySite.fifthSection.image }}"
                            data-fancybox>
-                            <img src="{{ mySite.fifthSection.image }}" class="mb-3 custom-image-section"/>
+                            <img src="{{ mySite.fifthSection.image }}" class="mb-3 custom-image-section" id="oxus-airsense-photo"/>
                         </a>
                     </div>
                 </div>
@@ -178,7 +198,7 @@
                         <p>
                             {{ mySite.fifthSection.text }}
                         </p>
-                        <a href="{{ mySite.fifthSection.buttonLink }}" class="learn-more-button">{{ mySite.fifthSection.buttonValue }}</a>
+                        <a href="{{ mySite.menu.home.link }}{{ mySite.fifthSection.buttonLink }}" class="learn-more-button">{{ mySite.fifthSection.buttonValue }}</a>
                     </div>
                 </div>
             </div>
@@ -192,7 +212,7 @@
                         <p>
                             {{ mySite.sixthSection.text }}
                         </p>
-                        <a href="{{ mySite.sixthSection.buttonLink }}" class="learn-more-button">{{ mySite.sixthSection.buttonValue }}</a>
+                        <a href="{{ mySite.menu.home.link }}{{ mySite.sixthSection.buttonLink }}" class="learn-more-button">{{ mySite.sixthSection.buttonValue }}</a>
                     </div>
                 </div>
                 <div class="image-block">
@@ -312,6 +332,7 @@
 <script src="../assets/js/carousel.js?v={{ assetsVersion }}"></script>
 <script src="../assets/js/sticky_navbar.js?v={{ assetsVersion }}"></script>
 <script src="../assets/js/hamburger.js?v={{ assetsVersion }}"></script>
+<script src="../assets/js/back-to-top.js?v={{ assetsVersion }}"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/fancybox.umd.js"></script>
 <script src="../assets/js/fancybox-options.js"></script>

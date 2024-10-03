@@ -1,0 +1,27 @@
+.back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place it 20px from the bottom */
+    right: 50px; /* Place it 30px from the right */
+    z-index: 1000; /* Make sure it appears above other elements */
+    font-size: 18px; /* Adjust the size of the button */
+    text-decoration: none;
+    background-color: white; /* Dark background */
+    color: #0563aa; /* White text */
+    border: 2px solid #0563aa; /* Remove borders */
+    border-radius: 50%; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.6s ease-in-out;
+    /*width: 50px;*/
+    /*height: 50px;*/
+    text-align: center;
+    padding: 3px 10px;
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        right: 30px;
+    }
+}
+
+
