@@ -162,15 +162,15 @@ main {
 
 @media (max-width: 550px) {
     .products {
-        scroll-margin-top: -30vh;
+        scroll-margin-top: -10vh;
     }
 
     #jayhun-trap-spec {
-        scroll-margin-top: 50px;
+        scroll-margin-top: 100px;
     }
 
     #gozanlink {
-        scroll-margin-top: 50px;
+        scroll-margin-top: 100px;
     }
 }
 
