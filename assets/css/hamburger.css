@@ -20,9 +20,9 @@
     background-color: transparent;
     min-width: 140px;
     max-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px rgba(10, 0, 10, 0.2);
     opacity: 0;  /* Fully hidden */
-    transform: translate(-40px, 5px); /* Start slightly above */
+    transform: translate(-34px, 5px); /* Start slightly above */
     transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
     z-index: 1;
     pointer-events: none; /* Prevent interaction while hidden */
@@ -32,8 +32,20 @@
 /* Show the dropdown on hover */
 .dropdown-custom.open .dropdown-content {
     opacity: 1;  /* Fully visible */
-    transform: translate(-40px, 55px); /* Slide to normal position */
+    transform: translate(-34px, 60px); /* Slide to normal position */
     pointer-events: auto; /* Allow interaction */
+}
+
+@media (min-width: 850px) {
+    .dropdown-custom.open .dropdown-content {
+        opacity: 1;  /* Fully visible */
+        transform: translate(140px, 60px); /* Slide to normal position */
+        pointer-events: auto; /* Allow interaction */
+    }
+
+    .dropdown-content {
+        transform: translate(140px, 5px); /* Start slightly above */
+    }
 }
 
 /* Dropdown content items */
@@ -43,14 +55,17 @@
     text-decoration: none;
     display: block;
     text-align: center;
-    background-color: #0563aa;
-    transition: all .4s ease-in-out;
     word-wrap: break-word; /* Breaks long words if necessary */
+    color: rgba(102, 102, 102, 0.85)!important;
+    font-size: .8em;
+    transition: all .8s;
+    font-weight: 500;
+    background-color: white!important;
 }
 
 .dropdown-content a:hover {
-    color: gray;
-    background-color: white;
+    color: white!important;
+    background-color: #0563aa!important;
 }
 
 #hamburger-button {
@@ -123,7 +138,7 @@ header.open #hamburger-button span:nth-child(3) {
     background-color: #045591 !important;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1200px) {
     #hamburger-button {
         display: block;
     }
