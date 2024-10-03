@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../assets/css/language-switcher.css?v=8">
     <link rel="stylesheet" href="../assets/css/common.css?v=8">
     <link rel="stylesheet" href="../assets/css/first-section.css?v=8">
+    <link rel="stylesheet" href="../assets/css/products-menu.css?v=8">
     <link rel="stylesheet" href="../assets/css/hamburger.css?v=8">
     <link rel="stylesheet" href="../assets/css/feature.css?v=8">
     <link rel="stylesheet" href="../assets/css/second-section.css?v=8">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="../assets/css/media.css?v=8">
     <link rel="stylesheet" href="../assets/css/partner.css?v=8">
     <link rel="stylesheet" href="../assets/css/footer.css?v=8">
+    <link rel="stylesheet" href="../assets/css/back-to-top.css?v=8">
 
     <link rel="stylesheet" href="../assets/css/product/product.css?v=8">
     <link rel="stylesheet" href="../assets/css/product/first-section-product.css?v=8">
@@ -51,12 +53,32 @@
         <div class="right-block">
             <div class="dropdown-custom">
                 <div class="dropdown-content">
-                    <a href="#">testing a really great app</a>
-                    <a href="#">Link 2</a>
+                    <a href="/">АСОСИЙ</a>
+                    <a href="#problem-emphasize">МУАММОЛАР</a>
+                    <a href="#second-section-features">ХУСУСИЯТЛАР</a>
+                    <a href="#agrometeostation-custom">КАНДАЙ ИШЛАЙДИ</a>
+                    <a href="#gallery-section">ГАЛЛЕРЕЯ</a>
+                    <a href="#meteostation-online">DASHBOARD</a>
+                    <a href="#hardware-characteristics">HARDWARE</a>
+                    <a href="mailto:info@amudar.io">info@amudar.io</a>
+                    <a href="tel:+998 90 035-02-25">90 035-02-25</a>
                 </div>
             </div>
+            <div class="menu-content">
+                <div class="dropdown-product-wrapper">
+                    <a href="#" id="product-dropdown" class="product-dropdown-link"><i class="fa-solid fa-chevron-down"></i> НАВИГАЦИЯ</a>
+                    <div class="product-dropdown-menu">
+                        <a href="#problem-emphasize">МУАММОЛАР</a>
+                        <a href="#second-section-features">ХУСУСИЯТЛАР</a>
+                        <a href="#agrometeostation-custom">КАНДАЙ ИШЛАЙДИ</a>
+                        <a href="#gallery-section">ГАЛЛЕРЕЯ</a>
+                        <a href="#meteostation-online">DASHBOARD</a>
+                        <a href="#hardware-characteristics">HARDWARE</a>
+                    </div>
+                </div>
+                <a href="/" id="home-link-id">АСОСИЙ</a>
+            </div>
             <div class="custom-language-switcher">
-                <a href="/">АСОСИЙ</a>
                 <a href="/ru/gozanlink">RU</a>
                 <a href="/en/gozanlink">EN</a>
             </div>
@@ -72,13 +94,14 @@
         </div>
     </nav>
 </header>
+<button id="backToTopBtn" class="back-to-top">↑</button>
 
 <main>
     <section id="product-banner">
         <div class="banner-wrapper">
             <img src="../assets/img/gozanlink/gozanlink-banner.jpg"  alt="banner"/>
             <div class="carousel-caption-custom text-uppercase">
-                <h3>Jayhun Trap Феромон туткичи</h3>
+                <h3>Jayhun Trap Феромон Туткичи</h3>
                 <p>
                     Бу замонавий тизим иссиқхона хўжалигингизнинг асосий кўрсаткичларини назорат қилади: ҳаво ва тупроқнинг ҳарорати ҳамда намлиги, газ ёки кўмир сарфиёти, шунингдек насослар ва бошқа ускуналарнинг ишлашини кузатиб боради.
                 </p>
@@ -86,7 +109,7 @@
         </div>
     </section>
 
-    <section id="problem-emphasize">
+    <section id="problem-emphasize" class="scroll-margin-top-class">
         <span class="section-title custom-feature-container">MAIN PAIN POINTS</span>
         <div class="custom-container">
             <div class="row mt-5 justify-content-center">
@@ -125,7 +148,7 @@
         </div>
     </section>
 
-    <section id="second-section-features" class="custom-features-product">
+    <section id="second-section-features" class="custom-features-product scroll-margin-top-class">
         <span class="section-title custom-feature-container">Benefits (bullet points)</span>
         <div class="row mt-5 justify-content-center custom-feature-container custom-product-div">
             
@@ -182,7 +205,7 @@
         </div>
     </section>
 
-    <section id="agrometeostation-custom">
+    <section id="agrometeostation-custom" class="scroll-margin-top-class">
         <div class="custom-container section-wrapper-ordinary">
             <div class="image-block">
                 <div id="meteostation-wrap">
@@ -203,7 +226,7 @@
         </div>
     </section>
 
-    <section id="gallery-section">
+    <section id="gallery-section" class="scroll-margin-top-class">
         <div class="gallery-wrapper custom-container carousel-wrapper">
             <span class="carousel-title mb-4">ФОТОГАЛЕРЕЯ</span>
             <div class="carousel-bottom py-3">
@@ -443,7 +466,7 @@
         </div>
     </section>
 
-    <section id="meteostation-online">
+    <section id="meteostation-online" class="scroll-margin-top-class">
         <div class="custom-container section-wrapper-ordinary">
             <div class="text-block">
                 <div>
@@ -484,7 +507,7 @@
         </div>
     </section>
 
-    <section id="hardware-characteristics">
+    <section id="hardware-characteristics" class="scroll-margin-top-class">
         <div class="custom-container section-wrapper-ordinary">
             <div class="image-block">
                 <div id="meteostation-wrap">
@@ -527,6 +550,8 @@
 <script src="../assets/js/carousel.js?v=8"></script>
 <script src="../assets/js/product/navbar.js?v=8"></script>
 <script src="../assets/js/hamburger.js?v=8"></script>
+<script src="../assets/js/product/sticky_navbar.js?v=8"></script>
+<script src="../assets/js/back-to-top.js?v=8"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/fancybox.umd.js"></script>
 <script src="../assets/js/fancybox-options.js"></script>
