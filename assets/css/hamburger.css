@@ -36,6 +36,18 @@
     pointer-events: auto; /* Allow interaction */
 }
 
+@media (min-width: 850px) {
+    .dropdown-custom.open .dropdown-content {
+        opacity: 1;  /* Fully visible */
+        transform: translate(140px, 60px); /* Slide to normal position */
+        pointer-events: auto; /* Allow interaction */
+    }
+
+    .dropdown-content {
+        transform: translate(140px, 5px); /* Start slightly above */
+    }
+}
+
 /* Dropdown content items */
 .dropdown-content a {
     color: white;
@@ -52,7 +64,7 @@
 }
 
 .dropdown-content a:hover {
-    color: gray;
+    color: white!important;
     background-color: #0563aa!important;
 }
 
