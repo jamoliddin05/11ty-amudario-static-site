@@ -161,3 +161,7 @@
     width: 30px;
     height: 30px;
 }
+
+.scroll-margin-top-class {
+    scroll-margin-top: 100px;
+}
