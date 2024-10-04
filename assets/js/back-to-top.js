@@ -6,9 +6,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backToTopBtn.style.display = "block"; // Show the button
+        backToTopBtn.classList.add('active'); // Show the button
     } else {
-        backToTopBtn.style.display = "none"; // Hide the button
+        backToTopBtn.classList.remove('active'); // Hide the button
     }
 }
 
