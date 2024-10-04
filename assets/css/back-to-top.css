@@ -1,5 +1,4 @@
 .back-to-top {
-    display: none; /* Hidden by default */
     position: fixed; /* Fixed position */
     bottom: 20px; /* Place it 20px from the bottom */
     right: 50px; /* Place it 30px from the right */
@@ -11,11 +10,18 @@
     border: 2px solid #0563aa; /* Remove borders */
     border-radius: 50%; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
-    transition: all 0.6s ease-in-out;
-    /*width: 50px;*/
-    /*height: 50px;*/
+    transition: all .6s ease-in-out;
     text-align: center;
     padding: 3px 10px;
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.back-to-top.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
 }
 
 @media (max-width: 768px) {
