@@ -13,6 +13,11 @@
     background-color: #0563aa;
 }
 
+.title-bold span {
+    font-weight: bold;
+    color: #0563aa !important;
+}
+
 #product-banner p {
     text-transform: none!important;
 }

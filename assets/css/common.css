@@ -152,6 +152,11 @@ main {
     scroll-margin-top: 80px;
 }
 
+.products h3 span {
+    font-weight: bold;
+    color: #0563aa !important;
+}
+
 #jayhun-trap-spec {
     scroll-margin-top: 20vh;
 }

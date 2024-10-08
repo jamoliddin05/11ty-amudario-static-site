@@ -51,12 +51,11 @@
             <div class="right-block">
                 <div class="dropdown-custom">
                     <div class="dropdown-content">
-{#                        <a href="{{ mySite.menu.home.link }}">{{ mySite.menu.home.value }}</a>#}
                         <a href="#oxus-ws">{{ mySite.menu.products.oxus_ws }}</a>
                         <a href="#jayhun-trap-spec">{{ mySite.menu.products.jayhun_trap }}</a>
                         <a href="#oxus-airsense">{{ mySite.menu.products.oxus_airsense }}</a>
                         <a href="#gozanlink">{{ mySite.menu.products.gozanlink }}</a>
-                        <a href="mailto:{{ mySite.email }}">{{ mySite.email }}</a>
+                        <a href="mailto:{{ mySite.email }}" class="text-uppercase">{{ mySite.email }}</a>
                         <a href="tel:{{ mySite.phone }}">{{ mySite.short_phone }}</a>
                     </div>
                 </div>
@@ -153,7 +152,7 @@
                 </div>
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase">{{ mySite.thirdSection.title }}</h3>
+                        <h3 class="text-uppercase"> <span>{{ mySite.thirdSection.title_strong }}</span>{{ mySite.thirdSection.title_rest }}</h3>
                         <p>
                             {{ mySite.thirdSection.text }}
                         </p>
@@ -167,7 +166,7 @@
             <div class="custom-container section-wrapper-ordinary">
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase">{{ mySite.fourthSection.title }}</h3>
+                        <h3 class="text-uppercase"><span>{{ mySite.fourthSection.title_strong }}</span>{{ mySite.fourthSection.title_rest }}</h3>
                         <p>
                             {{ mySite.fourthSection.text }}
                         </p>
@@ -198,7 +197,7 @@
                 </div>
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase">{{ mySite.fifthSection.title }}</h3>
+                        <h3 class="text-uppercase"><span>{{ mySite.fifthSection.title_strong }}</span>{{ mySite.fifthSection.title_rest }}</h3>
                         <p>
                             {{ mySite.fifthSection.text }}
                         </p>
@@ -212,7 +211,7 @@
             <div class="custom-container section-wrapper-ordinary">
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase">{{ mySite.sixthSection.title }}</h3>
+                        <h3 class="text-uppercase"><span>{{ mySite.sixthSection.title_strong }}</span>{{ mySite.sixthSection.title_rest }}</h3>
                         <p>
                             {{ mySite.sixthSection.text }}
                         </p>
