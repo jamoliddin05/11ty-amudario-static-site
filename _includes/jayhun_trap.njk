@@ -122,6 +122,26 @@
         </div>
     </section>
 
+    <section id="problem-emphasize">
+        <span class="section-title custom-feature-container">{{ mySite.thirdSection.title }}</span>
+        <div class="custom-container">
+            <div class="row mt-5 justify-content-center">
+                {% for problem_feature in mySite.thirdSection.problem_features %}
+                    <div class="problem-feature">
+                        <div class="image-wrapper-problem">
+                            <img src="{{ baseUrl }}{{ problem_feature.img }}"/>
+                        </div>
+                        <div class="feature-data">
+                            <h5 class="text-uppercase">{{ problem_feature.title }}</h5>
+                            <p>{{ problem_feature.caption }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
     <section id="agrometeostation-custom">
         <div class="custom-container section-wrapper-ordinary">
             <div class="image-block">
