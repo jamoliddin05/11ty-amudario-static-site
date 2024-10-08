@@ -152,9 +152,10 @@ main {
     scroll-margin-top: 80px;
 }
 
-.products h3 span {
+.products h3 a {
     font-weight: bold;
     color: #0563aa !important;
+    text-decoration: none;
 }
 
 #jayhun-trap-spec {
