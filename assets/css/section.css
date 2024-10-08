@@ -43,12 +43,13 @@
     color: #777;
     line-height: 1.8;
     font-style: normal;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .text-block ul {
     max-width: 500px;
-    padding-left: 2.8em;
+    padding-left: 1rem!important;
+    /*list-style: none;*/
 }
 
 .text-block li {

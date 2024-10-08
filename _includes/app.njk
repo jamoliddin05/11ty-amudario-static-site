@@ -51,7 +51,7 @@
             <div class="right-block">
                 <div class="dropdown-custom">
                     <div class="dropdown-content">
-                        <a href="{{ mySite.menu.home.link }}">{{ mySite.menu.home.value }}</a>
+{#                        <a href="{{ mySite.menu.home.link }}">{{ mySite.menu.home.value }}</a>#}
                         <a href="#oxus-ws">{{ mySite.menu.products.oxus_ws }}</a>
                         <a href="#jayhun-trap-spec">{{ mySite.menu.products.jayhun_trap }}</a>
                         <a href="#oxus-airsense">{{ mySite.menu.products.oxus_airsense }}</a>
@@ -61,8 +61,9 @@
                     </div>
                 </div>
                 <div class="menu-content">
+                    <a href="{{ mySite.menu.home.link }}" id="home-link-id">{{ mySite.menu.home.value }}</a>
                     <div class="dropdown-product-wrapper">
-                        <a href="#" id="product-dropdown" class="product-dropdown-link"><i class="fa-solid fa-chevron-down"></i> {{ mySite.menu.products.value }}</a>
+                        <a href="#" id="product-dropdown" class="product-dropdown-link">{{ mySite.menu.products.value }} <i class="fa-solid fa-chevron-down"></i> </a>
                         <div class="product-dropdown-menu">
                             <a href="#oxus-ws">{{ mySite.menu.products.oxus_ws }}</a>
                             <a href="#jayhun-trap-spec">{{ mySite.menu.products.jayhun_trap }}</a>
@@ -70,7 +71,6 @@
                             <a href="#gozanlink">{{ mySite.menu.products.gozanlink }}</a>
                         </div>
                     </div>
-                    <a href="{{ mySite.menu.home.link }}" id="home-link-id">{{ mySite.menu.home.value }}</a>
                 </div>
                 <div class="custom-language-switcher">
                     <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>

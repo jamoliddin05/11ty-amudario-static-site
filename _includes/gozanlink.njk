@@ -59,28 +59,28 @@
             <div class="dropdown-custom">
                 <div class="dropdown-content">
                     <a href="{{ mySite.menu.home.link }}">{{ mySite.menu.home.value }}</a>
-                    <a href="#problem-emphasize">{{ mySite.menu.navigation.pain_points }}</a>
-                    <a href="#second-section-features">{{ mySite.menu.navigation.benefits }}</a>
-                    <a href="#agrometeostation-custom">{{ mySite.menu.navigation.how_it_works }}</a>
-                    <a href="#gallery-section">{{ mySite.menu.navigation.gallery }}</a>
-                    <a href="#meteostation-online">{{ mySite.menu.navigation.dashboard }}</a>
-                    <a href="#hardware-characteristics">{{ mySite.menu.navigation.hardware }}</a>
+{#                    <a href="#problem-emphasize">{{ mySite.menu.navigation.pain_points }}</a>#}
+{#                    <a href="#second-section-features">{{ mySite.menu.navigation.benefits }}</a>#}
+{#                    <a href="#agrometeostation-custom">{{ mySite.menu.navigation.how_it_works }}</a>#}
+{#                    <a href="#gallery-section">{{ mySite.menu.navigation.gallery }}</a>#}
+{#                    <a href="#meteostation-online">{{ mySite.menu.navigation.dashboard }}</a>#}
+{#                    <a href="#hardware-characteristics">{{ mySite.menu.navigation.hardware }}</a>#}
                     <a href="mailto:{{ mySite.email }}">{{ mySite.email }}</a>
                     <a href="tel:{{ mySite.phone }}">{{ mySite.short_phone }}</a>
                 </div>
             </div>
             <div class="menu-content">
-                <div class="dropdown-product-wrapper">
-                    <a href="#" id="product-dropdown" class="product-dropdown-link"><i class="fa-solid fa-chevron-down"></i> {{ mySite.menu.navigation.value }}</a>
-                    <div class="product-dropdown-menu">
-                        <a href="#problem-emphasize">{{ mySite.menu.navigation.pain_points }}</a>
-                        <a href="#second-section-features">{{ mySite.menu.navigation.benefits }}</a>
-                        <a href="#agrometeostation-custom">{{ mySite.menu.navigation.how_it_works }}</a>
-                        <a href="#gallery-section">{{ mySite.menu.navigation.gallery }}</a>
-                        <a href="#meteostation-online">{{ mySite.menu.navigation.dashboard }}</a>
-                        <a href="#hardware-characteristics">{{ mySite.menu.navigation.hardware }}</a>
-                    </div>
-                </div>
+{#                <div class="dropdown-product-wrapper">#}
+{#                    <a href="#" id="product-dropdown" class="product-dropdown-link"><i class="fa-solid fa-chevron-down"></i> {{ mySite.menu.navigation.value }}</a>#}
+{#                    <div class="product-dropdown-menu">#}
+{#                        <a href="#problem-emphasize">{{ mySite.menu.navigation.pain_points }}</a>#}
+{#                        <a href="#second-section-features">{{ mySite.menu.navigation.benefits }}</a>#}
+{#                        <a href="#agrometeostation-custom">{{ mySite.menu.navigation.how_it_works }}</a>#}
+{#                        <a href="#gallery-section">{{ mySite.menu.navigation.gallery }}</a>#}
+{#                        <a href="#meteostation-online">{{ mySite.menu.navigation.dashboard }}</a>#}
+{#                        <a href="#hardware-characteristics">{{ mySite.menu.navigation.hardware }}</a>#}
+{#                    </div>#}
+{#                </div>#}
                 <a href="{{ mySite.menu.home.link }}" id="home-link-id">{{ mySite.menu.home.value }}</a>
             </div>
             <div class="custom-language-switcher">
@@ -152,20 +152,20 @@
 
     <section id="agrometeostation-custom" class="scroll-margin-top-class">
         <div class="custom-container section-wrapper-ordinary">
-            <div class="image-block">
-                <div id="meteostation-wrap">
-                    <a href="{{ baseUrl }}{{ mySite.how_it_works.img }}"
-                       data-fancybox>
-                        <img src="{{ baseUrl }}{{ mySite.how_it_works.img }}" class="mb-3"/>
-                    </a>
-                </div>
-            </div>
             <div class="text-block">
                 <div>
                     <h3 class="text-uppercase">{{ mySite.how_it_works.title }}</h3>
                     <p>
                         {{ mySite.how_it_works.text }}
                     </p>
+                </div>
+            </div>
+            <div class="image-block">
+                <div id="meteostation-wrap">
+                    <a href="{{ baseUrl }}{{ mySite.how_it_works.img }}"
+                       data-fancybox>
+                        <img src="{{ baseUrl }}{{ mySite.how_it_works.img }}" class="mb-3"/>
+                    </a>
                 </div>
             </div>
         </div>
@@ -189,18 +189,6 @@
 
     <section id="meteostation-online" class="scroll-margin-top-class">
         <div class="custom-container section-wrapper-ordinary">
-            <div class="text-block">
-                <div>
-                    <h3 class="text-uppercase">{{ mySite.dashboard.title}}</h3>
-                    <ul>
-                        {% for featureText in mySite.dashboard.features %}
-                            <li>
-                                <p>{{ featureText.text }}</p>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
             <div class="image-block">
                 <div id="meteostation-wrap">
                     <a href="{{ baseUrl }}{{ mySite.dashboard.photo_one }}"
@@ -213,25 +201,37 @@
                     </a>
                 </div>
             </div>
+            <div class="text-block">
+                <div>
+                    <h3 class="text-uppercase mb-3">{{ mySite.dashboard.title}}</h3>
+                    <ul>
+                        {% for featureText in mySite.dashboard.features %}
+                            <li>
+                                <p>{{ featureText.text }}</p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="hardware-characteristics" class="scroll-margin-top-class">
         <div class="custom-container section-wrapper-ordinary">
-            <div class="image-block">
-                <div id="meteostation-wrap">
-                    <a href="{{ baseUrl }}{{ mySite.hardware.photo }}"
-                       data-fancybox>
-                        <img src="{{ baseUrl }}{{ mySite.hardware.photo }}" class="mb-3"/>
-                    </a>
-                </div>
-            </div>
             <div class="text-block">
                 <div>
                     <h3 class="text-uppercase">{{ mySite.hardware.title }}</h3>
                     <p>
                         {{ mySite.hardware.text }}
                     </p>
+                </div>
+            </div>
+            <div class="image-block">
+                <div id="meteostation-wrap">
+                    <a href="{{ baseUrl }}{{ mySite.hardware.photo }}"
+                       data-fancybox>
+                        <img src="{{ baseUrl }}{{ mySite.hardware.photo }}" class="mb-3"/>
+                    </a>
                 </div>
             </div>
         </div>
