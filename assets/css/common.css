@@ -156,6 +156,11 @@ main {
     font-weight: bold;
     color: #0563aa !important;
     text-decoration: none;
+    transition: color .3s;
+}
+
+.products h3 a:hover {
+    color: #0093ff !important;
 }
 
 #jayhun-trap-spec {
