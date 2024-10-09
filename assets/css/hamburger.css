@@ -39,12 +39,12 @@
 @media (min-width: 850px) {
     .dropdown-custom.open .dropdown-content {
         opacity: 1;  /* Fully visible */
-        transform: translate(140px, 60px); /* Slide to normal position */
+        transform: translate(19px, 60px); /* Slide to normal position */
         pointer-events: auto; /* Allow interaction */
     }
 
     .dropdown-content {
-        transform: translate(140px, 5px); /* Start slightly above */
+        transform: translate(19px, 5px); /* Start slightly above */
     }
 }
 
