@@ -58,7 +58,6 @@
     word-wrap: break-word; /* Breaks long words if necessary */
     color: rgba(102, 102, 102, 0.85)!important;
     font-size: .8em;
-    transition: all .8s;
     font-weight: 500;
     background-color: white!important;
 }
