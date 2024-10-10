@@ -14,7 +14,7 @@
 }
 
 .title-bold span {
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: #0563aa !important;
     letter-spacing: .5px;
 }
