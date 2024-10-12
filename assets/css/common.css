@@ -4,6 +4,10 @@
     font-weight: 500;
 }
 
+#slider {
+    margin-top: 60px;
+}
+
 html {
     scroll-behavior: smooth!important;
 }
