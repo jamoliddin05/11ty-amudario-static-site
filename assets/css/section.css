@@ -138,6 +138,11 @@
     .text-block p {
         margin-bottom: 1.5em;
     }
+
+
+    .section-wrapper-ordinary {
+        gap: 1.5em;
+    }
 }
 
 @media (max-width: 800px) {
