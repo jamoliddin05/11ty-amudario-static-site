@@ -171,3 +171,12 @@
 .scroll-margin-top-class {
     scroll-margin-top: 100px;
 }
+
+#pheromones {
+    background-color: rgb(227, 242, 253)!important;
+    padding: 5vh 0;
+}
+
+.test-class {
+    background-color: rgb(227, 242, 253)!important;
+}

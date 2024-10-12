@@ -116,7 +116,26 @@
         </div>
     </section>
 
-    <section id="second-section-features" class="custom-features-product scroll-margin-top-class">
+    <section id="pheromones" class="scroll-margin-top-class">
+        <span class="section-title custom-feature-container">{{ mySite.pheromones.title }}</span>
+        <div class="custom-container">
+            <div class="row mt-5 justify-content-center">
+                {% for problem_feature in mySite.pheromones.media_info %}
+                    <div class="problem-feature">
+                        <div class="image-wrapper-problem">
+                            <img src="{{ baseUrl }}{{ problem_feature.img }}" alt="test"/>
+                        </div>
+                        <div class="feature-data">
+                            <h5 class="text-uppercase">{{ problem_feature.title }}</h5>
+                            <p>{{ problem_feature.caption }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section id="second-section-features" class="scroll-margin-top-class">
         <span class="section-title custom-feature-container">{{ mySite.secondSection.title }}</span>
         <div class="row mt-5 justify-content-center custom-feature-container custom-product-div">
             {% for iconFeature in mySite.secondSection.iconFeatures %}
@@ -133,7 +152,7 @@
         </div>
     </section>
 
-    <section id="agrometeostation-custom" class="scroll-margin-top-class">
+    <section id="agrometeostation-custom" class="scroll-margin-top-class test-class">
         <div class="custom-container section-wrapper-ordinary">
             <div class="text-block">
                 <div>
