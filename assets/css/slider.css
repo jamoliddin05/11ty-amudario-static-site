@@ -23,19 +23,19 @@
     transform: translateY(-40%); /* Vertically centers the caption */
     background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
     padding: 50px 30px; /* Adds padding around the text */
-    max-width: 500px; /* Adjust to limit width if needed */
+    max-width: 550px; /* Adjust to limit width if needed */
     font-family: 'Roboto', sans-serif;
     transition: all .6s;
 }
 
 .carousel-caption-custom h3 {
-    font-size: 29px;
+    font-size: 25px;
     line-height: 1;
     font-weight: 400;
     letter-spacing: 1.2px;
     margin-bottom: 15px;
     color: #555;
-    max-width: 400px;
+    max-width: 100%;
 }
 
 .carousel-caption-custom p {

@@ -161,6 +161,7 @@ main {
     color: #0563aa !important;
     text-decoration: none;
     transition: color .3s;
+    /*display: block;*/
 }
 
 .products h3 a:hover {
