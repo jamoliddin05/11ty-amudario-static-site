@@ -38,6 +38,12 @@
     /*zoom: 150%;*/
 }
 
+@media (min-width: 1700px) {
+    .banner-wrapper {
+        max-height: 800px; /* Cap the height on very large screens */
+    }
+}
+
 @media (max-width: 1050px) {
 
     .banner-wrapper .banner-caption-custom {

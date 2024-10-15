@@ -29,7 +29,7 @@
 }
 
 .carousel-caption-custom h3 {
-    font-size: 25px;
+    font-size: 1.7em;
     line-height: 1;
     font-weight: 400;
     letter-spacing: 1.2px;
@@ -51,6 +51,10 @@
 @media (min-width: 1700px) {
     .carousel-caption-custom {
         left: 25%; /* Adjust this value to create space from the left edge */
+    }
+
+    .carousel-cell {
+        max-height: 800px;
     }
 }
 
