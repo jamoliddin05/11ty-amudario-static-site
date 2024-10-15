@@ -44,6 +44,12 @@
     }
 }
 
+@media (max-width: 500px) {
+    .banner-wrapper {
+        max-height: 700px; /* Cap the height on very large screens */
+    }
+}
+
 @media (max-width: 1050px) {
 
     .banner-wrapper .banner-caption-custom {

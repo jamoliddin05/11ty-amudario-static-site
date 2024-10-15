@@ -75,9 +75,9 @@
 }
 
 @media (min-width: 1600px) {
-    /*.image-block img {*/
-    /*    width: 500px; !* Makes the image responsive and fit the parent width *!*/
-    /*}*/
+    .text-block h3 {
+        font-size: 1.8em;
+    }
 }
 
 @media (max-width: 1280px) {
