@@ -31,7 +31,7 @@
 }
 
 .text-block h3 {
-    font-size: 1.6em;
+    font-size: 1.75em;
     color: #555;
     /*margin-bottom: 1.6em;*/
     letter-spacing: .5px;
@@ -76,7 +76,7 @@
 
 @media (min-width: 1600px) {
     .text-block h3 {
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
 }
 
