@@ -54,7 +54,13 @@
     }
 
     .carousel-cell {
-        max-height: 800px;
+        max-height: 900px!important;
+    }
+}
+
+@media (min-width: 1350px) {
+    .carousel-cell {
+        max-height: 700px;
     }
 }
 
