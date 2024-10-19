@@ -35,6 +35,8 @@
 
     <link rel="stylesheet" href="{{ baseUrl }}../assets/css/fancybox.css"/>
 
+    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/product/gozanlink.css?v={{ assetsVersion }}">
+
     <link rel="apple-touch-icon" sizes="180x180" href="{{ baseUrl }}../assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ baseUrl }}../assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ baseUrl }}../assets/favicon_io/favicon-16x16.png">
@@ -202,22 +204,43 @@
         </div>
     </section>
 
-    <section id="hardware-characteristics" class="scroll-margin-top-class">
+    <section id="video-section" class="scroll-margin-top-class">
         <div class="custom-container section-wrapper-ordinary">
             <div class="text-block">
                 <div>
-                    <h3 class="text-uppercase">{{ mySite.hardware.title }}</h3>
+                    <h3 class="text-uppercase">{{ mySite.video.title }}</h3>
                     <p>
-                        {{ mySite.hardware.text }}
+                        {{ mySite.video.text }}
                     </p>
                 </div>
             </div>
+            <div class="image-block">
+                <div id="meteostation-wrap" class="thumbnail-wrapper">
+                    <a data-fancybox href="{{ mySite.video.link }}">
+                        <img src="{{ baseUrl }}{{ mySite.video.thumbnail }}" alt="test" class="video-thumbnail"/>
+                        <div class="play-button" id="play-button"><img src="{{ baseUrl }}../assets/img/icons/play-button.png" alt="play"/></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hardware-characteristics" class="scroll-margin-top-class">
+        <div class="custom-container section-wrapper-ordinary">
             <div class="image-block">
                 <div id="meteostation-wrap">
                     <a href="{{ baseUrl }}{{ mySite.hardware.photo }}"
                        data-fancybox>
                         <img src="{{ baseUrl }}{{ mySite.hardware.photo }}" class="mb-3"/>
                     </a>
+                </div>
+            </div>
+            <div class="text-block">
+                <div>
+                    <h3 class="text-uppercase">{{ mySite.hardware.title }}</h3>
+                    <p>
+                        {{ mySite.hardware.text }}
+                    </p>
                 </div>
             </div>
         </div>
