@@ -50,6 +50,9 @@
 <header class="navbar-custom">
     <nav>
         <div class="d-flex justify-content-between align-items-center">
+            <div class="back-home">
+                <a href="{{ mySite.menu.home.link }}"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
             <a href="{{ mySite.menu.home.link }}" class="centered-link">
                 <img src="{{ baseUrl }}../assets/img/logo/newLogo.png" alt="Logo" />
             </a>
@@ -63,9 +66,9 @@
                     <a href="tel:{{ mySite.phone }}" class="text-uppercase">{{ mySite.short_phone }}</a>
                 </div>
             </div>
-            <div class="menu-content">
-                <a href="{{ mySite.menu.home.link }}" id="home-link-id">{{ mySite.menu.home.value }}</a>
-            </div>
+{#            <div class="menu-content">#}
+{#                <a href="{{ mySite.menu.home.link }}" id="home-link-id">{{ mySite.menu.home.value }}</a>#}
+{#            </div>#}
             <div class="custom-language-switcher">
                 <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>
                 <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>

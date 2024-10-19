@@ -7,3 +7,26 @@
     padding-top: 7px;
     font-size: 1em;
 }
+
+.back-home {
+    position: absolute;
+    left: 11%;
+    margin-top: 8px;
+}
+
+.back-home i {
+    font-size: 1.5em;
+    color: #777;
+    font-weight: 300;
+    transition: .4s all;
+}
+
+.back-home:hover i {
+    color: black;
+}
+
+@media (max-width: 1200px) {
+    .back-home {
+        display: none;
+    }
+}
