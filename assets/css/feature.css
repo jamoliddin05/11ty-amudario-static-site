@@ -68,7 +68,7 @@
     overflow: hidden; /* Ensure overflow is hidden to crop the image */
     position: relative; /* Positioning for any additional effects */
     border-radius: 50%;
-    border: 2px solid #0563aa;
+    border: .15em solid #0563aa;
     display: flex; /* Use flexbox to center the image */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */

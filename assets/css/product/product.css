@@ -13,6 +13,18 @@
     background-color: #0563aa;
 }
 
+@media (min-width: 1700px) {
+    .banner-wrapper {
+        max-height: 900px!important;
+    }
+}
+
+@media (min-width: 1350px) {
+    .banner-wrapper {
+        max-height: 700px;
+    }
+}
+
 #product-banner {
     margin-top: 60px;
 }
