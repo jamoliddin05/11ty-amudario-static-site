@@ -3,6 +3,6 @@ var flkty = new Flickity( elem, {
     // options
     wrapAround: true,
     freeScroll: true,
-    lazyLoad: 4,
+    lazyLoad: 3,
     pageDots: false,
 });
