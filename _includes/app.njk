@@ -72,10 +72,11 @@
                 </div>
                 <div class="menu-lang-content">
                     <div class="dropdown-lang-wrapper">
-                        <a href="#" id="language-dropdown" class="product-dropdown-link">УЗ <i class="fa-solid fa-chevron-down"></i> </a>
+                        <a href="#" id="language-dropdown" class="product-dropdown-link">{{ mySite.menu.currentLang }} <i class="fa-solid fa-chevron-down"></i> </a>
                         <div class="lang-dropdown-menu">
                             <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>
                             <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>
+                            <a href="{{ mySite.menu.thirdLang.link }}">{{ mySite.menu.thirdLang.value }}</a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +106,7 @@
                    <div class="carousel-caption-custom">
                       <h3 class="text-uppercase">{{ carouselItem.caption.heading }}</h3>
                       <p>{{ carouselItem.caption.text }}</p>
-                      <a href="{{ carouselItem.link }}" class="learn-more-button">Батафсил</a>
+                      <a href="{{ carouselItem.link }}" class="learn-more-button">{{ carouselItem.button }}</a>
                    </div>
                </div>
            {% endfor %}
@@ -253,7 +254,7 @@
         </section>
 
         <section id="about-us" class="pt-5">
-            <span class="section-title custom-container mb-5">Биз хакимизда</span>
+            <span class="section-title custom-container mb-5">{{ mySite.about_us_section.title }}</span>
             <div class="about-us-wrapper custom-container">
                 <div class="member-info">
                     <div class="member-image-title">
@@ -317,7 +318,7 @@
         </section>
 
         <section id="our-partners" class="py-5">
-            <span class="section-title custom-container mb-5">БИЗНИНГ ҲАМКОРЛАР</span>
+            <span class="section-title custom-container mb-5">{{mySite.partners_section.title}}</span>
             <div class="custom-container carousel-wrapper">
                 <div class="carousel-partners"
                   data-flickity='{ "wrapAround": true, "freeScroll": true, "pageDots": false }'>
