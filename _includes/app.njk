@@ -1,4 +1,4 @@
-{% set assetsVersion = "14" %}
+{% set assetsVersion = "15" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,10 +70,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="custom-language-switcher">
-                    <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>
-                    <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>
+                <div class="menu-lang-content">
+                    <div class="dropdown-lang-wrapper">
+                        <a href="#" id="language-dropdown" class="product-dropdown-link">УЗ <i class="fa-solid fa-chevron-down"></i> </a>
+                        <div class="lang-dropdown-menu">
+                            <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>
+                            <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>
+                        </div>
+                    </div>
                 </div>
+{#                <div class="custom-language-switcher">#}
+{#                    <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>#}
+{#                    <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>#}
+{#                </div>#}
                 <button id="hamburger-button">
                     <span></span>
                     <span></span>
