@@ -101,7 +101,8 @@
 <main>
     <section id="product-banner">
         <div class="banner-wrapper title-bold">
-            <img src="{{ baseUrl }}{{ mySite.banner.img }}"  alt="banner"/>
+            <img id="main-banner" src="{{ baseUrl }}{{ mySite.banner.img }}"  alt="banner"/>
+            <img id="mobile-banner" src="{{ baseUrl }}{{ mySite.banner.mobile_img }}" alt="banner-mobile" />
             <div class="carousel-caption-custom text-uppercase">
                 <h3><span>{{ mySite.banner.title_strong }}</span>{{ mySite.banner.title_rest }}</h3>
                 <p>
@@ -240,7 +241,7 @@
                 <div id="meteostation-wrap">
                     <a href="{{ baseUrl }}{{ mySite.hardware.photo }}"
                        data-fancybox>
-                        <img src="{{ baseUrl }}{{ mySite.hardware.photo }}" class="mb-3" style="box-shadow: none"/>
+                        <img src="{{ baseUrl }}{{ mySite.hardware.photo }}" class="mb-3"/>
                     </a>
                 </div>
             </div>

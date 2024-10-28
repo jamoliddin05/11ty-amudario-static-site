@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .image-block div {
@@ -142,6 +143,12 @@
 
     .section-wrapper-ordinary {
         gap: 1.5em;
+    }
+}
+
+@media (max-width: 830px) {
+    #jayhun-trap-spec div, #gozanlink div {
+        flex-direction: column-reverse;
     }
 }
 
