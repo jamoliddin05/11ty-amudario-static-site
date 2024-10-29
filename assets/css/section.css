@@ -152,6 +152,30 @@
     }
 }
 
+@media (max-width: 410px) {
+    #jayhun-trap-spec div, #gozanlink div {
+        margin-left: -.7%;
+    }
+}
+
+@media (max-width: 380px) {
+    #jayhun-trap-spec div, #gozanlink div {
+        margin-left: -1.4%;
+    }
+}
+
+@media (max-width: 370px) {
+    #jayhun-trap-spec div, #gozanlink div {
+        margin-left: -2.2%;
+    }
+}
+
+@media (max-width: 320px) {
+    #jayhun-trap-spec div, #gozanlink div {
+        margin-left: -4%;
+    }
+}
+
 @media (max-width: 800px) {
     .text-block h3 {
         color: #555;
