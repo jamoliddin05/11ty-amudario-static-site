@@ -113,3 +113,9 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 850px) {
+    #main-banner {
+        display: none;
+    }
+}
