@@ -162,7 +162,15 @@
                 </div>
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase"> <a href="{{ mySite.menu.home.link }}{{ mySite.thirdSection.buttonLink }}">{{ mySite.thirdSection.title_strong }}</a>{{ mySite.thirdSection.title_rest }}</h3>
+                        {% if (mySite.menu.currentLang == "РУ") %}
+                            <h3 class="text-uppercase">
+                                {{ mySite.thirdSection.title_rest }}<a href="{{ mySite.menu.home.link }}{{ mySite.thirdSection.buttonLink }}">{{ mySite.thirdSection.title_strong }}</a>
+                            </h3>
+                        {% else %}
+                            <h3 class="text-uppercase">
+                                <a href="{{ mySite.menu.home.link }}{{ mySite.thirdSection.buttonLink }}">{{ mySite.thirdSection.title_strong }}</a>{{ mySite.thirdSection.title_rest }}
+                            </h3>
+                        {% endif %}
                         <p>
                             {{ mySite.thirdSection.text }}
                         </p>
@@ -176,7 +184,15 @@
             <div class="custom-container section-wrapper-ordinary">
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase"><a href="{{ mySite.menu.home.link }}{{ mySite.fourthSection.buttonLink }}">{{ mySite.fourthSection.title_strong }}</a>{{ mySite.fourthSection.title_rest }}</h3>
+                        {% if (mySite.menu.currentLang == "РУ") %}
+                            <h3 class="text-uppercase">
+                                {{ mySite.fourthSection.title_rest }}<a href="{{ mySite.menu.home.link }}{{ mySite.fourthSection.buttonLink }}">{{ mySite.fourthSection.title_strong }}</a>
+                            </h3>
+                        {% else %}
+                            <h3 class="text-uppercase">
+                                <a href="{{ mySite.menu.home.link }}{{ mySite.fourthSection.buttonLink }}">{{ mySite.fourthSection.title_strong }}</a>{{ mySite.fourthSection.title_rest }}
+                            </h3>
+                        {% endif %}
                         <p>
                             {{ mySite.fourthSection.text }}
                         </p>
@@ -207,7 +223,15 @@
                 </div>
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase"><a href="{{ mySite.menu.home.link }}{{ mySite.fifthSection.buttonLink }}">{{ mySite.fifthSection.title_strong }}</a>{{ mySite.fifthSection.title_rest }}</h3>
+                        {% if (mySite.menu.currentLang == "РУ") %}
+                            <h3 class="text-uppercase">
+                                {{ mySite.fifthSection.title_rest }}<a href="{{ mySite.menu.home.link }}{{ mySite.fifthSection.buttonLink }}">{{ mySite.fifthSection.title_strong }}</a>
+                            </h3>
+                        {% else %}
+                            <h3 class="text-uppercase">
+                                <a href="{{ mySite.menu.home.link }}{{ mySite.fifthSection.buttonLink }}">{{ mySite.fifthSection.title_strong }}</a>{{ mySite.fifthSection.title_rest }}
+                            </h3>
+                        {% endif %}
                         <p>
                             {{ mySite.fifthSection.text }}
                         </p>
@@ -221,7 +245,15 @@
             <div class="custom-container section-wrapper-ordinary">
                 <div class="text-block">
                     <div>
-                        <h3 class="text-uppercase"><a href="{{ mySite.menu.home.link }}{{ mySite.sixthSection.buttonLink }}">{{ mySite.sixthSection.title_strong }}</a>{{ mySite.sixthSection.title_rest }}</h3>
+                        {% if (mySite.menu.currentLang == "РУ") %}
+                            <h3 class="text-uppercase">
+                                {{ mySite.sixthSection.title_rest }}<a href="{{ mySite.menu.home.link }}{{ mySite.sixthSection.buttonLink }}">{{ mySite.sixthSection.title_strong }}</a>
+                            </h3>
+                        {% else %}
+                            <h3 class="text-uppercase">
+                                <a href="{{ mySite.menu.home.link }}{{ mySite.sixthSection.buttonLink }}">{{ mySite.sixthSection.title_strong }}</a>{{ mySite.sixthSection.title_rest }}
+                            </h3>
+                        {% endif %}
                         <p>
                             {{ mySite.sixthSection.text }}
                         </p>

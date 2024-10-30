@@ -98,7 +98,7 @@
         padding: 25px;
         width: 300px;
         left: 50%;
-        transform: translate(-50%, -25%);
+        transform: translate(-50%, -40%);
     }
 
     .carousel-caption-custom h3 {
