@@ -77,7 +77,7 @@
 
 @media (min-width: 1600px) {
     .text-block h3 {
-        font-size: 1.9em;
+        font-size: 1.7em;
     }
 }
 
@@ -149,30 +149,11 @@
 @media (max-width: 830px) {
     #jayhun-trap-spec div, #gozanlink div {
         flex-direction: column-reverse;
+        align-content: center;
     }
-}
 
-@media (max-width: 410px) {
-    #jayhun-trap-spec div, #gozanlink div {
-        margin-left: -.7%;
-    }
-}
-
-@media (max-width: 380px) {
-    #jayhun-trap-spec div, #gozanlink div {
-        margin-left: -1.4%;
-    }
-}
-
-@media (max-width: 370px) {
-    #jayhun-trap-spec div, #gozanlink div {
-        margin-left: -2.2%;
-    }
-}
-
-@media (max-width: 320px) {
-    #jayhun-trap-spec div, #gozanlink div {
-        margin-left: -4%;
+    .image-block div {
+        margin-bottom: .5em;
     }
 }
 
@@ -213,5 +194,17 @@
 
     .image-block img {
         width: 85%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1580px) {
+    #jayhun-trap-spec h3 a {
+        display: block;
+    }
+}
+
+@media (min-width: 1460px) {
+    #oxus-airsense h3, #gozanlink h3 {
+        max-width: 450px;
     }
 }
