@@ -23,7 +23,7 @@
     transform: translateY(-40%); /* Vertically centers the caption */
     background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
     padding: 50px 30px; /* Adds padding around the text */
-    max-width: 550px; /* Adjust to limit width if needed */
+    max-width: 610px; /* Adjust to limit width if needed */
     font-family: 'Roboto', sans-serif;
     transition: all .6s;
 }
