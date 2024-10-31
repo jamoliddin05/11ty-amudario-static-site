@@ -210,8 +210,25 @@
     background-color: rgb(227, 242, 253)!important;
 }
 
+.oxus_ws_title {
+    display: inline;
+}
+
+.oxus_ws_h3 {
+    text-align: left;
+}
+
 @media (max-width: 850px) {
     #main-banner {
         display: none;
+    }
+
+    .oxus_ws_title {
+        display: block;
+        text-align: center;
+    }
+
+    .oxus_ws_h3 {
+        text-align: center;
     }
 }

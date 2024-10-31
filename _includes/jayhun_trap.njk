@@ -103,7 +103,11 @@
             <img id="main-banner" src="{{ baseUrl }}{{ mySite.banner.img }}"  alt="banner"/>
             <img id="mobile-banner" src="{{ baseUrl }}{{ mySite.banner.mobile_img }}" alt="banner-mobile" />
             <div class="carousel-caption-custom text-uppercase">
-                <h3><span>{{ mySite.banner.title_strong }}</span>{{ mySite.banner.title_rest }}</h3>
+                {% if (mySite.menu.currentLang == "РУ") %}
+                    <h3 class="oxus_ws_h3">{{ mySite.banner.title_rest }}<span class="oxus_ws_title">{{ mySite.banner.title_strong }}</span></h3>
+                {% else %}
+                    <h3><span>{{ mySite.banner.title_strong }}</span>{{ mySite.banner.title_rest }}</h3>
+                {% endif %}
                 <p>
                     {{ mySite.banner.caption }}
                 </p>
