@@ -23,7 +23,7 @@
     transform: translateY(-40%); /* Vertically centers the caption */
     background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
     padding: 50px 30px; /* Adds padding around the text */
-    max-width: 610px; /* Adjust to limit width if needed */
+    max-width: 640px; /* Adjust to limit width if needed */
     font-family: 'Roboto', sans-serif;
     transition: all .6s;
 }
@@ -81,7 +81,7 @@
     }
 
     .carousel-caption-custom p {
-        font-size: 14px;
+        font-size: 17px;
     }
 }
 
@@ -111,12 +111,16 @@
     }
 
     .carousel-caption-custom p {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 850px) {
     #main-banner {
         display: none;
+    }
+
+    .carousel-caption-custom {
+        text-align: center;
     }
 }

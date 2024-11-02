@@ -1,3 +1,9 @@
 #first-section {
     margin-top: 5vh;
 }
+
+@media (max-width: 500px) {
+    #first-section {
+        margin-top: 2vh;
+    }
+}
