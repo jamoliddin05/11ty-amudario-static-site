@@ -102,6 +102,13 @@
     }
 }
 
+@media (max-width: 850px) {
+
+    .text-block div {
+        text-align: center;
+    }
+}
+
 /*@media (max-width: 1000px) {*/
 /*    .image-block img {*/
 /*        min-width: 370px;*/
@@ -189,7 +196,7 @@
 
 @media (max-width: 450px) {
     .section-wrapper-ordinary {
-        padding: 3.5vh 2em;
+        padding: 4.2vh 2em;
     }
 }
 
