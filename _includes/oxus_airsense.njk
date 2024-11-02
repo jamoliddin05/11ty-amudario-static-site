@@ -104,6 +104,8 @@
             <div class="carousel-caption-custom text-uppercase">
                 {% if (mySite.menu.currentLang == "РУ") %}
                     <h3 class="oxus_ws_h3" style="max-width: 450px">{{ mySite.banner.title_rest }}<span class="oxus_ws_title">{{ mySite.banner.title_strong }}</span></h3>
+                {% elif (mySite.menu.currentLang == "EN") %}
+                    <h3 style="max-width: 440px"><span>{{ mySite.banner.title_strong }}</span>{{ mySite.banner.title_rest }}</h3>
                 {% else %}
                     <h3 style="max-width: 450px"><span>{{ mySite.banner.title_strong }}</span>{{ mySite.banner.title_rest }}</h3>
                 {% endif %}
