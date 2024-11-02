@@ -47,11 +47,19 @@
 
 @media (max-width: 500px) {
     .top-footer p {
-        margin-bottom: 1em;
+        display: none;
     }
 
     .contact-buttons-footer {
         gap: 1em;
+    }
+
+    .top-footer {
+        padding: 5vh 1em;
+    }
+
+    .top-footer h3 {
+        margin-bottom: 1em;
     }
 }
 

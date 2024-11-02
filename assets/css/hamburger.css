@@ -22,7 +22,7 @@
     max-width: 200px;
     box-shadow: 10px 10px 20px rgba(10, 0, 10, 0.2);
     opacity: 0;  /* Fully hidden */
-    transform: translate(-34px, 5px); /* Start slightly above */
+    transform: translate(-50px, 5px); /* Start slightly above */
     transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
     z-index: 1;
     pointer-events: none; /* Prevent interaction while hidden */
@@ -32,19 +32,19 @@
 /* Show the dropdown on hover */
 .dropdown-custom.open .dropdown-content {
     opacity: 1;  /* Fully visible */
-    transform: translate(-34px, 60px); /* Slide to normal position */
+    transform: translate(-50px, 60px); /* Slide to normal position */
     pointer-events: auto; /* Allow interaction */
 }
 
 @media (min-width: 850px) {
     .dropdown-custom.open .dropdown-content {
         opacity: 1;  /* Fully visible */
-        transform: translate(19px, 60px); /* Slide to normal position */
+        transform: translate(-62px, 60px); /* Slide to normal position */
         pointer-events: auto; /* Allow interaction */
     }
 
     .dropdown-content {
-        transform: translate(19px, 5px); /* Start slightly above */
+        transform: translate(-62px, 5px); /* Start slightly above */
     }
 }
 

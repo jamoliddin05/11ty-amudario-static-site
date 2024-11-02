@@ -5,3 +5,12 @@
 .section-wrapper {
     padding-top: 5vh;
 }
+
+.mobile-padding-second-section {
+}
+
+@media (max-width: 500px) {
+    .mobile-padding-second-section {
+        padding-top: 2vh!important;
+    }
+}

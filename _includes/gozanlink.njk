@@ -104,7 +104,11 @@
         <div class="banner-wrapper title-bold">
             <img src="{{ baseUrl }}{{ mySite.banner.img }}"  alt="banner"/>
             <div class="carousel-caption-custom text-uppercase">
-                <h3 style="max-width: 450px"><span>{{ mySite.banner.title_strong }}</span>{{ mySite.banner.title_rest }}</h3>
+                {% if (mySite.menu.currentLang == "РУ") %}
+                    <h3 style="max-width: 450px">{{ mySite.banner.title_rest }}<span>{{ mySite.banner.title_strong }}</span></h3>
+                {% else %}
+                    <h3 style="max-width: 450px"><span>{{ mySite.banner.title_strong }}</span>{{ mySite.banner.title_rest }}</h3>
+                {% endif %}
                 <p>
                     {{ mySite.banner.caption }}
                 </p>

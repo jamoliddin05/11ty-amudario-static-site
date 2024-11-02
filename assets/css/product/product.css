@@ -98,6 +98,16 @@
     padding: 5vh 0;
 }
 
+@media (max-width: 500px) {
+    #second-section-features {
+        padding: 2vh 0;
+    }
+
+    #problem-emphasize {
+        padding: 2vh 0;
+    }
+}
+
 #second-section-features .custom-product-div {
     margin: 0 auto;
 }
@@ -204,6 +214,12 @@
 #pheromones {
     background-color: rgb(227, 242, 253)!important;
     padding: 5vh 0;
+}
+
+@media (max-width: 500px) {
+    #pheromones {
+        padding: 2vh 0;
+    }
 }
 
 .test-class {
