@@ -219,43 +219,22 @@
         </div>
     </section>
 
-    <section id="video-section" class="scroll-margin-top-class">
-        <div class="custom-container section-wrapper-ordinary reverse-flex">
-            <div class="text-block">
-                <div>
-                    <h3 class="text-uppercase">{{ mySite.video.title }}</h3>
-                    <p>
-                        {{ mySite.video.text }}
-                    </p>
-                </div>
-            </div>
-            <div class="image-block">
-                <div id="meteostation-wrap" class="thumbnail-wrapper">
-                    <a data-fancybox href="{{ mySite.video.link }}">
-                        <img src="{{ baseUrl }}{{ mySite.video.thumbnail }}" alt="test" class="video-thumbnail"/>
-                        <div class="play-button" id="play-button"><img src="{{ baseUrl }}../assets/img/icons/play-button.png" alt="play"/></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="hardware-characteristics" class="scroll-margin-top-class">
-        <div class="custom-container section-wrapper-ordinary">
-            <div class="image-block">
-                <div id="meteostation-wrap">
-                    <a href="{{ baseUrl }}{{ mySite.hardware.photo }}"
-                       data-fancybox>
-                        <img src="{{ baseUrl }}{{ mySite.hardware.photo }}" class="mb-3"/>
-                    </a>
-                </div>
-            </div>
+        <div class="custom-container section-wrapper-ordinary reverse-flex">
             <div class="text-block">
                 <div>
                     <h3 class="text-uppercase">{{ mySite.hardware.title }}</h3>
                     <p>
                         {{ mySite.hardware.text }}
                     </p>
+                </div>
+            </div>
+            <div class="image-block">
+                <div id="meteostation-wrap">
+                    <a href="{{ baseUrl }}{{ mySite.hardware.photo }}"
+                       data-fancybox>
+                        <img src="{{ baseUrl }}{{ mySite.hardware.photo }}" class="mb-3"/>
+                    </a>
                 </div>
             </div>
         </div>
