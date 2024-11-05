@@ -30,7 +30,7 @@
 
 
 /* Show the dropdown on hover */
-.dropdown-custom.open .dropdown-content {
+header.open .dropdown-content {
     opacity: 1;  /* Fully visible */
     transform: translate(-50px, 60px); /* Slide to normal position */
     pointer-events: auto; /* Allow interaction */
