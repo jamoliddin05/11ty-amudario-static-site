@@ -25,7 +25,7 @@ file_put_contents('/var/log/github-webhook.log', implode("\n", $output), FILE_AP
 
 // Respond to GitHub
 if ($return_var === 0) {
-    echo 'Webhook handled successfully';
+    echo 'Webhook handled successfully test';
 } else {
     http_response_code(500);
     echo 'Webhook handling failed';
