@@ -2,8 +2,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const dropdown = document.querySelector(".dropdown-content");
 
     document.getElementById("hamburger-button").addEventListener("click", function() {
-        document.querySelector("header").classList.add("open");
-        // document.querySelector(".dropdown-custom").classList.toggle("open");
+        if (document.querySelector("header").classList.contains("open")) {
+            document.querySelector("header").classList.remove("open");
+        } else {
+            document.querySelector("header").classList.add("open");
+        }
     })
 
     dropdown.addEventListener('click', function(event) {
