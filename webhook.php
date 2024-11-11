@@ -15,17 +15,20 @@ if (!hash_equals($hash, $signature)) {
 }
 
 // Log the payload (optional, for debugging)
-file_put_contents('/var/log/github-webhook.log', $payload, FILE_APPEND);
+file_put_contents(__DIR__ . '/github-webhook.log', $payload, FILE_APPEND);
+
+// Path to webhook-handler.sh in the current directory
+$script_path = __DIR__ . '/webhook-handler.sh';
 
 // Execute your deployment script
-exec('/home/jamol/webhook-handler.sh 2>&1', $output, $return_var);
+exec($script_path . ' 2>&1', $output, $return_var);
 
 // Log output (optional)
-file_put_contents('/var/log/github-webhook.log', implode("\n", $output), FILE_APPEND);
+file_put_contents(__DIR__ . '/github-webhook.log', implode("\n", $output) . "\n", FILE_APPEND);
 
 // Respond to GitHub
 if ($return_var === 0) {
-    echo 'Webhook handled successfully test';
+    echo 'Webhook handled successfully';
 } else {
     http_response_code(500);
     echo 'Webhook handling failed';
