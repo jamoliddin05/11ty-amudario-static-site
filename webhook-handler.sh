@@ -21,10 +21,6 @@ echo "==== $(date): Starting webhook-handler.sh ====" >> "$LOG_FILE"
 # Ensure we are in the current directory
 echo "$(date): Using current directory $(pwd)" >> "$LOG_FILE"
 
-# Ensure the branch is checked out
-git fetch origin >> "$LOG_FILE" 2>&1
-git checkout "$BRANCH" >> "$LOG_FILE" 2>&1
-
 # Pull the latest changes
 echo "$(date): Pulling latest changes from $BRANCH branch." >> "$LOG_FILE"
 git pull origin "$BRANCH" >> "$LOG_FILE" 2>&1
