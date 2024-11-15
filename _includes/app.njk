@@ -98,21 +98,21 @@
     </header>
     <button id="backToTopBtn" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
     <main>
-        <section id="slider">
-           <div class="main-carousel">
-           {% for carouselItem in mySite.carouselItems %}
-               <div class="carousel-cell">
-                   <img id="main-banner" src="../{{ carouselItem.image.src }}" alt="{{ carouselItem.image.alt }}" class="carousel-image" loading="eager">
-                   <img id="mobile-banner" src="../{{ carouselItem.mobile_image.src }}" alt="{{ carouselItem.mobile_image.alt }}" class="carousel-image" loading="eager">
-                   <div class="carousel-caption-custom">
-                      <h3 class="text-uppercase">{{ carouselItem.caption.heading }}</h3>
-                      <p>{{ carouselItem.caption.text }}</p>
-                      <a href="{{ carouselItem.link }}" class="learn-more-button">{{ carouselItem.button }}</a>
-                   </div>
-               </div>
-           {% endfor %}
-          </div>
-        </section>
+{#        <section id="slider">#}
+{#           <div class="main-carousel">#}
+{#           {% for carouselItem in mySite.carouselItems %}#}
+{#               <div class="carousel-cell">#}
+{#                   <img id="main-banner" src="../{{ carouselItem.image.src }}" alt="{{ carouselItem.image.alt }}" class="carousel-image" loading="eager">#}
+{#                   <img id="mobile-banner" src="../{{ carouselItem.mobile_image.src }}" alt="{{ carouselItem.mobile_image.alt }}" class="carousel-image" loading="eager">#}
+{#                   <div class="carousel-caption-custom">#}
+{#                      <h3 class="text-uppercase">{{ carouselItem.caption.heading }}</h3>#}
+{#                      <p>{{ carouselItem.caption.text }}</p>#}
+{#                      <a href="{{ carouselItem.link }}" class="learn-more-button">{{ carouselItem.button }}</a>#}
+{#                   </div>#}
+{#               </div>#}
+{#           {% endfor %}#}
+{#          </div>#}
+{#        </section>#}
 
         <section id="first-section" class="custom-feature-container">
             <span class="section-title text-uppercase">{{ mySite.firstSection.title }}</span>
@@ -271,20 +271,20 @@
             </div>
         </section>
 
-        <section id="gallery-section">
-            <div class="gallery-wrapper custom-container carousel-wrapper">
-                <span class="carousel-title mb-4">{{ mySite.mainGallery.title }}</span>
-                <div class="carousel-bottom py-3">
-                    {% for galleryImage in mySite.mainGallery.folder | getFiles %}
-                        <div class="carousel-cell-partner">
-                            <a href="../{{ galleryImage }}" data-fancybox="mainGallery">
-                                <img src="../{{ galleryImage }}" class="mb-3"/>
-                            </a>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
+{#        <section id="gallery-section">#}
+{#            <div class="gallery-wrapper custom-container carousel-wrapper">#}
+{#                <span class="carousel-title mb-4">{{ mySite.mainGallery.title }}</span>#}
+{#                <div class="carousel-bottom py-3">#}
+{#                    {% for galleryImage in mySite.mainGallery.folder | getFiles %}#}
+{#                        <div class="carousel-cell-partner">#}
+{#                            <a href="../{{ galleryImage }}" data-fancybox="mainGallery">#}
+{#                                <img src="../{{ galleryImage }}" class="mb-3"/>#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    {% endfor %}#}
+{#                </div>#}
+{#            </div>#}
+{#        </section>#}
 
         <section id="about-us" class="pt-5">
             <span class="section-title custom-container mb-5">{{ mySite.about_us_section.title }}</span>
