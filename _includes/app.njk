@@ -342,7 +342,7 @@
                 <div class="row justify-content-around">
                     {% for media in mySite.media_about_us_section.media_info %}
                         <div class="media-info">
-                            <h5>{{ media.title }}</h5>
+                            <h5 class="text-uppercase">{{ media.title }}</h5>
                             <a href="{{ media.link }}" target="_blank">{{ media.linkValue }}</a>
                         </div>
                     {% endfor %}
