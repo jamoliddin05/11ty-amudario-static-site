@@ -271,20 +271,20 @@
             </div>
         </section>
 
-{#        <section id="gallery-section">#}
-{#            <div class="gallery-wrapper custom-container carousel-wrapper">#}
-{#                <span class="carousel-title mb-4">{{ mySite.mainGallery.title }}</span>#}
-{#                <div class="carousel-bottom py-3">#}
-{#                    {% for galleryImage in mySite.mainGallery.folder | getFiles %}#}
-{#                        <div class="carousel-cell-partner">#}
-{#                            <a href="../{{ galleryImage }}" data-fancybox="mainGallery">#}
-{#                                <img src="../{{ galleryImage }}" class="mb-3"/>#}
-{#                            </a>#}
-{#                        </div>#}
-{#                    {% endfor %}#}
-{#                </div>#}
-{#            </div>#}
-{#        </section>#}
+        <section id="gallery-section">
+            <div class="gallery-wrapper custom-container carousel-wrapper">
+                <span class="carousel-title mb-4">{{ mySite.mainGallery.title }}</span>
+                <div class="carousel-bottom py-3">
+                    {% for galleryImage in mySite.mainGallery.folder | getFiles %}
+                        <div class="carousel-cell-partner">
+                            <a href="../{{ galleryImage }}" data-fancybox="mainGallery">
+                                <img src="../{{ galleryImage }}" class="mb-3"/>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
 
         <section id="about-us" class="pt-5">
             <span class="section-title custom-container mb-5">{{ mySite.about_us_section.title }}</span>
