@@ -174,21 +174,21 @@
         </div>
     </section>
 
-    <section id="gallery-section" class="scroll-margin-top-class">
-        <div class="gallery-wrapper custom-container carousel-wrapper">
-            <span class="carousel-title mb-4">{{ mySite.product_gallery.title }}</span>
-            <div class="carousel-bottom py-3">
-                {% for productPhoto in mySite.product_gallery.folder | getFiles %}
-                    <div class="carousel-cell-bottom">
-                        <a href="{{ mySite.product_gallery.sub }}{{ productPhoto }}"
-                           data-fancybox="gallery">
-                            <img src="{{ mySite.product_gallery.sub }}{{ productPhoto }}" class="carousel-image-bottom" alt="test"/>
-                        </a>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
+{#    <section id="gallery-section" class="scroll-margin-top-class">#}
+{#        <div class="gallery-wrapper custom-container carousel-wrapper">#}
+{#            <span class="carousel-title mb-4">{{ mySite.product_gallery.title }}</span>#}
+{#            <div class="carousel-bottom py-3">#}
+{#                {% for productPhoto in mySite.product_gallery.folder | getFiles %}#}
+{#                    <div class="carousel-cell-bottom">#}
+{#                        <a href="{{ mySite.product_gallery.sub }}{{ productPhoto }}"#}
+{#                           data-fancybox="gallery">#}
+{#                            <img src="{{ mySite.product_gallery.sub }}{{ productPhoto }}" class="carousel-image-bottom" alt="test"/>#}
+{#                        </a>#}
+{#                    </div>#}
+{#                {% endfor %}#}
+{#            </div>#}
+{#        </div>#}
+{#    </section>#}
 
     <section id="meteostation-online" class="scroll-margin-top-class">
         <div class="custom-container section-wrapper-ordinary">
