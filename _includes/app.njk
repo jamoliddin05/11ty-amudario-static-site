@@ -278,7 +278,7 @@
                     {% for galleryImage in mySite.mainGallery.folder | getFiles %}
                         <div class="carousel-cell-partner">
                             <a href="../{{ galleryImage }}" data-fancybox="mainGallery">
-                                <img src="../{{ galleryImage }}" class="mb-3"/>
+                                <img src="../{{ galleryImage }}" class="mb-3" loading="lazy"/>
                             </a>
                         </div>
                     {% endfor %}
