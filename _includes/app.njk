@@ -1,4 +1,4 @@
-{% set assetsVersion = "17" %}
+{% set assetsVersion = "18" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../assets/css/back-to-top.css?v={{ assetsVersion }}">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="../assets/css/flickity.css" media="screen">
+{#    <link rel="stylesheet" href="../assets/css/flickity.css" media="screen">#}
     <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.css"/>
     <link rel="stylesheet" href="../assets/fontawesome/css/brands.css"/>
     <link rel="stylesheet" href="../assets/fontawesome/css/solid.css"/>
@@ -36,6 +36,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" href="../assets/css/flickity-v1.css" media="screen">;
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -354,7 +356,8 @@
             <span class="section-title custom-container mb-5">{{mySite.partners_section.title}}</span>
             <div class="custom-container carousel-wrapper">
                 <div class="carousel-partners"
-                  data-flickity='{ "wrapAround": true, "freeScroll": true, "pageDots": false }'>
+{#                  data-flickity='{ "wrapAround": true, "freeScroll": true, "pageDots": false }'#}
+                >
                   {% for logo in mySite.partners_section.folder | getFiles %}
                     <div class="carousel-cell-partner">
                         <a href="../{{ logo }}"
@@ -396,7 +399,9 @@
 {#    </section>#}
 
 </body>
-<script src="../assets/js/flickity.pkgd.min.js"></script>
+{#<script src="../assets/js/flickity.pkgd.min.js"></script>#}
+<script src="../assets/js/flickity-v1.js"></script>
+<script src="../assets/js/partners.js"></script>
 <script src="../assets/js/top_carousel.js?v={{ assetsVersion }}"></script>
 <script src="../assets/js/carousel.js?v={{ assetsVersion }}"></script>
 <script src="../assets/js/sticky_navbar.js?v={{ assetsVersion }}"></script>
