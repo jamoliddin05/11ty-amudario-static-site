@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="../assets/css/footer.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/back-to-top.css?v={{ assetsVersion }}">
 
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" >
-{#    <link rel="stylesheet" href="../assets/css/flickity.css" media="screen">#}
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/flickity.css" media="screen">
     <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.css"/>
     <link rel="stylesheet" href="../assets/fontawesome/css/brands.css"/>
     <link rel="stylesheet" href="../assets/fontawesome/css/solid.css"/>
@@ -37,370 +37,384 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
 
-    <link rel="stylesheet" href="../assets/css/flickity-v1.css" media="screen">;
+{#    <link rel="stylesheet" href="../assets/css/flickity-v1.css" media="screen">#}
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
 </head>
 <body class="mx-auto mb-10">
-    <header class="navbar-custom">
-        <nav>
-            <a href="#" class="centered-link">
-                <img src="../assets/img/logo/newLogo.png" alt="Logo" />
-            </a>
+<header class="navbar-custom">
+    <nav>
+        <a href="#" class="centered-link">
+            <img src="../assets/img/logo/newLogo.png" alt="Logo"/>
+        </a>
 
-            <div class="right-block">
-                <div class="dropdown-custom">
-                    <div class="dropdown-content">
+        <div class="right-block">
+            <div class="dropdown-custom">
+                <div class="dropdown-content">
+                    <a href="#oxus-ws">{{ mySite.menu.products.oxus_ws }}</a>
+                    <a href="#jayhun-trap-spec">{{ mySite.menu.products.jayhun_trap }}</a>
+                    <a href="#oxus-airsense">{{ mySite.menu.products.oxus_airsense }}</a>
+                    <a href="#gozanlink">{{ mySite.menu.products.gozanlink }}</a>
+                    <a href="mailto:{{ mySite.email }}" class="text-uppercase">{{ mySite.email }}</a>
+                    <a href="tel:{{ mySite.phone }}">{{ mySite.short_phone }}</a>
+                </div>
+            </div>
+            <div class="menu-content">
+                <div class="dropdown-product-wrapper">
+                    <a href="#" id="product-dropdown" class="product-dropdown-link">{{ mySite.menu.products.value }} <i
+                                class="fa-solid fa-chevron-down"></i> </a>
+                    <div class="product-dropdown-menu">
                         <a href="#oxus-ws">{{ mySite.menu.products.oxus_ws }}</a>
                         <a href="#jayhun-trap-spec">{{ mySite.menu.products.jayhun_trap }}</a>
                         <a href="#oxus-airsense">{{ mySite.menu.products.oxus_airsense }}</a>
                         <a href="#gozanlink">{{ mySite.menu.products.gozanlink }}</a>
-                        <a href="mailto:{{ mySite.email }}" class="text-uppercase">{{ mySite.email }}</a>
-                        <a href="tel:{{ mySite.phone }}">{{ mySite.short_phone }}</a>
                     </div>
-                </div>
-                <div class="menu-content">
-                    <div class="dropdown-product-wrapper">
-                        <a href="#" id="product-dropdown" class="product-dropdown-link">{{ mySite.menu.products.value }} <i class="fa-solid fa-chevron-down"></i> </a>
-                        <div class="product-dropdown-menu">
-                            <a href="#oxus-ws">{{ mySite.menu.products.oxus_ws }}</a>
-                            <a href="#jayhun-trap-spec">{{ mySite.menu.products.jayhun_trap }}</a>
-                            <a href="#oxus-airsense">{{ mySite.menu.products.oxus_airsense }}</a>
-                            <a href="#gozanlink">{{ mySite.menu.products.gozanlink }}</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-lang-content">
-                    <div class="dropdown-lang-wrapper">
-                        <a href="#" id="language-dropdown" class="product-dropdown-link">{{ mySite.menu.currentLang }} <i class="fa-solid fa-chevron-down"></i> </a>
-                        <div class="lang-dropdown-menu">
-                            <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>
-                            <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>
-                            <a href="{{ mySite.menu.thirdLang.link }}">{{ mySite.menu.thirdLang.value }}</a>
-                        </div>
-                    </div>
-                </div>
-{#                <div class="custom-language-switcher">#}
-{#                    <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>#}
-{#                    <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>#}
-{#                </div>#}
-                <button id="hamburger-button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="contact-info align-items-center">
-                    <a href="mailto:{{ mySite.email }}" class="mx-2 text-uppercase" id="email">{{ mySite.email }}</a>
-                    <a href="tel:{{ mySite.phone }}" class="mx-2" id="phone">{{ mySite.phone }}</a>
                 </div>
             </div>
-        </nav>
-    </header>
-    <button id="backToTopBtn" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
-    <main>
-        <section id="slider">
-           <div class="main-carousel">
-           {% for carouselItem in mySite.carouselItems %}
-               <div class="carousel-cell">
-                   <img id="main-banner" src="../{{ carouselItem.image.src }}" alt="{{ carouselItem.image.alt }}" class="carousel-image" loading="eager">
-                   <img id="mobile-banner" src="../{{ carouselItem.mobile_image.src }}" alt="{{ carouselItem.mobile_image.alt }}" class="carousel-image" loading="eager">
-                   <div class="carousel-caption-custom">
-                      <h3 class="text-uppercase">{{ carouselItem.caption.heading }}</h3>
-                      <p>{{ carouselItem.caption.text }}</p>
-                      <a href="{{ carouselItem.link }}" class="learn-more-button">{{ carouselItem.button }}</a>
-                   </div>
-               </div>
-           {% endfor %}
-          </div>
-        </section>
+            <div class="menu-lang-content">
+                <div class="dropdown-lang-wrapper">
+                    <a href="#" id="language-dropdown" class="product-dropdown-link">{{ mySite.menu.currentLang }} <i
+                                class="fa-solid fa-chevron-down"></i> </a>
+                    <div class="lang-dropdown-menu">
+                        <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>
+                        <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>
+                        <a href="{{ mySite.menu.thirdLang.link }}">{{ mySite.menu.thirdLang.value }}</a>
+                    </div>
+                </div>
+            </div>
+            {#                <div class="custom-language-switcher"> #}
+            {#                    <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a> #}
+            {#                    <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a> #}
+            {#                </div> #}
+            <button id="hamburger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="contact-info align-items-center">
+                <a href="mailto:{{ mySite.email }}" class="mx-2 text-uppercase" id="email">{{ mySite.email }}</a>
+                <a href="tel:{{ mySite.phone }}" class="mx-2" id="phone">{{ mySite.phone }}</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<button id="backToTopBtn" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+<main>
+    <section id="slider">
+        <div class="main-carousel">
+            {% for carouselItem in mySite.carouselItems %}
+                <div class="carousel-cell">
+                    <img id="main-banner" src="../{{ carouselItem.image.src }}" alt="{{ carouselItem.image.alt }}"
+                         class="carousel-image" loading="eager">
+                    <img id="mobile-banner" src="../{{ carouselItem.mobile_image.src }}"
+                         alt="{{ carouselItem.mobile_image.alt }}" class="carousel-image" loading="eager">
+                    <div class="carousel-caption-custom">
+                        <h3 class="text-uppercase">{{ carouselItem.caption.heading }}</h3>
+                        <p>{{ carouselItem.caption.text }}</p>
+                        <a href="{{ carouselItem.link }}" class="learn-more-button">{{ carouselItem.button }}</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
 
-        <section id="first-section" class="custom-feature-container">
-            <span class="section-title text-uppercase">{{ mySite.firstSection.title }}</span>
+    <section id="first-section" class="custom-feature-container">
+        <span class="section-title text-uppercase">{{ mySite.firstSection.title }}</span>
+        <div class="row mt-5 justify-content-center">
+            {% for iconFeature in mySite.firstSection.iconFeatures %}
+                <div class="custom-feature">
+                    <div class="feature-image-container">
+                        <img src="../{{ iconFeature.img }}" class="custom-feature-img"/>
+                    </div>
+                    <div class="feature-data">
+                        <h5 class="text-uppercase">{{ iconFeature.title }}</h5>
+                        <p>{{ iconFeature.paragraph }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section id="second-section">
+        <div class="section-wrapper custom-feature-container mobile-padding-second-section">
+            <span class="section-title">{{ mySite.secondSection.title }}</span>
             <div class="row mt-5 justify-content-center">
-                {% for iconFeature in mySite.firstSection.iconFeatures %}
-                   <div class="custom-feature">
-                       <div class="feature-image-container">
-                          <img src="../{{ iconFeature.img }}" class="custom-feature-img" />
-                       </div>
-                       <div class="feature-data">
-                           <h5 class="text-uppercase">{{ iconFeature.title }}</h5>
-                           <p>{{ iconFeature.paragraph }}</p>
-                       </div>
-                   </div>
-               {% endfor %}
-            </div>
-        </section>
-
-        <section id="second-section">
-            <div class="section-wrapper custom-feature-container mobile-padding-second-section">
-                <span class="section-title">{{ mySite.secondSection.title }}</span>
-                <div class="row mt-5 justify-content-center">
-                    {% for iconFeature in mySite.secondSection.iconFeatures %}
-                       <div class="custom-feature">
-                           <div class="feature-image-container">
-                              <img src="../{{ iconFeature.img }}" class="custom-feature-img" />
-                           </div>
-                           <div class="feature-data">
-                               <h5 class="text-uppercase">{{ iconFeature.title }}</h5>
-                               <p>{{ iconFeature.paragraph }}</p>
-                           </div>
-                       </div>
-                   {% endfor %}
-                </div>
-            </div>
-        </section>
-
-        <section id="oxus-ws" class="products">
-            <div class="custom-container section-wrapper-ordinary">
-                <div class="image-block">
-                    <div id="meteostation-wrap">
-                        <a href="{{ mySite.thirdSection.image }}"
-                           data-fancybox>
-                            <img src="{{ mySite.thirdSection.image }}" class="mb-3 custom-image-section" id="oxusws-photo"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="text-block">
-                    <div>
-                        {% if (mySite.menu.currentLang == "РУ") %}
-                            <h3 class="text-uppercase">
-                                {{ mySite.thirdSection.title_rest }}<a href="{{ mySite.menu.home.link }}{{ mySite.thirdSection.buttonLink }}">{{ mySite.thirdSection.title_strong }}</a>
-                            </h3>
-                        {% else %}
-                            <h3 class="text-uppercase">
-                                <a href="{{ mySite.menu.home.link }}{{ mySite.thirdSection.buttonLink }}">{{ mySite.thirdSection.title_strong }}</a>{{ mySite.thirdSection.title_rest }}
-                            </h3>
-                        {% endif %}
-                        <p>
-                            {{ mySite.thirdSection.text }}
-                        </p>
-                        <a href="{{ mySite.menu.home.link }}{{ mySite.thirdSection.buttonLink }}" class="learn-more-button">{{ mySite.thirdSection.buttonValue }}</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="jayhun-trap-spec" class="products">
-            <div class="custom-container section-wrapper-ordinary">
-                <div class="text-block">
-                    <div>
-                        {% if (mySite.menu.currentLang == "РУ") %}
-                            <h3 class="text-uppercase">
-                                {{ mySite.fourthSection.title_rest }}<a href="{{ mySite.menu.home.link }}{{ mySite.fourthSection.buttonLink }}">{{ mySite.fourthSection.title_strong }}</a>
-                            </h3>
-                        {% else %}
-                            <h3 class="text-uppercase">
-                                <a href="{{ mySite.menu.home.link }}{{ mySite.fourthSection.buttonLink }}">{{ mySite.fourthSection.title_strong }}</a>{{ mySite.fourthSection.title_rest }}
-                            </h3>
-                        {% endif %}
-                        <p>
-                            {{ mySite.fourthSection.text }}
-                        </p>
-                        <a href="{{ mySite.menu.home.link }}{{ mySite.fourthSection.buttonLink }}" class="learn-more-button">{{ mySite.fourthSection.buttonValue }}</a>
-                    </div>
-                </div>
-
-                <div class="image-block">
-                    <div id="meteostation-wrap">
-                        <a href="{{ mySite.fourthSection.image }}"
-                           data-fancybox>
-                            <img src="{{ mySite.fourthSection.image }}" class="mb-3 custom-image-section"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="oxus-airsense" class="products">
-            <div class="custom-container section-wrapper-ordinary">
-                <div class="image-block">
-                    <div id="meteostation-wrap">
-                        <a href="{{ mySite.fifthSection.image }}"
-                           data-fancybox>
-                            <img src="{{ mySite.fifthSection.image }}" class="mb-3 custom-image-section" id="oxus-airsense-photo"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="text-block">
-                    <div>
-                        {% if (mySite.menu.currentLang == "РУ") %}
-                            <h3 class="text-uppercase">
-                                {{ mySite.fifthSection.title_rest }}<a href="{{ mySite.menu.home.link }}{{ mySite.fifthSection.buttonLink }}">{{ mySite.fifthSection.title_strong }}</a>
-                            </h3>
-                        {% else %}
-                            <h3 class="text-uppercase">
-                                <a href="{{ mySite.menu.home.link }}{{ mySite.fifthSection.buttonLink }}">{{ mySite.fifthSection.title_strong }}</a>{{ mySite.fifthSection.title_rest }}
-                            </h3>
-                        {% endif %}
-                        <p>
-                            {{ mySite.fifthSection.text }}
-                        </p>
-                        <a href="{{ mySite.menu.home.link }}{{ mySite.fifthSection.buttonLink }}" class="learn-more-button">{{ mySite.fifthSection.buttonValue }}</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="gozanlink" class="products">
-            <div class="custom-container section-wrapper-ordinary">
-                <div class="text-block">
-                    <div>
-                        {% if (mySite.menu.currentLang == "РУ") %}
-                            <h3 class="text-uppercase">
-                                {{ mySite.sixthSection.title_rest }}<a href="{{ mySite.menu.home.link }}{{ mySite.sixthSection.buttonLink }}">{{ mySite.sixthSection.title_strong }}</a>
-                            </h3>
-                        {% else %}
-                            <h3 class="text-uppercase">
-                                <a href="{{ mySite.menu.home.link }}{{ mySite.sixthSection.buttonLink }}">{{ mySite.sixthSection.title_strong }}</a>{{ mySite.sixthSection.title_rest }}
-                            </h3>
-                        {% endif %}
-                        <p>
-                            {{ mySite.sixthSection.text }}
-                        </p>
-                        <a href="{{ mySite.menu.home.link }}{{ mySite.sixthSection.buttonLink }}" class="learn-more-button">{{ mySite.sixthSection.buttonValue }}</a>
-                    </div>
-                </div>
-                <div class="image-block">
-                    <div id="meteostation-wrap">
-                        <a href="{{ mySite.sixthSection.image }}"
-                         data-fancybox>
-                          <img src="{{ mySite.sixthSection.image }}" class="mb-3 custom-image-section"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="gallery-section">
-            <div class="gallery-wrapper custom-container carousel-wrapper">
-                <span class="carousel-title mb-4">{{ mySite.mainGallery.title }}</span>
-                <div class="carousel-bottom py-3">
-                    {% for galleryImage in mySite.mainGallery.folder | getFiles %}
-                        <div class="carousel-cell-partner">
-                            <a href="../{{ galleryImage }}" data-fancybox="mainGallery">
-                                <img src="../{{ galleryImage }}" class="mb-3"/>
-                            </a>
+                {% for iconFeature in mySite.secondSection.iconFeatures %}
+                    <div class="custom-feature">
+                        <div class="feature-image-container">
+                            <img src="../{{ iconFeature.img }}" class="custom-feature-img"/>
                         </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-
-        <section id="about-us" class="pt-5">
-            <span class="section-title custom-container mb-5">{{ mySite.about_us_section.title }}</span>
-            <div class="about-us-wrapper custom-container">
-                <div class="member-info">
-                    <div class="member-image-title">
-                        <img src="{{ mySite.about_us_section.member_one.member_img }}"/>
-                        <h5>{{ mySite.about_us_section.member_one.member_name }}</h5>
-                        <p>{{ mySite.about_us_section.member_one.member_position }}</p>
-                    </div>
-                    <div class="member-text">
-                        <ul>
-                            <li>{{ mySite.about_us_section.member_one.member_desc_1 }}</li>
-                            <li>{{ mySite.about_us_section.member_one.member_desc_2 }}</li>
-                            <li>{{ mySite.about_us_section.member_one.member_desc_3 }}</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="member-info">
-                    <div class="member-image-title">
-                        <img src="{{ mySite.about_us_section.member_two.member_img }}"/>
-                        <h5>{{ mySite.about_us_section.member_two.member_name }}</h5>
-                        <p>{{ mySite.about_us_section.member_two.member_position }}</p>
-                    </div>
-                    <div class="member-text">
-                        <ul>
-                            <li>{{ mySite.about_us_section.member_two.member_desc_1 }}</li>
-                            <li>{{ mySite.about_us_section.member_two.member_desc_2 }}</li>
-                            <li>{{ mySite.about_us_section.member_two.member_desc_3 }}</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="member-info">
-                    <div class="member-image-title">
-                        <img src="{{ mySite.about_us_section.member_three.member_img }}"/>
-                        <h5>{{ mySite.about_us_section.member_three.member_name }}</h5>
-                        <p>{{ mySite.about_us_section.member_three.member_position }}</p>
-                    </div>
-                    <div class="member-text">
-                        <ul>
-                            <li>{{ mySite.about_us_section.member_three.member_desc_1 }}</li>
-                            <li>{{ mySite.about_us_section.member_three.member_desc_2 }}</li>
-                            <li>{{ mySite.about_us_section.member_three.member_desc_3 }}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="media-about-us" class="py-5">
-            <span class="section-title custom-container mb-5">{{ mySite.media_about_us_section.title }}</span>
-            <div class="custom-container">
-                <div class="row justify-content-around">
-                    {% for media in mySite.media_about_us_section.media_info %}
-                        <div class="media-info">
-                            <h5 class="text-uppercase">{{ media.title }}</h5>
-                            <a href="{{ media.link }}" target="_blank">{{ media.linkValue }}</a>
+                        <div class="feature-data">
+                            <h5 class="text-uppercase">{{ iconFeature.title }}</h5>
+                            <p>{{ iconFeature.paragraph }}</p>
                         </div>
-                    {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section id="oxus-ws" class="products">
+        <div class="custom-container section-wrapper-ordinary">
+            <div class="image-block">
+                <div id="meteostation-wrap">
+                    <a href="{{ mySite.thirdSection.image }}"
+                       data-fancybox>
+                        <img src="{{ mySite.thirdSection.image }}" class="mb-3 custom-image-section" id="oxusws-photo"/>
+                    </a>
                 </div>
             </div>
-        </section>
+            <div class="text-block">
+                <div>
+                    {% if (mySite.menu.currentLang == "РУ") %}
+                        <h3 class="text-uppercase">
+                            {{ mySite.thirdSection.title_rest }}<a
+                                    href="{{ mySite.menu.home.link }}{{ mySite.thirdSection.buttonLink }}">{{ mySite.thirdSection.title_strong }}</a>
+                        </h3>
+                    {% else %}
+                        <h3 class="text-uppercase">
+                            <a href="{{ mySite.menu.home.link }}{{ mySite.thirdSection.buttonLink }}">{{ mySite.thirdSection.title_strong }}</a>{{ mySite.thirdSection.title_rest }}
+                        </h3>
+                    {% endif %}
+                    <p>
+                        {{ mySite.thirdSection.text }}
+                    </p>
+                    <a href="{{ mySite.menu.home.link }}{{ mySite.thirdSection.buttonLink }}"
+                       class="learn-more-button">{{ mySite.thirdSection.buttonValue }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="our-partners" class="py-5">
-            <span class="section-title custom-container mb-5">{{mySite.partners_section.title}}</span>
-            <div class="custom-container carousel-wrapper">
-                <div class="carousel-partners"
-{#                  data-flickity='{ "wrapAround": true, "freeScroll": true, "pageDots": false }'#}
-                >
-                  {% for logo in mySite.partners_section.folder | getFiles %}
+    <section id="jayhun-trap-spec" class="products">
+        <div class="custom-container section-wrapper-ordinary">
+            <div class="text-block">
+                <div>
+                    {% if (mySite.menu.currentLang == "РУ") %}
+                        <h3 class="text-uppercase">
+                            {{ mySite.fourthSection.title_rest }}<a
+                                    href="{{ mySite.menu.home.link }}{{ mySite.fourthSection.buttonLink }}">{{ mySite.fourthSection.title_strong }}</a>
+                        </h3>
+                    {% else %}
+                        <h3 class="text-uppercase">
+                            <a href="{{ mySite.menu.home.link }}{{ mySite.fourthSection.buttonLink }}">{{ mySite.fourthSection.title_strong }}</a>{{ mySite.fourthSection.title_rest }}
+                        </h3>
+                    {% endif %}
+                    <p>
+                        {{ mySite.fourthSection.text }}
+                    </p>
+                    <a href="{{ mySite.menu.home.link }}{{ mySite.fourthSection.buttonLink }}"
+                       class="learn-more-button">{{ mySite.fourthSection.buttonValue }}</a>
+                </div>
+            </div>
+
+            <div class="image-block">
+                <div id="meteostation-wrap">
+                    <a href="{{ mySite.fourthSection.image }}"
+                       data-fancybox>
+                        <img src="{{ mySite.fourthSection.image }}" class="mb-3 custom-image-section"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="oxus-airsense" class="products">
+        <div class="custom-container section-wrapper-ordinary">
+            <div class="image-block">
+                <div id="meteostation-wrap">
+                    <a href="{{ mySite.fifthSection.image }}"
+                       data-fancybox>
+                        <img src="{{ mySite.fifthSection.image }}" class="mb-3 custom-image-section"
+                             id="oxus-airsense-photo"/>
+                    </a>
+                </div>
+            </div>
+            <div class="text-block">
+                <div>
+                    {% if (mySite.menu.currentLang == "РУ") %}
+                        <h3 class="text-uppercase">
+                            {{ mySite.fifthSection.title_rest }}<a
+                                    href="{{ mySite.menu.home.link }}{{ mySite.fifthSection.buttonLink }}">{{ mySite.fifthSection.title_strong }}</a>
+                        </h3>
+                    {% else %}
+                        <h3 class="text-uppercase">
+                            <a href="{{ mySite.menu.home.link }}{{ mySite.fifthSection.buttonLink }}">{{ mySite.fifthSection.title_strong }}</a>{{ mySite.fifthSection.title_rest }}
+                        </h3>
+                    {% endif %}
+                    <p>
+                        {{ mySite.fifthSection.text }}
+                    </p>
+                    <a href="{{ mySite.menu.home.link }}{{ mySite.fifthSection.buttonLink }}"
+                       class="learn-more-button">{{ mySite.fifthSection.buttonValue }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gozanlink" class="products">
+        <div class="custom-container section-wrapper-ordinary">
+            <div class="text-block">
+                <div>
+                    {% if (mySite.menu.currentLang == "РУ") %}
+                        <h3 class="text-uppercase">
+                            {{ mySite.sixthSection.title_rest }}<a
+                                    href="{{ mySite.menu.home.link }}{{ mySite.sixthSection.buttonLink }}">{{ mySite.sixthSection.title_strong }}</a>
+                        </h3>
+                    {% else %}
+                        <h3 class="text-uppercase">
+                            <a href="{{ mySite.menu.home.link }}{{ mySite.sixthSection.buttonLink }}">{{ mySite.sixthSection.title_strong }}</a>{{ mySite.sixthSection.title_rest }}
+                        </h3>
+                    {% endif %}
+                    <p>
+                        {{ mySite.sixthSection.text }}
+                    </p>
+                    <a href="{{ mySite.menu.home.link }}{{ mySite.sixthSection.buttonLink }}"
+                       class="learn-more-button">{{ mySite.sixthSection.buttonValue }}</a>
+                </div>
+            </div>
+            <div class="image-block">
+                <div id="meteostation-wrap">
+                    <a href="{{ mySite.sixthSection.image }}"
+                       data-fancybox>
+                        <img src="{{ mySite.sixthSection.image }}" class="mb-3 custom-image-section"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery-section">
+        <div class="gallery-wrapper custom-container carousel-wrapper">
+            <span class="carousel-title mb-4">{{ mySite.mainGallery.title }}</span>
+            <div class="carousel-bottom py-3">
+                {% for galleryImage in mySite.mainGallery.folder | getFiles %}
+                    <div class="carousel-cell-partner">
+                        <a href="../{{ galleryImage }}" data-fancybox="mainGallery">
+                            <img src="../{{ galleryImage }}" class="mb-3" alt="gallery-image"/>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="pt-5">
+        <span class="section-title custom-container mb-5">{{ mySite.about_us_section.title }}</span>
+        <div class="about-us-wrapper custom-container">
+            <div class="member-info">
+                <div class="member-image-title">
+                    <img src="{{ mySite.about_us_section.member_one.member_img }}"/>
+                    <h5>{{ mySite.about_us_section.member_one.member_name }}</h5>
+                    <p>{{ mySite.about_us_section.member_one.member_position }}</p>
+                </div>
+                <div class="member-text">
+                    <ul>
+                        <li>{{ mySite.about_us_section.member_one.member_desc_1 }}</li>
+                        <li>{{ mySite.about_us_section.member_one.member_desc_2 }}</li>
+                        <li>{{ mySite.about_us_section.member_one.member_desc_3 }}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="member-info">
+                <div class="member-image-title">
+                    <img src="{{ mySite.about_us_section.member_two.member_img }}"/>
+                    <h5>{{ mySite.about_us_section.member_two.member_name }}</h5>
+                    <p>{{ mySite.about_us_section.member_two.member_position }}</p>
+                </div>
+                <div class="member-text">
+                    <ul>
+                        <li>{{ mySite.about_us_section.member_two.member_desc_1 }}</li>
+                        <li>{{ mySite.about_us_section.member_two.member_desc_2 }}</li>
+                        <li>{{ mySite.about_us_section.member_two.member_desc_3 }}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="member-info">
+                <div class="member-image-title">
+                    <img src="{{ mySite.about_us_section.member_three.member_img }}"/>
+                    <h5>{{ mySite.about_us_section.member_three.member_name }}</h5>
+                    <p>{{ mySite.about_us_section.member_three.member_position }}</p>
+                </div>
+                <div class="member-text">
+                    <ul>
+                        <li>{{ mySite.about_us_section.member_three.member_desc_1 }}</li>
+                        <li>{{ mySite.about_us_section.member_three.member_desc_2 }}</li>
+                        <li>{{ mySite.about_us_section.member_three.member_desc_3 }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="media-about-us" class="py-5">
+        <span class="section-title custom-container mb-5">{{ mySite.media_about_us_section.title }}</span>
+        <div class="custom-container">
+            <div class="row justify-content-around">
+                {% for media in mySite.media_about_us_section.media_info %}
+                    <div class="media-info">
+                        <h5 class="text-uppercase">{{ media.title }}</h5>
+                        <a href="{{ media.link }}" target="_blank">{{ media.linkValue }}</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section id="our-partners" class="py-5">
+        <span class="section-title custom-container mb-5">{{ mySite.partners_section.title }}</span>
+        <div class="custom-container carousel-wrapper">
+            <div class="carousel-partners"
+                    {#                  data-flickity='{ "wrapAround": true, "freeScroll": true, "pageDots": false }' #}
+            >
+                {% for logo in mySite.partners_section.folder | getFiles %}
                     <div class="carousel-cell-partner">
                         <a href="../{{ logo }}"
-                            data-fancybox="partner">
+                           data-fancybox="partner">
                             <img src="../{{ logo }}" class="mb-3"/>
                         </a>
                     </div>
                 {% endfor %}
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-    <footer>
-        <div class="top-footer-wrapper">
-            <div class="top-footer">
-                <h3 class="text-uppercase">{{ mySite.footer_info.title }}</h3>
-                <p>{{ mySite.footer_info.info }}</p>
-                <div class="contact-buttons-footer">
-                    <a href="tel:{{ mySite.phone }}">{{ mySite.phone }}</a>
-                    <a href="mailto:{{ mySite.email }}" class="text-uppercase">{{ mySite.email }}</a>
-                </div>
             </div>
         </div>
+    </section>
+</main>
 
-        <div class="bottom-footer custom-container py-3">
-            <span>{{ mySite.footer_info.bottom_strong }}<strong>{{ mySite.footer_info.bottom_ord }}</strong></span>
+
+<footer>
+    <div class="top-footer-wrapper">
+        <div class="top-footer">
+            <h3 class="text-uppercase">{{ mySite.footer_info.title }}</h3>
+            <p>{{ mySite.footer_info.info }}</p>
+            <div class="contact-buttons-footer">
+                <a href="tel:{{ mySite.phone }}">{{ mySite.phone }}</a>
+                <a href="mailto:{{ mySite.email }}" class="text-uppercase">{{ mySite.email }}</a>
+            </div>
         </div>
-    </footer>
+    </div>
 
-{#    <section>#}
-{#        <iframe width="812" height="457" src="https://www.youtube.com/embed/bFHak21e230?list=RDr-gXTixCZFo"#}
-{#                title="Егор Крид - Самая Самая (Премьера клипа, 2014)" frameborder="0"#}
-{#                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"#}
-{#                referrerpolicy="strict-origin-when-cross-origin"#}
-{#                allowfullscreen>#}
-{#        </iframe>#}
-{#    </section>#}
+    <div class="bottom-footer custom-container py-3">
+        <span>{{ mySite.footer_info.bottom_strong }}<strong>{{ mySite.footer_info.bottom_ord }}</strong></span>
+    </div>
+</footer>
+
+{#    <section> #}
+{#        <iframe width="812" height="457" src="https://www.youtube.com/embed/bFHak21e230?list=RDr-gXTixCZFo" #}
+{#                title="Егор Крид - Самая Самая (Премьера клипа, 2014)" frameborder="0" #}
+{#                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" #}
+{#                referrerpolicy="strict-origin-when-cross-origin" #}
+{#                allowfullscreen> #}
+{#        </iframe> #}
+{#    </section> #}
 
 </body>
-{#<script src="../assets/js/flickity.pkgd.min.js"></script>#}
-<script src="../assets/js/flickity-v1.js"></script>
+ <script src="../assets/js/flickity.pkgd.min.js"></script>
+{#<script src="../assets/js/flickity-v1.js"></script>#}
 <script src="../assets/js/partners.js"></script>
 <script src="../assets/js/top_carousel.js?v={{ assetsVersion }}"></script>
 <script src="../assets/js/carousel.js?v={{ assetsVersion }}"></script>
