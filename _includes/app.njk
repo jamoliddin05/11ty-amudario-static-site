@@ -108,9 +108,9 @@
             {% for carouselItem in mySite.carouselItems %}
                 <div class="carousel-cell">
                     <img id="main-banner" src="../{{ carouselItem.image.src }}" alt="{{ carouselItem.image.alt }}"
-                         class="carousel-image" loading="eager">
+                         class="carousel-image">
                     <img id="mobile-banner" src="../{{ carouselItem.mobile_image.src }}"
-                         alt="{{ carouselItem.mobile_image.alt }}" class="carousel-image" loading="eager">
+                         alt="{{ carouselItem.mobile_image.alt }}" class="carousel-image">
                     <div class="carousel-caption-custom">
                         <h3 class="text-uppercase">{{ carouselItem.caption.heading }}</h3>
                         <p>{{ carouselItem.caption.text }}</p>
