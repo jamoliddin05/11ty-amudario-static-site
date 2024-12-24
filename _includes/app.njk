@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmudarIO</title>
+    <title>{{ mySite.title }}</title>
     <link rel="stylesheet" href="../assets/css/slider.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/sticky-navbar.css?v={{ assetsVersion }}">
     <link rel="stylesheet" href="../assets/css/language-switcher.css?v={{ assetsVersion }}">
@@ -36,6 +36,35 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ mySite.metaDescription }}">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Amudario Research",
+            "url": "https://amudar.io",
+            "logo": "https://amudar.io/assets/img/logo/newLogo.png",
+            "description": "{{ mySite.metaDescription }}",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "{{ mySite.phone }}",
+                "contactType": "Customer Service"
+            }
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWZLDE14ZP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DWZLDE14ZP');
+    </script>
 
 {#    <link rel="stylesheet" href="../assets/css/flickity-v1.css" media="screen">#}
 
