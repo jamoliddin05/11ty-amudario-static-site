@@ -28,7 +28,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-buttons-footer a {
@@ -39,6 +41,8 @@
     font-size: .97em;
     letter-spacing: .05em;
     transition: all .6s;
+    max-width: 220px;
+    min-width: 200px;
 }
 
 .contact-buttons-footer a:hover {
