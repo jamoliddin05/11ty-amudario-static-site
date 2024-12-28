@@ -12,7 +12,7 @@ module.exports = function(eleventyConfig) {
         try {
             // Read the files in the folder and filter by image extensions
             const files = fs.readdirSync(fullPath).filter(file => {
-                return [".jpg", ".jpeg", ".png", ".gif"].includes(path.extname(file).toLowerCase());
+                return [".jpg", ".jpeg", ".png", ".gif", ".webp"].includes(path.extname(file).toLowerCase());
             });
 
             // Create an HTML string for each file path
