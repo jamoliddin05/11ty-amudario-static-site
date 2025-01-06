@@ -8,10 +8,16 @@
 }
 
 .top-footer {
-    max-width: 600px;
+    /*max-width: 600px;*/
     text-align: center;
     margin: 0 auto;
     color: white;
+}
+
+@media (max-width: 670px) {
+    .top-footer {
+        max-width: 400px;
+    }
 }
 
 .top-footer h3 {
@@ -29,7 +35,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    flex-direction: column;
+    /*flex-direction: column;*/
     align-items: center;
 }
 
