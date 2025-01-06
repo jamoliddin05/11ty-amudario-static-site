@@ -1,69 +1,7 @@
-{% set assetsVersion = "18" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ mySite.title }}</title>
-    <link rel="stylesheet" href="../assets/css/slider.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/sticky-navbar.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/language-switcher.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/products-menu.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/common.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/first-section.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/hamburger.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/feature.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/second-section.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/section.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/custom-carousel.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/about-us.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/media.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/partner.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/footer.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="../assets/css/back-to-top.css?v={{ assetsVersion }}">
-
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/flickity.css" media="screen">
-    <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.css"/>
-    <link rel="stylesheet" href="../assets/fontawesome/css/brands.css"/>
-    <link rel="stylesheet" href="../assets/fontawesome/css/solid.css"/>
-
-    <link rel="stylesheet" href="../assets/css/fancybox.css"/>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ mySite.metaDescription }}">
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Amudario Research",
-            "url": "https://amudar.io",
-            "logo": "https://amudar.io/assets/img/logo/newLogo.png",
-            "description": "{{ mySite.metaDescription }}",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "{{ mySite.phone }}",
-                "contactType": "Customer Service"
-            }
-        }
-    </script>
-
-    {% include 'gtag.njk' %}
-
-{#    <link rel="stylesheet" href="../assets/css/flickity-v1.css" media="screen">#}
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet">
+    {% include 'app_head.njk' %}
 </head>
 <body class="mx-auto mb-10" itemscope itemtype="http://schema.org/WebPage">
 <header class="navbar-custom" itemscope itemtype="http://schema.org/WPHeader">
@@ -107,10 +45,7 @@
                     </div>
                 </div>
             </div>
-            {#                <div class="custom-language-switcher"> #}
-            {#                    <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a> #}
-            {#                    <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a> #}
-            {#                </div> #}
+
             <button id="hamburger-button">
                 <span></span>
                 <span></span>
@@ -392,9 +327,7 @@
     <section id="our-partners" class="py-5">
         <span class="section-title custom-container mb-5">{{ mySite.partners_section.title }}</span>
         <div class="custom-container carousel-wrapper">
-            <div class="carousel-partners"
-                    {#                  data-flickity='{ "wrapAround": true, "freeScroll": true, "pageDots": false }' #}
-            >
+            <div class="carousel-partners">
                 {% for logo in mySite.partners_section.folder | getFiles %}
                     <div class="carousel-cell-partner">
                         <a href="../{{ logo }}"
@@ -408,44 +341,4 @@
     </section>
 </main>
 
-
-<footer itemscope itemtype="http://schema.org/WPFooter">
-    <div class="top-footer-wrapper">
-        <div class="top-footer">
-            <h3 class="text-uppercase">{{ mySite.footer_info.title }}</h3>
-            <p>{{ mySite.footer_info.info }}</p>
-            <div class="contact-buttons-footer">
-                <a href="tel:{{ mySite.phone }}">{{ mySite.phone }}</a>
-                <a href="{{ mySite.telegram }}"><i class="fa-brands fa-telegram"></i> TELEGRAM</a>
-                <a href="mailto:{{ mySite.email }}" class="text-uppercase">{{ mySite.email }}</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="bottom-footer custom-container py-3">
-        <span>{{ mySite.footer_info.bottom_strong }}<strong>{{ mySite.footer_info.bottom_ord }}</strong></span>
-    </div>
-</footer>
-
-{#    <section> #}
-{#        <iframe width="812" height="457" src="https://www.youtube.com/embed/bFHak21e230?list=RDr-gXTixCZFo" #}
-{#                title="Егор Крид - Самая Самая (Премьера клипа, 2014)" frameborder="0" #}
-{#                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" #}
-{#                referrerpolicy="strict-origin-when-cross-origin" #}
-{#                allowfullscreen> #}
-{#        </iframe> #}
-{#    </section> #}
-
-</body>
- <script src="../assets/js/flickity.pkgd.min.js"></script>
-{#<script src="../assets/js/flickity-v1.js"></script>#}
-<script src="../assets/js/partners.js"></script>
-<script src="../assets/js/top_carousel.js?v={{ assetsVersion }}"></script>
-<script src="../assets/js/carousel.js?v={{ assetsVersion }}"></script>
-<script src="../assets/js/sticky_navbar.js?v={{ assetsVersion }}"></script>
-<script src="../assets/js/hamburger.js?v={{ assetsVersion }}"></script>
-<script src="../assets/js/back-to-top.js?v={{ assetsVersion }}"></script>
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
-<script src="../assets/js/fancybox.umd.js"></script>
-<script src="../assets/js/fancybox-options.js"></script>
-</html>
+{% include 'footer.njk' %}

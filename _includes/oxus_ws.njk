@@ -2,71 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ mySite.title }}</title>
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/slider.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/sticky-navbar.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/language-switcher.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/common.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/first-section.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/products-menu.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/hamburger.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/feature.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/second-section.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/section.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/custom-carousel.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/about-us.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/media.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/partner.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/footer.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/back-to-top.css?v={{ assetsVersion }}">
-
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/product/product.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/product/first-section-product.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/product/product-menu.css?v={{ assetsVersion }}">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/product/characteristics.css?v={{ assetsVersion }}">
-
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/flickity.css" media="screen">
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/fontawesome/css/fontawesome.css"/>
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/fontawesome/css/brands.css"/>
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/fontawesome/css/solid.css"/>
-
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/fancybox.css"/>
-
-    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/product/gozanlink.css?v={{ assetsVersion }}">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ baseUrl }}../assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ baseUrl }}../assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ baseUrl }}../assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="{{ baseUrl }}../assets/favicon_io/site.webmanifest">
-
-    {% include 'gtag.njk' %}
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ mySite.metaDescription }}">
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Amudario Research",
-            "url": "https://amudar.io",
-            "logo": "https://amudar.io/assets/img/logo/newLogo.png",
-            "description": "{{ mySite.metaDescription }}",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "{{ mySite.phone }}",
-                "contactType": "Customer Service"
-            }
-        }
-    </script>
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    {% include 'app_head.njk' %}
 </head>
 
 <body class="mx-auto mb-10">
@@ -90,13 +26,6 @@
                     <a href="{{ mySite.telegram }}"><i class="fa-brands fa-telegram"></i> TELEGRAM</a>
                 </div>
             </div>
-{#            <div class="menu-content">#}
-{#                <a href="{{ mySite.menu.home.link }}" id="home-link-id">{{ mySite.menu.home.value }}</a>#}
-{#            </div>#}
-{#            <div class="custom-language-switcher">#}
-{#                <a href="{{ mySite.menu.firstLang.link }}">{{ mySite.menu.firstLang.value }}</a>#}
-{#                <a href="{{ mySite.menu.secondLang.link }}">{{ mySite.menu.secondLang.value }}</a>#}
-{#            </div>#}
             <div class="menu-lang-content">
                 <div class="dropdown-lang-wrapper">
                     <a href="#" id="language-dropdown" class="product-dropdown-link">{{ mySite.menu.currentLang }} <i class="fa-solid fa-chevron-down"></i> </a>
@@ -264,31 +193,4 @@
     </section>
 </main>
 
-<footer>
-    <div class="top-footer-wrapper">
-        <div class="top-footer">
-            <h3>{{ mySite.footer_info.title }}</h3>
-            <p>{{ mySite.footer_info.info }}</p>
-            <div class="contact-buttons-footer">
-                <a href="tel:{{ mySite.phone }}">{{ mySite.phone }}</a>
-                <a href="{{ mySite.telegram }}"><i class="fa-brands fa-telegram"></i> TELEGRAM</a>
-                <a href="mailto:{{ mySite.email }}" class="text-uppercase">{{ mySite.email }}</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="bottom-footer custom-container py-3">
-        <span>{{ mySite.footer_info.bottom_strong }} <strong>{{ mySite.footer_info.bottom_ord }}</strong></span>
-    </div>
-</footer>
-</body>
-<script src="{{ baseUrl }}../assets/js/flickity.pkgd.min.js"></script>
-<script src="{{ baseUrl }}../assets/js/carousel.js?v={{ assetsVersion }}"></script>
-<script src="{{ baseUrl }}../assets/js/product/navbar.js?v={{ assetsVersion }}"></script>
-<script src="{{ baseUrl }}../assets/js/hamburger.js?v={{ assetsVersion }}"></script>
-<script src="{{ baseUrl }}../assets/js/product/sticky_navbar.js?v={{ assetsVersion }}"></script>
-<script src="{{ baseUrl }}../assets/js/back-to-top.js?v={{ assetsVersion }}"></script>
-<script src="{{ baseUrl }}../assets/js/bootstrap.bundle.min.js"></script>
-<script src="{{ baseUrl }}../assets/js/fancybox.umd.js"></script>
-<script src="{{ baseUrl }}../assets/js/fancybox-options.js"></script>
-</html>
+{% include 'footer.njk' %}
