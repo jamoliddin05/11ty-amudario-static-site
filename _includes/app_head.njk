@@ -2,6 +2,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ mySite.title }}</title>
+
+{% for carouselItem in mySite.carouselItems %}
+    <link rel="preload" href="../{{ carouselItem.mobile_image.src }}" as="image"/>
+    <link rel="preload" href="../{{ carouselItem.image.src }}" as="image"/>
+{% endfor %}
+<link rel="preload" href="{{ baseUrl }}{{ mySite.banner.img }}" as="image"/>
+<link rel="preload" href="{{ baseUrl }}{{ mySite.banner.mobile_img }}" as="image"/>
+
+
+
 <link rel="stylesheet" href="{{ baseUrl }}../assets/css/slider.css?v={{ assetsVersion }}">
 <link rel="stylesheet" href="{{ baseUrl }}../assets/css/sticky-navbar.css?v={{ assetsVersion }}">
 <link rel="stylesheet" href="{{ baseUrl }}../assets/css/language-switcher.css?v={{ assetsVersion }}">
@@ -25,7 +35,11 @@
 <link rel="stylesheet" href="{{ baseUrl }}../assets/css/product/characteristics.css?v={{ assetsVersion }}">
 <link rel="stylesheet" href="{{ baseUrl }}../assets/css/product/gozanlink.css?v={{ assetsVersion }}">
 
-<link rel="stylesheet" href="{{ baseUrl }}../assets/css/bootstrap.min.css" >
+{#<link rel="stylesheet" href="{{ baseUrl }}../assets/css/bootstrap.min.css" >#}
+<link rel="preload" href="{{ baseUrl }}../assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+    <link rel="stylesheet" href="{{ baseUrl }}../assets/css/bootstrap.min.css">
+</noscript>
 <link rel="stylesheet" href="{{ baseUrl }}../assets/css/flickity.css" media="screen">
 <link rel="stylesheet" href="{{ baseUrl }}../assets/fontawesome/css/fontawesome.css"/>
 <link rel="stylesheet" href="{{ baseUrl }}../assets/fontawesome/css/brands.css"/>
@@ -44,7 +58,7 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWZLDE14ZP"></script>
-<script>
+<script async>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
